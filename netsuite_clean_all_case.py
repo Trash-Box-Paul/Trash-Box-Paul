@@ -129,8 +129,10 @@ class CleanAllCase:
                 )
             finally:
                 self.driver.find_element(By.XPATH, input_box).send_keys("Closed")
+                time.sleep(2)
+                self.driver.find_element(By.XPATH, input_box).click()
             # 4 | shift + last line
-            time.sleep(3)
+
             ele = self.driver.find_element(By.XPATH, last_row_xpath)
             action_chains = ActionChains(self.driver)
             action_chains.key_down(Keys.SHIFT).click(ele).key_up(Keys.SHIFT).perform()

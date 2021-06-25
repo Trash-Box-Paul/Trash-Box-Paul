@@ -58,7 +58,7 @@ class CleanAllCase:
         element = self.driver.find_element(By.XPATH, "//div[2]/div/div/h2")
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
-        # 2 | move mouse | Title: Paul's All Case View | hover element
+        # 2 | MouseMoveAt | Title: Paul's All Case View | hover element
         time.sleep(2)
         refresh_icon = "//div[2]/div/div/div/span[3]"
         try:
@@ -147,6 +147,7 @@ class CleanAllCase:
                 ele = self.driver.find_element(By.XPATH, number_sum)
             html = ele.get_attribute('innerHTML')
             case_sum = int(html)
+            # 7 |  update the case number
 
     def change_criteria(self, type, key_word):
         js_top = "var q=document.documentElement.scrollTop=0"
@@ -162,8 +163,8 @@ class CleanAllCase:
             element = self.driver.find_element(By.XPATH, title)
             actions = ActionChains(self.driver)
             actions.move_to_element(element).perform()
+            # 1 | mouseMoveAt | Title: Paul's All case view | hover element
             # element.click()
-        # 1 | mouseMoveAt | xpath=//div[2]/div/div/div/span[3] |
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
@@ -175,6 +176,7 @@ class CleanAllCase:
             actions = ActionChains(self.driver)
             actions.move_to_element(element).perform()
             # element.click()
+            # 2 | mouseMoveAt | Configure Icon | hover element
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located(
@@ -187,7 +189,7 @@ class CleanAllCase:
             actions = ActionChains(self.driver)
             actions.move_to_element(element).perform()
             element.click()
-
+            # 3 | mouseMoveAt and click | Edit Icon | hover element
         self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr["
                                            "1]/td/table/tbody/tr/td[2]/a").click()
         criteria_subject = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[" \
@@ -207,6 +209,7 @@ class CleanAllCase:
             actions.move_to_element(element).perform()
             element.click()
             time.sleep(2)
+            # 4 | mouseMoveAt and click | Arrow | hover element
         iframe = "/html/body/div[9]/div[2]/div[1]/div/div/iframe"
         element = self.driver.find_element(By.XPATH, iframe)
         self.driver.switch_to.frame(element)
@@ -224,12 +227,16 @@ class CleanAllCase:
             self.driver.find_element(By.XPATH, textbox_1).click()
             time.sleep(2)
             self.driver.find_element(By.XPATH, textbox_1_1).send_keys(type)
+            # 3 | Input | Search Type
         self.driver.find_element(By.NAME, textbox_2).click()
         self.driver.find_element(By.NAME, textbox_2).send_keys(Keys.CONTROL + "a");
         self.driver.find_element(By.NAME, textbox_2).send_keys(key_word)
+        # 4 | Input | Search Key Words
         element = "/html/body/div[1]/div/div[4]/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[" \
                   "1]/table/tbody/tr/td[2]/input"
         self.driver.find_element(By.XPATH, element).click()
+        # 4 | Click | Edit
         time.sleep(2)
         element = "/html/body/div[1]/div[2]/div[3]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input"
         self.driver.find_element(By.XPATH, element).click()
+        # 4 | Click | Save

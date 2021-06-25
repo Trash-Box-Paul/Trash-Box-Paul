@@ -123,9 +123,14 @@ class CleanAllCase:
             select_close = "/html/body/div[7]/div/div/div[15]"
             # 3 | click | first row |
             self.driver.find_element(By.XPATH, first_row_xpath).click()
-            time.sleep(2)
-            self.driver.find_element(By.XPATH, input_box).send_keys("Closed")
+            try:
+                WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, input_box))
+                )
+            finally:
+                self.driver.find_element(By.XPATH, input_box).send_keys("Closed")
             # 4 | shift + last line
+            time.sleep(3)
             ele = self.driver.find_element(By.XPATH, last_row_xpath)
             action_chains = ActionChains(self.driver)
             action_chains.key_down(Keys.SHIFT).click(ele).key_up(Keys.SHIFT).perform()

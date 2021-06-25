@@ -7,8 +7,8 @@ import socket
 class DebugBrowser:
     def __init__(self):
         self.ip = '127.0.0.1'
-        self.port = 9222
-        self.user_file = 'C:/testfile'
+        self.port = 9000
+        self.user_file = 'C:/test'
         self.chrome_option = Options()
         self.chrome_address = 'C:\Program Files\Google\Chrome\Application'
 

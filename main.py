@@ -7,9 +7,9 @@ import win32api, win32con
 test1 = netsuite_clean_all_case.CleanAllCase()
 test1.__init__()
 var = [
-        # "To Base Brands CC",
-        # "Amware Logistics Unknown To Unknown",
-        # "Almo Unknown To Unknown",
+        "To Base Brands CC",
+        "Amware Logistics Unknown To Unknown",
+        "Almo Unknown To Unknown",
         "Home Depot Canada Unknown To Unknown",
         "To Nurse Assist, Inc.",
         "Medline Unknown To Unknown",

@@ -10,12 +10,12 @@ var = [
         # "To Base Brands CC",
         # "Amware Logistics Unknown To Unknown",
         # "Almo Unknown To Unknown",
-        # "Home Depot Canada Unknown To Unknown",
-        # "To Nurse Assist, Inc.",
-        # "Medline Unknown To Unknown",
-        # "P2P - Cat5 Commerce Unknown To Unknown",
-        # "Tractor Supply Drop Ship Unknown To Unknown",
-        # "Unknown Unknown To Unknown",
+        "Home Depot Canada Unknown To Unknown",
+        "To Nurse Assist, Inc.",
+        "Medline Unknown To Unknown",
+        "P2P - Cat5 Commerce Unknown To Unknown",
+        "Tractor Supply Drop Ship Unknown To Unknown",
+        "Unknown Unknown To Unknown",
         "Walmart Unknown To Unknown"
        ]
 for search_key in var:

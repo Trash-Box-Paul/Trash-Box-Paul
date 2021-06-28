@@ -76,6 +76,12 @@ class CleanAllCase:
         # Step # | name | target | value
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[4]/li[2]/a/span"
         self.driver.find_element(By.XPATH, tab_case).click()
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, tab_case))
+            )
+        finally:
+            self.driver.find_element(By.XPATH, tab_case).click()
         # 1 | click | case tab |
         number_sum = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[2]/table[" \
                      "2]/tbody/tr/td/table/tbody/tr/td/a "
@@ -137,6 +143,8 @@ class CleanAllCase:
             action_chains = ActionChains(self.driver)
             action_chains.key_down(Keys.SHIFT).click(ele).key_up(Keys.SHIFT).perform()
             # 5 | click | id=uir_totalcount |
+            js_top = "var q=document.documentElement.scrollTop=0"
+            self.driver.execute_script(js_top)
             self.driver.find_element(By.ID, "uir_totalcount").click()
             # 6 |  refresh the list
             time.sleep(2)

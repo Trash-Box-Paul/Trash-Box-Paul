@@ -250,3 +250,997 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+Invalid port. Exiting...
+1625480104820	geckodriver	INFO	Listening on 127.0.0.1:52216
+1625480107834	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile5UzmT1"
+1625480108122	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile5UzmT1\\search.json.mozlz4", (void 0)))
+1625480109690	Marionette	INFO	Listening on port 52163
+1625480109905	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625480200271	Marionette	INFO	Stopped listening on port 52163
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile5ZNMoq"
+1625480113282	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile5ZNMoq\\search.json.mozlz4", (void 0)))
+1625480115021	Marionette	INFO	Listening on port 57604
+1625480115069	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1625480207489	Marionette	INFO	Stopped listening on port 57604
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileYHWCiN"
+1625480202342	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileYHWCiN\\search.json.mozlz4", (void 0)))
+1625480203835	Marionette	INFO	Listening on port 55523
+1625480204135	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625480234510	Marionette	INFO	Stopped listening on port 55523
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileptr1HZ"
+1625480207485	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileptr1HZ\\search.json.mozlz4", (void 0)))
+1625480209144	Marionette	INFO	Listening on port 55559
+1625480209251	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625480244880	Marionette	INFO	Stopped listening on port 55559
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625538673535	geckodriver	INFO	Listening on 127.0.0.1:61577
+1625538676523	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileeZKeYq"
+1625538676800	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileeZKeYq\\search.json.mozlz4", (void 0)))
+1625538678370	Marionette	INFO	Listening on port 61587
+1625538678605	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625539043907	Marionette	INFO	Stopped listening on port 61587
+5538681738	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileuX8q5e"
+1625538682002	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileuX8q5e\\search.json.mozlz4", (void 0)))
+1625538683527	Marionette	INFO	Listening on port 61635
+1625538683803	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1625538746616	Marionette	INFO	Stopped listening on port 61635
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625538748625	geckodriver	INFO	Listening on 127.0.0.1:63005
+1625538751673	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilekvuoZm"
+1625538751959	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilekvuoZm\\search.json.mozlz4", (void 0)))
+1625538753537	Marionette	INFO	Listening on port 54430
+1625538753753	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625539621865	Marionette	INFO	Stopped listening on port 54430
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilerzR27F\\search.json.mozlz4", (void 0)))
+1625538758645	Marionette	INFO	Listening on port 54477
+1625538758896	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625539622746	Marionette	INFO	Stopped listening on port 54477
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625539633068	geckodriver	INFO	Listening on 127.0.0.1:60143
+1625539636124	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilej6ZRIa"
+1625539636407	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilej6ZRIa\\search.json.mozlz4", (void 0)))
+1625539637970	Marionette	INFO	Listening on port 53132
+1625539638196	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625542399401	Marionette	INFO	Stopped listening on port 53132
+_mozprofile5Oqt54"
+1625539743757	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile5Oqt54\\search.json.mozlz4", (void 0)))
+1625539745216	Marionette	INFO	Listening on port 59780
+1625539745537	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625542398694	Marionette	INFO	Stopped listening on port 59780
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileqTslI6\\search.json.mozlz4", (void 0)))
+1625539898135	Marionette	INFO	Listening on port 56112
+1625539898417	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625539912102	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+1625542398054	Marionette	INFO	Stopped listening on port 56112
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+sdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625542397342	Marionette	INFO	Stopped listening on port 51428
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofiled6Tuxj\\search.json.mozlz4", (void 0)))
+1625540084044	Marionette	INFO	Listening on port 59994
+1625540084333	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625540088974	geckodriver	INFO	Listening on 127.0.0.1:54834
+1625540092031	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile459OMo"
+1625540092284	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile459OMo\\search.json.mozlz4", (void 0)))
+1625540093769	Marionette	INFO	Listening on port 62622
+1625540094086	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625542409576	geckodriver	INFO	Listening on 127.0.0.1:50179
+1625542412683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileNvNd2o"
+1625542412983	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileNvNd2o\\search.json.mozlz4", (void 0)))
+1625542414488	Marionette	INFO	Listening on port 55008
+1625542414751	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+1625543208569	Marionette	INFO	Stopped listening on port 55008
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625550066487	geckodriver	INFO	Listening on 127.0.0.1:54493
+1625550069554	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilenvhe0F"
+1625550069828	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilenvhe0F\\search.json.mozlz4", (void 0)))
+1625550071483	Marionette	INFO	Listening on port 51344
+1625550071628	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625551100562	geckodriver	INFO	Listening on 127.0.0.1:58868
+1625551103633	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileD1iSqr"
+1625551103911	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileD1iSqr\\search.json.mozlz4", (void 0)))
+1625551105492	Marionette	INFO	Listening on port 60368
+1625551105695	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625551243648	Marionette	INFO	Stopped listening on port 60368
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileCtsxB4"
+1625551222561	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileCtsxB4\\search.json.mozlz4", (void 0)))
+1625551224161	Marionette	INFO	Listening on port 63017
+1625551224368	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625551330071	Marionette	INFO	Stopped listening on port 63017
+1625551332737	geckodriver	INFO	Listening on 127.0.0.1:50831
+1625551335823	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileMs4X9D"
+1625551336091	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileMs4X9D\\search.json.mozlz4", (void 0)))
+1625551337670	Marionette	INFO	Listening on port 50839
+1625551337889	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+JavaScript error: http://psdtool.tc.net/psdTool/ScriptResource.axd?d=t41vGisQa4Mnga1xJV1MPDT0hrLnE9ijJEYpFfwIDwdV6wqfeZ9t9H0VTi-7ZXHZk1FVVW7w-zhNk0NB5urm4H-Qd2IhuXjfZY88W5QTLhkfZdbT61jRlgVm0fD4I-4qd3m_DT-NIuKrdO3VfHX-LzNvOESNFEQyOkTOpEhBC1SCTDgcbS4e2Qphi_wayMFMF2AIFD_xIU8jrPQwvW47mQ2&t=ffffffffa4c90074, line 7609: TypeError: document.getBoxObjectFor is not a function
+1625551840952	Marionette	INFO	Stopped listening on port 50839
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilerSsPkd"
+1625551833897	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilerSsPkd\\search.json.mozlz4", (void 0)))
+1625551835633	Marionette	INFO	Listening on port 53957
+1625551835684	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625552400194	Marionette	INFO	Stopped listening on port 53957
+ile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileZHOic6"
+1625551934293	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileZHOic6\\search.json.mozlz4", (void 0)))
+1625551935826	Marionette	INFO	Listening on port 56309
+1625551936092	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625551949310	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625552399030	Marionette	INFO	Stopped listening on port 56309
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileK08JjN"
+1625552044299	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileK08JjN\\search.json.mozlz4", (void 0)))
+1625552045874	Marionette	INFO	Listening on port 64103
+1625552046086	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552398017	Marionette	INFO	Stopped listening on port 64103
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileAwc0Mz"
+1625552171756	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileAwc0Mz\\search.json.mozlz4", (void 0)))
+1625552173352	Marionette	INFO	Listening on port 57697
+1625552173561	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552395974	Marionette	INFO	Stopped listening on port 57697
+5552194942	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileSU6ohn"
+1625552195206	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileSU6ohn\\search.json.mozlz4", (void 0)))
+1625552196777	Marionette	INFO	Listening on port 62872
+1625552197007	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552394774	Marionette	INFO	Stopped listening on port 62871625552395486	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileCInAyg"
+1625552395756	Marionette	INFO	Marionette enabled
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625552408424	geckodriver	INFO	Listening on 127.0.0.1:58408
+1625552411494	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofiley0V61E"
+1625552411764	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofiley0V61E\\search.json.mozlz4", (void 0)))
+1625552413396	Marionette	INFO	Listening on port 57715
+1625552413566	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552438311	geckodriver	INFO	Listening on 127.0.0.1:54385
+1625552441393	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileyVQ6ZJ"
+1625552441652	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileyVQ6ZJ\\search.json.mozlz4", (void 0)))
+1625552443090	Marionette	INFO	Listening on port 64163
+1625552443454	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552490287	geckodriver	INFO	Listening on 127.0.0.1:56223
+1625552493362	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileJeS5Gy"
+1625552493614	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileJeS5Gy\\search.json.mozlz4", (void 0)))
+1625552495040	Marionette	INFO	Listening on port 55976
+1625552495413	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557662599	Marionette	INFO	Stopped listening on port 55976
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileH1wNAe\\search.json.mozlz4", (void 0)))
+1625552577677	Marionette	INFO	Listening on port 54679
+1625552578071	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552590546	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557662200	Marionette	INFO	Stopped listening on port 54679
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilem3jTxl\\search.json.mozlz4", (void 0)))
+1625552635017	Marionette	INFO	Listening on port 63503
+1625552635384	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557661767	Marionette	INFO	Stopped listening on port 63503
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilewPnkGt\\search.json.mozlz4", (void 0)))
+1625552784305	Marionette	INFO	Listening on port 50659
+1625552784620	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552806645	geckodriver	INFO	Listening on 127.0.0.1:50725
+1625552809683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileTfPr7U"
+1625552809946	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileTfPr7U\\search.json.mozlz4", (void 0)))
+1625552811534	Marionette	INFO	Listening on port 50733
+1625552811736	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552851750	geckodriver	INFO	Listening on 127.0.0.1:57816
+1625552854811	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilep0mqlJ"
+1625552855086	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilep0mqlJ\\search.json.mozlz4", (void 0)))
+1625552856554	Marionette	INFO	Listening on port 55448
+1625552856873	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557661351	Marionette	INFO	Stopped listening on port 55448
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilepi8B7S\\search.json.mozlz4", (void 0)))
+1625552887820	Marionette	INFO	Listening on port 64178
+1625552888050	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625552905899	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625552907430	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557660872	Marionette	INFO	Stopped listening on port 64178
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilenTsRH6\\search.json.mozlz4", (void 0)))
+1625553169689	Marionette	INFO	Listening on port 51530
+1625553169904	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557660468	Marionette	INFO	Stopped listening on port 51530
+_mozprofile4rbxjR"
+1625553247901	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile4rbxjR\\search.json.mozlz4", (void 0)))
+1625553249792	Marionette	INFO	Listening on port 53606
+1625553249806	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625553281172	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557659963	Marionette	INFO	Stopped listening on port 53606
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileCR64nq\\search.json.mozlz4", (void 0)))
+1625553296392	Marionette	INFO	Listening on port 53698
+1625553296479	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557658481	Marionette	INFO	Stopped listening on port 53698
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilePoM9se\\search.json.mozlz4", (void 0)))
+1625553604758	Marionette	INFO	Listening on port 61248
+1625553604925	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557657156	Marionette	INFO	Stopped listening on port 61248
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile2px7sC\\search.json.mozlz4", (void 0)))
+1625553634519	Marionette	INFO	Listening on port 54902
+1625553634540	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625553700909	Marionette	INFO	Stopped listening on port 54902
+5553699810	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileBSwvcK"
+1625553700079	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileBSwvcK\\search.json.mozlz4", (void 0)))
+1625553701894	Marionette	INFO	Listening on port 60296
+1625553701982	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625555450531	Marionette	INFO	Stopped listening on port 60291625555451121	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilelj4hIJ"
+1625555451389	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilelj4hIJ\\search.json.mozlz4", (void 0)))
+1625555452998	Marionette	INFO	Listening on port 52455
+1625555453184	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625557656567	Marionette	INFO	Stopped listening on port 52455
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625557680399	geckodriver	INFO	Listening on 127.0.0.1:56091
+1625557683459	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileGyLmL3"
+1625557683724	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileGyLmL3\\search.json.mozlz4", (void 0)))
+1625557685188	Marionette	INFO	Listening on port 55509
+1625557685528	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625557714219	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625557727348	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625557740990	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625557751129	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625557771533	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625557792662	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625557805607	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625557815371	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558064700	geckodriver	INFO	Listening on 127.0.0.1:57493
+1625558067786	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilewbCY5W"
+1625558068048	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilewbCY5W\\search.json.mozlz4", (void 0)))
+1625558069493	Marionette	INFO	Listening on port 55361
+1625558069850	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625558098046	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558110615	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558436030	geckodriver	INFO	Listening on 127.0.0.1:54389
+1625558439099	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileYWmrob"
+1625558439358	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileYWmrob\\search.json.mozlz4", (void 0)))
+1625558440790	Marionette	INFO	Listening on port 57540
+1625558441158	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625558474103	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558488626	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625626052508	Marionette	INFO	Stopped listening on port 57540
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileGqefXD\\search.json.mozlz4", (void 0)))
+1625558625729	Marionette	INFO	Listening on port 58607
+1625558626049	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625558657948	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558671846	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558692653	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558701881	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558723317	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558760465	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558773805	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558781516	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558802985	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558814996	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558825490	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558839005	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558847528	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558866389	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558887912	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558900589	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558911065	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558924051	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558931647	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558941601	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558948905	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558972217	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625558991147	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559003835	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559014232	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559029057	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559039817	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559054642	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559062527	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559075013	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559083482	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559105014	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559117049	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559124059	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625559139797	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559147419	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559168843	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559181535	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559189544	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559214388	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559226123	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559234039	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559249960	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559255865	Marionette	INFO	Stopped listening on port 58607
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625559261387	geckodriver	INFO	Listening on 127.0.0.1:57957
+1625559264429	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileL80Gze"
+1625559264686	Marionette	INFO	Marionette enabled
+1625559655741	geckodriver	INFO	Listening on 127.0.0.1:52549
+1625559658801	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilewTz9rH"
+1625559659061	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilewTz9rH\\search.json.mozlz4", (void 0)))
+1625559660557	Marionette	INFO	Listening on port 53499
+1625559660866	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625559698213	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559715991	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559748622	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559755842	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559768864	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559775583	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559788471	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559796294	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559809283	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559818459	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559833611	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559841728	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559853714	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559860713	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559883127	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559905764	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559915672	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559923037	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559947045	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625559968909	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560006367	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560026746	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560048188	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560069481	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560087644	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560098169	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560108062	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560121182	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560128199	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560141107	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560151524	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560164542	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560171515	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625560207996	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560246553	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560268436	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560286196	Marionette	INFO	Stopped listening on port 53499
+1625560447935	geckodriver	INFO	Listening on 127.0.0.1:55159
+1625560450977	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilez3yVMQ"
+1625560451247	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilez3yVMQ\\search.json.mozlz4", (void 0)))
+1625560452738	Marionette	INFO	Listening on port 56951
+1625560453038	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625560486345	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560497726	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560505552	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560515458	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560523767	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560543329	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560565289	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560577293	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560584862	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560596991	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560606540	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560649957	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560659539	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560670506	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560682802	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560691275	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560704440	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560715159	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560728777	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560739068	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560755127	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560762666	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560781371	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560791680	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560799611	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560822305	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560840497	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560860734	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560881478	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560901841	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560914195	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560922804	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560941829	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560951455	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625560961189	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625560995167	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561038153	Marionette	INFO	Stopped listening on port 56951
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625561183074	geckodriver	INFO	Listening on 127.0.0.1:64106
+1625561186147	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile5R942E"
+1625561186403	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile5R942E\\search.json.mozlz4", (void 0)))
+1625561187880	Marionette	INFO	Listening on port 58324
+1625561188210	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625561246644	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561268614	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561275831	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561307543	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561320774	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561329341	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561352309	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561382718	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561391912	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561412723	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1625561415898	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561440746	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561448087	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561468290	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561489883	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561511758	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561523643	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561531717	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561541907	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561549395	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561589728	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561613210	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561621526	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561640591	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561650129	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561659575	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561684424	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625561704394	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561716966	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561726969	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561748340	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561760825	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561766462	Marionette	INFO	Stopped listening on port 58324
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625561773363	geckodriver	INFO	Listening on 127.0.0.1:57789
+1625561776426	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile57WsJb"
+1625561776689	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile57WsJb\\search.json.mozlz4", (void 0)))
+1625561778140	Marionette	INFO	Listening on port 51336
+1625561778488	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625561812940	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561831979	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561841941	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561850607	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561875666	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561887115	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561895449	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561916233	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561937397	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625561990728	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562013448	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562032450	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562065130	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562076219	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562096157	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562116651	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562137879	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562149646	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562158234	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562168434	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562177169	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562193419	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562202971	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562219649	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562228634	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562242103	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562249827	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625562291548	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562298327	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562313120	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562320857	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562332481	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562343114	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562354728	Marionette	INFO	Stopped listening on port 51336
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625562361520	geckodriver	INFO	Listening on 127.0.0.1:49248
+1625562364580	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilelgykj8"
+1625562364851	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilelgykj8\\search.json.mozlz4", (void 0)))
+1625562366420	Marionette	INFO	Listening on port 57669
+1625562366639	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625562419953	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562438302	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562451226	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562458602	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562493221	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562501662	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562514319	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562605785	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562613205	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562635464	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562652604	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562662513	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562672165	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562682354	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562689965	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562708616	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562720702	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562727701	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562739497	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562752698	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562778812	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562794698	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562806226	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562822141	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562831382	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562850369	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562866006	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625562874245	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1625626052119	Marionette	INFO	Stopped listening on port 57669
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileZrVhVP"
+1625564286647	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileZrVhVP\\search.json.mozlz4", (void 0)))
+1625564288198	Marionette	INFO	Listening on port 59418
+1625564288434	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625564336146	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564349480	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564358724	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564371505	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564378852	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564401172	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564414035	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564423439	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564435781	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564445977	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564486594	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564493846	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564506824	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564517511	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564538489	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564558893	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564577568	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564590542	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564597579	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564621523	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564634535	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564643708	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564669021	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564691192	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564700836	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564707899	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564730040	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564749482	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564768377	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564792063	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625564801702	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564809620	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564829179	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564847970	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564871582	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564884328	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564892142	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625564909574	Marionette	INFO	Stopped listening on port 59418
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625564916850	geckodriver	INFO	Listening on 127.0.0.1:60217
+1625564919922	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileaOQNTR"
+1625564920183	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileaOQNTR\\search.json.mozlz4", (void 0)))
+1625564921662	Marionette	INFO	Listening on port 51075
+1625564921981	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625565007479	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565014531	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565048684	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565061841	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565071914	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565091388	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565114648	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565138338	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565160111	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565177902	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565190350	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565200382	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565210337	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565221102	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565242318	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565257472	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565265693	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565278140	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565286671	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565299697	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565309591	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565333410	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565343034	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565350103	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565368465	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565380201	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565395472	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565405529	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565431941	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625565450275	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565457497	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565474371	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565483099	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565512189	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565525373	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565540267	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565557075	Marionette	INFO	Stopped listening on port 51075
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625565564074	geckodriver	INFO	Listening on 127.0.0.1:64503
+1625565567107	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileuzj5Ph"
+1625565567372	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileuzj5Ph\\search.json.mozlz4", (void 0)))
+1625565568812	Marionette	INFO	Listening on port 64250
+1625565569181	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625565589426	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565613181	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565624789	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565648212	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565664583	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565674470	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565699077	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565728424	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565746008	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565758755	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1625626051630	Marionette	INFO	Stopped listening on port 64250
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+)))
+1625565914405	Marionette	INFO	Listening on port 57099
+1625565914724	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625565961833	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625565992125	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566017536	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566043069	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566073769	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566097799	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566118433	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566140527	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566163651	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566185968	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566210875	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566235206	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566254473	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566276488	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566300126	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566325719	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566352484	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566374626	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566394774	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566412904	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625566432548	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566456036	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566487647	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625566489157	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1625626051163	Marionette	INFO	Stopped listening on port 57099
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofile0ibnNH\\search.json.mozlz4", (void 0)))
+1625566621430	Marionette	INFO	Listening on port 64836
+1625566621631	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625566691439	geckodriver	INFO	Listening on 127.0.0.1:50361
+1625566694465	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileFjtWp2"
+1625566694735	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileFjtWp2\\search.json.mozlz4", (void 0)))
+1625566696358	Marionette	INFO	Listening on port 49696
+1625566696523	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1625626050483	Marionette	INFO	Stopped listening on port 49696
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ 53311
+1625566787775	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1625626056297	Marionette	INFO	Stopped listening on port 53311
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ 50202
+1625567012674	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625567080650	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567105701	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567128197	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567153008	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567178631	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567202582	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567226212	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567278207	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567323723	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567386257	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567393773	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567414950	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+[Parent 31768, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1625626055469	Marionette	INFO	Stopped listening on port 50202
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+e.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofileaYdZGV\\search.json.mozlz4", (void 0)))
+1625567544246	Marionette	INFO	Listening on port 51473
+1625567544460	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625567898698	Marionette	INFO	Stopped listening on port 51473
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilez9DVt6"
+1625567646073	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\paul.wu\\AppData\\Local\\Temp\\rust_mozprofilez9DVt6\\search.json.mozlz4", (void 0)))
+1625567647662	Marionette	INFO	Listening on port 53822
+1625567647867	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1625567729599	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567775438	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625567895567	Marionette	INFO	Stopped listening on port 53822
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

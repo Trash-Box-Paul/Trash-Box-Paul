@@ -1,11 +1,8 @@
-from selenium import webdriver
-import time
-import testraw
+
 import netsuite_clean_all_case
 import win32api, win32con
 
 test1 = netsuite_clean_all_case.CleanAllCase()
-test1.__init__()
 var = [
         "To Base Brands CC",
         "Amware Logistics Unknown To Unknown",
@@ -16,8 +13,16 @@ var = [
         "P2P - Cat5 Commerce Unknown To Unknown",
         "Tractor Supply Drop Ship Unknown To Unknown",
         "Unknown Unknown To Unknown",
-        "Walmart Unknown To Unknown"
+        "Walmart Unknown To Unknown",
+        "Kroger Unknown To Unknown",
+        "TM File processing",
+        "iTrade Network Unknown To Phillips Foods, Inc",
+        "Unknown Unknown To Total Quality Logistics 2",
+        "Amazon Unknown To Unknown",
+        "Amazon.ca Unknown To Unknown",
+        "Chewy.com Unknown To Unknown"
        ]
+
 for search_key in var:
     test1.change_criteria("contains", search_key)
     test1.clean_all_case()

@@ -23,6 +23,8 @@ class TestPsd:
         all_handle = self.driver.window_handles  # get all handles
         target_url = "http://psdtool.tc.net/psdTool/"
         self.driver.get(target_url)
+        self.driver.set_window_size(960, 1080)
+        self.driver.set_window_position(960, 0)
         for h in all_handle:
             if h != cur_handle:
                 self.driver.switch_to.window(h)  # Switch to the new pop-up window

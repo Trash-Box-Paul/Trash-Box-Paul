@@ -70,8 +70,8 @@ class CleanAllCase:
         finally:
             element = self.driver.find_element(By.XPATH, refresh_icon)
             actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
-            element.click()
+            actions.move_to_element(element)
+            actions.click(element).perform()
         # 3 | move mouse and click | Refresh Icon | hover element
 
     def refresh_list_down(self):
@@ -556,6 +556,89 @@ class CleanAllCase:
                 case_sum = int(html)
                 time.sleep(2)
         file1.close()
+
+    def cloud_ftp(self, profile_name):
+        target_url = "http://psdtool.tc.net/psdTool/"
+        self.driver.get(target_url)
+        search_input = "/html/body/form/table/tbody/tr[2]/td[2]/div/table/tbody/tr/td[2]/input"
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, search_input))
+            )
+        finally:
+            ele = self.driver.find_element(By.XPATH, search_input)
+            ele.send_keys(profile_name)
+            self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[2]"
+                                               "/td[2]/div/table/tbody/tr/td[3]/input").click()
+        notes_input = "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[3]/td/table/tbody/tr[2]/td/div[1]/div[" \
+                      "2]/div/table/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/textarea "
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, notes_input))
+            )
+        finally:
+            time.sleep(1)
+            qualifier = self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
+                                                           "3]/td/table/tbody/tr[2]/td/div[1]/div[4]/table/tbody/tr["
+                                                           "2]/td[1]").get_attribute("innerHTML") 
+            ediid = self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
+                                                      "3]/td/table/tbody/tr[2]/td/div[1]/div[4]/table/tbody/tr[2]/td["
+                                                      "2]").get_attribute("innerHTML")
+            ele = self.driver.find_element(By.XPATH, notes_input)
+            username = qualifier+ediid
+            print(username)
+            ele.send_keys("\n"+"Cloud SFTP:"+"\n"+"U: "+username+"\n")
+            var = profile_name.split()
+            profile_id = self.driver.find_element(By.XPATH,"/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
+                                                           "3]/td/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr["
+                                                           "1]/td[2]").get_attribute("innerHTML")
+            password = var[0]+profile_id+"!"
+            print(password)
+            ele.send_keys("P: "+password)
+            self.driver.find_element(By.XPATH,"/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
+                                              "3]/td/table/tbody/tr[2]/td/div[1]/div[2]/div/table/tbody/tr["
+                                              "3]/td/input").click()
+
+            profile_manage = "/html/body/form/table/tbody/tr[2]/td[1]/table/tbody/tr/td/table/tbody/tr/td[" \
+                             "4]/table/tbody/tr/td[1]/a "
+            ftp_setup = "/html/body/form/table/tbody/tr[2]/td[1]/table/tbody/tr/td/div[4]/table/tbody/tr[" \
+                        "6]/td/table/tbody/tr/td "
+            setup_inbox = "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[2]/td[1]/input[1]"
+            element = self.driver.find_element(By.XPATH, profile_manage)
+            actions = ActionChains(self.driver)
+            actions.move_to_element(element).perform()
+            try:
+                WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, ftp_setup))
+                )
+            finally:
+                ele = self.driver.find_element(By.XPATH, ftp_setup)
+                actions = ActionChains(self.driver)
+                actions.move_to_element(ele)
+                actions.click(ele).perform()
+            try:
+                WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, setup_inbox))
+                )
+            finally:
+                ele = self.driver.find_element(By.XPATH, setup_inbox)
+                ele.send_keys(profile_name)
+                self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[2]/td["
+                                                   "1]/input[2]").click()
+                self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
+                                                   "1]/div/table/tbody/tr[3]/td[2]/input") .send_keys(username)
+                self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
+                                                   "1]/div/table/tbody/tr[4]/td[2]/input").send_keys(password)
+                self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
+                                                   "1]/div/table/tbody/tr[5]/td/input[2]").click()
+                self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
+                                                   "1]/div/table/tbody/tr[6]/td/input").click()
+
+
+
+
+
+
 
         # # 3 | click | first row |
         # self.driver.find_element(By.XPATH, first_row_xpath).click()

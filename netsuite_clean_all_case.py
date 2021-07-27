@@ -21,6 +21,7 @@ import testraw
 
 
 class CleanAllCase:
+
     def __init__(self):
         # Step # | name | target | value
         chrome_driver = r'.\drivers\chromedriver.exe'
@@ -118,7 +119,6 @@ class CleanAllCase:
     def clean_all_case(self):
         # Step # | name | target | value
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[4]/li[2]/a/span"
-        self.driver.find_element(By.XPATH, tab_case).click()
         filename = datetime.now().strftime("%b_%d_%Y") + "_clean_list_log.txt"
         file1 = open(filename, "a+")
         try:

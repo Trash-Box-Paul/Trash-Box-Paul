@@ -70,6 +70,24 @@ class TakeTasks:
             element = self.driver.find_element(By.XPATH, title_list)
             actions = ActionChains(self.driver)
             actions.move_to_element(element).perform()
+            # 2 | MouseMoveAt | Title: Paul's All Case View | hover element
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, refresh_icon))
+            )
+        finally:
+            element = self.driver.find_element(By.XPATH, refresh_icon)
+            # ele = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[2]/div["
+            #                                          "1]/div")
+            # self.driver.execute_script("arguments[0].style.display='block';", ele)
+            # self.driver.execute_script("arguments[0].style.display='block';", element)
+            # time.sleep(3)
+            actions = ActionChains(self.driver)
+            actions.move_to_element(element).perform()
+            element.click()
+        # 3 | move mouse and click | Refresh Icon | hover element
+        element = self.driver.find_element(By.XPATH, title_list)
+        self.driver.execute_script("arguments[0].scrollIntoView(true)", element)
         # 3 | move mouse and click | Refresh Icon | hover element
 
     def take_task(self):

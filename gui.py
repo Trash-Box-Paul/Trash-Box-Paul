@@ -1,20 +1,26 @@
+import threading
 import tkinter
 import tkinter as tk
 from tkinter import *
 import time
 from netsuite_clean_all_case import *
-from sub import *
+import netsuite_take_tasks as ntt
+from outlook_send_emails import *
+from singleUI import *
+import _thread
 
 LOG_LINE_NUM = 0
+STATUS_LINE_NUM = 0
 
 
-class Application(tk.Frame):
+class Application(tk.Frame, metaclass=SingletonMetaclass):
 
     def __init__(self, master=None):
         super().__init__(master)
         self.master = master
         # self.pack()
         self.set_init_window()
+        self.lock = threading.Lock
         # self.create_widgets()
 
     def set_init_window(self):
@@ -40,13 +46,13 @@ class Application(tk.Frame):
 
         # 按钮
         self.clean_button = Button(self.master, text="Clean All Noise Tasks", bg="WhiteSmoke", width=20,
-                                   command=self.do_clean)  # 调用内部方法  加()为直接调用
+                                   command=self.new_clean_thread)  # 调用内部方法  加()为直接调用
         self.clean_button.grid(row=2, column=11)
         self.take_button = Button(self.master, text="Take All PSA Tasks", bg="WhiteSmoke", width=20,
-                                  command=self.do_take)  # 调用内部方法  加()为直接调用
+                                  command=self.new_take_thread)  # 调用内部方法  加()为直接调用
         self.take_button.grid(row=1, column=11)
         self.send_button = Button(self.master, text="Send an email to Amy", bg="WhiteSmoke", width=20,
-                                  command=self.do_send)  # 调用内部方法  加()为直接调用
+                                  command=self.new_send_thread)  # 调用内部方法  加()为直接调用
         self.send_button.grid(row=4, column=11)
         self.resend_button = Button(self.master, text="Resend All Listed Tasks", bg="WhiteSmoke", width=20,
                                     command=self.do_resend)  # 调用内部方法  加()为直接调用
@@ -66,24 +72,40 @@ class Application(tk.Frame):
             self.log_data_Text.delete(1.0, 2.0)
             self.log_data_Text.insert(END, logmsg_in)
 
-    def create_widgets(self):
-        self.master.title("Paul's Tool")  # 窗口名
-        self.master.geometry('320x160+10+10')  # 290 160为窗口大小，+10 +10 定义窗口弹出时的默认展示位置
-        self.master.geometry('1068x681+10+10')
-        self.master["bg"] = "pink"
-        self.clean_all_task = Button(self)
-        self.clean_all_task["text"] = "Clean All Noise Task"
-        self.clean_all_task["command"] = self.do_clean
-        self.clean_all_task.pack(side="top")
-        self.take_all_task = Button(self)
-        self.take_all_task["text"] = "Take All PSA Task"
-        self.take_all_task["command"] = self.do_take
-        self.take_all_task.pack(anchor="center")
-        self.quit = Button(self, text="QUIT", fg="red",
-                           command=self.master.destroy)
-        self.quit.pack(side="bottom")
+    def write_status_to_text(self, statusmsg):
+        global STATUS_LINE_NUM
+        current_time = self.get_current_time()
+        statusmsg_in = str(current_time) + " " + str(statusmsg) + "\n"  # 换行
+        if STATUS_LINE_NUM <= 20:
+            self.result_data_Text.insert(END, statusmsg_in)
+            STATUS_LINE_NUM = STATUS_LINE_NUM + 1
+        else:
+            self.result_data_Text.delete(1.0, 2.0)
+            self.result_data_Text.insert(END, statusmsg_in)
+    #
+    # def create_widgets(self):
+    #     self.master.title("Paul's Tool")  # 窗口名
+    #     self.master.geometry('320x160+10+10')  # 290 160为窗口大小，+10 +10 定义窗口弹出时的默认展示位置
+    #     self.master.geometry('1068x681+10+10')
+    #     self.master["bg"] = "pink"
+    #     self.clean_all_task = Button(self)
+    #     self.clean_all_task["text"] = "Clean All Noise Task"
+    #     self.clean_all_task["command"] = self.do_clean
+    #     self.clean_all_task.pack(side="top")
+    #     self.take_all_task = Button(self)
+    #     self.take_all_task["text"] = "Take All PSA Task"
+    #     self.take_all_task["command"] = self.do_take
+    #     self.take_all_task.pack(anchor="center")
+    #     self.quit = Button(self, text="QUIT", fg="red",
+    #                        command=self.master.destroy)
+    #     self.quit.pack(side="bottom")
+
+    def new_clean_thread(self):
+        take_thread = threading.Thread(target=self.do_clean)
+        take_thread.start()
 
     def do_clean(self):
+        self.write_status_to_text("Start cleaning all the noise cases:")
         robot = CleanAllCase()
         var = [
             "To Base Brands CC",
@@ -103,23 +125,41 @@ class Application(tk.Frame):
             "Amazon Unknown To Unknown",
             "Amazon.ca Unknown To Unknown",
             "Chewy.com Unknown To Unknown",
-            "Digi-Key Corporation Unknown To Unknown"
+            "Digi-Key Corporation Unknown To Unknown",
+            "Unknown Unknown To Bestseller"
         ]
         for search_key in var:
             robot.change_criteria("contains", search_key)
-            robot.clean_all_case()
+            self.write_status_to_text("Closing "+str(robot.clean_all_case())+" cases with key word: "+search_key)
         robot.change_criteria("is not empty", "Hello")
         win32api.MessageBox(0, "No more noise in queue. :)", "Cleaning Done", win32con.MB_OK)
-        self.write_log_to_text("Cleaned all the message successfully !")
+        self.write_status_to_text("Complete cleaning all the noise cases!")
+        self.write_status_to_text("-------------------------------------------------------------------------------")
+        self.write_log_to_text("Cleaned all the noise cases successfully!")
 
     def do_take(self):
-        robot = CleanAllCase()
+        self.write_status_to_text("Start taking all the PSA tasks:")
+        robot = ntt.TakeTasks()
         robot.take_task()
+        self.write_status_to_text("Complete taking all the PSA tasks!")
+        self.write_status_to_text("-------------------------------------------------------------------------------")
         self.write_log_to_text("Took all the PSA tasks successfully !")
 
+    def new_take_thread(self):
+        take_thread = threading.Thread(target=self.do_take)
+        take_thread.start()
+
     def do_send(self):
-        SendEmails.send_amy_log()
+        self.write_status_to_text("Start sending a log email to Amy:")
+        robot = SendEmails()
+        robot.send_amy_log()
+        self.write_status_to_text("Complete sending a log email to Amy!")
+        self.write_status_to_text("-------------------------------------------------------------------------------")
         self.write_log_to_text("Sent a log email to Amy successfully !")
+
+    def new_send_thread(self):
+        take_thread = threading.Thread(target=self.do_send)
+        take_thread.start()
 
     def do_resend(self):
         self.write_log_to_text("Resent all the transactions in list successfully !")
@@ -130,3 +170,4 @@ class Application(tk.Frame):
     def get_current_time(self):
         current_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
         return current_time
+

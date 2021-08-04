@@ -13,7 +13,7 @@ class SendEmails:
         # 创建一个item
         mail = outlook.CreateItem(0)
         # 接收人
-        mail.To = "amy@truecommerce.com"
+        mail.To = "amy.xu@truecommerce.com"
         # 抄送人
         # mail.CC =  "***@outlook.com;***@outlook.com"
         # 主题

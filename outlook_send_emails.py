@@ -4,11 +4,13 @@ import netsuite_clean_all_case
 import win32com
 from win32com.client import Dispatch, constants
 from datetime import datetime
+import pythoncom
 
 
 class SendEmails:
 
     def send_amy_log(self):
+        pythoncom.CoInitialize()
         outlook = win32com.client.Dispatch('outlook.application')
         # 创建一个item
         mail = outlook.CreateItem(0)

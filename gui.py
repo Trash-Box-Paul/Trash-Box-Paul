@@ -105,6 +105,7 @@ class Application(tk.Frame, metaclass=SingletonMetaclass):
         take_thread.start()
 
     def do_clean(self):
+        self.write_status_to_text("--------------------------------------------------")
         self.write_status_to_text("Start cleaning all the noise cases:")
         robot = CleanAllCase()
         var = [
@@ -134,15 +135,16 @@ class Application(tk.Frame, metaclass=SingletonMetaclass):
         robot.change_criteria("is not empty", "Hello")
         win32api.MessageBox(0, "No more noise in queue. :)", "Cleaning Done", win32con.MB_OK)
         self.write_status_to_text("Complete cleaning all the noise cases!")
-        self.write_status_to_text("-------------------------------------------------------------------------------")
+        self.write_status_to_text("--------------------------------------------------")
         self.write_log_to_text("Cleaned all the noise cases successfully!")
 
     def do_take(self):
+        self.write_status_to_text("--------------------------------------------------")
         self.write_status_to_text("Start taking all the PSA tasks:")
         robot = ntt.TakeTasks()
         robot.take_task()
         self.write_status_to_text("Complete taking all the PSA tasks!")
-        self.write_status_to_text("-------------------------------------------------------------------------------")
+        self.write_status_to_text("--------------------------------------------------")
         self.write_log_to_text("Took all the PSA tasks successfully !")
 
     def new_take_thread(self):
@@ -150,11 +152,12 @@ class Application(tk.Frame, metaclass=SingletonMetaclass):
         take_thread.start()
 
     def do_send(self):
+        self.write_status_to_text("--------------------------------------------------")
         self.write_status_to_text("Start sending a log email to Amy:")
         robot = SendEmails()
         robot.send_amy_log()
         self.write_status_to_text("Complete sending a log email to Amy!")
-        self.write_status_to_text("-------------------------------------------------------------------------------")
+        self.write_status_to_text("--------------------------------------------------")
         self.write_log_to_text("Sent a log email to Amy successfully !")
 
     def new_send_thread(self):

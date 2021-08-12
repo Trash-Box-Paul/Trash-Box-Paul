@@ -165,7 +165,7 @@ class CleanAllCase:
                 tab = tables[0]
                 table_body = tab.tbody
                 tr_group = table_body.find_all('tr')
-                target = int(len(tr_group)-1)  # number of tr
+                target = int(len(tr_group) - 1)  # number of tr
                 log += target
                 print(target)
                 for tr in tr_group:
@@ -173,7 +173,7 @@ class CleanAllCase:
                         td_group = tr.find_all('td')
                         txt = td_group[5].text
                         case_num = td_group[8].text
-                        file1.write(case_num.rstrip()+'\t'+txt+'\n')
+                        file1.write(case_num.rstrip() + '\t' + txt + '\n')
                         print(case_num)
 
                 # 2 | count | case number in one page |
@@ -227,7 +227,12 @@ class CleanAllCase:
         js_top = "var q=document.documentElement.scrollTop=0"
         self.driver.execute_script(js_top)
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[4]/li[2]/a/span"
-        self.driver.find_element(By.XPATH, tab_case).click()
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, tab_case))
+            )
+        finally:
+            self.driver.find_element(By.XPATH, tab_case).click()
         title = "//div[2]/div/div/h2"
         try:
             WebDriverWait(self.driver, 10).until(
@@ -254,8 +259,8 @@ class CleanAllCase:
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located(
-                    (By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div["
-                               "1]/div/div/ul/li[3]"))
+                    (By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
+                               "1]/div[1]/div/div/ul/li[3]/a"))
             )
         finally:
 
@@ -264,7 +269,7 @@ class CleanAllCase:
             while element.get_attribute("innerHTML") is None:
                 element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
                                                              "1]/div[1]/div/div/ul/li[3]/a")
-            while not("Edit" in element.get_attribute("innerHTML")):
+            while not ("Edit" in element.get_attribute("innerHTML")):
                 element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
                                                              "1]/div[1]/div/div/ul/li[3]/a")
             actions = ActionChains(self.driver)
@@ -423,7 +428,7 @@ class CleanAllCase:
                         EC.presence_of_element_located((By.XPATH, input_name))
                     )
                 finally:
-                    self.driver.find_element(By.XPATH, input_name).send_keys(Keys.CONTROL+"a")
+                    self.driver.find_element(By.XPATH, input_name).send_keys(Keys.CONTROL + "a")
                     self.driver.find_element(By.XPATH, input_name).send_keys("Paul Wu")
                     time.sleep(3)
                     self.driver.find_element(By.XPATH, input_name).send_keys(Keys.ENTER)
@@ -501,7 +506,7 @@ class CleanAllCase:
                 tables = soup.findAll('table')
                 tab = tables[0]
                 table_body = tab.tbody
-                number_tr = int(len(table_body.find_all('tr')))-1
+                number_tr = int(len(table_body.find_all('tr'))) - 1
                 print(number_tr)
                 # 2 | count | case number in one page |
                 first_row_xpath = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
@@ -543,7 +548,7 @@ class CleanAllCase:
                         td_group = tr.find_all('td')
                         txt = td_group[5].text
                         case_num = td_group[8].text
-                        file1.write(case_num.rstrip()+'\t'+txt+'\n')
+                        file1.write(case_num.rstrip() + '\t' + txt + '\n')
                         log_id = txt.split("LogId ", 1)[1]
                         print(log_id)
                         print(case_num)
@@ -589,24 +594,24 @@ class CleanAllCase:
             time.sleep(1)
             qualifier = self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
                                                            "3]/td/table/tbody/tr[2]/td/div[1]/div[4]/table/tbody/tr["
-                                                           "2]/td[1]").get_attribute("innerHTML") 
+                                                           "2]/td[1]").get_attribute("innerHTML")
             ediid = self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
-                                                      "3]/td/table/tbody/tr[2]/td/div[1]/div[4]/table/tbody/tr[2]/td["
-                                                      "2]").get_attribute("innerHTML")
+                                                       "3]/td/table/tbody/tr[2]/td/div[1]/div[4]/table/tbody/tr[2]/td["
+                                                       "2]").get_attribute("innerHTML")
             ele = self.driver.find_element(By.XPATH, notes_input)
-            username = qualifier+ediid
+            username = qualifier + ediid
             print(username)
-            ele.send_keys("\n"+"Cloud SFTP:"+"\n"+"U: "+username+"\n")
+            ele.send_keys("\n" + "Cloud SFTP:" + "\n" + "U: " + username + "\n")
             var = profile_name.split()
-            profile_id = self.driver.find_element(By.XPATH,"/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
-                                                           "3]/td/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr["
-                                                           "1]/td[2]").get_attribute("innerHTML")
-            password = var[0]+profile_id+"!"
+            profile_id = self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
+                                                            "3]/td/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr["
+                                                            "1]/td[2]").get_attribute("innerHTML")
+            password = var[0] + profile_id + "!"
             print(password)
-            ele.send_keys("P: "+password)
-            self.driver.find_element(By.XPATH,"/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
-                                              "3]/td/table/tbody/tr[2]/td/div[1]/div[2]/div/table/tbody/tr["
-                                              "3]/td/input").click()
+            ele.send_keys("P: " + password)
+            self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
+                                               "3]/td/table/tbody/tr[2]/td/div[1]/div[2]/div/table/tbody/tr["
+                                               "3]/td/input").click()
 
             profile_manage = "/html/body/form/table/tbody/tr[2]/td[1]/table/tbody/tr/td/table/tbody/tr/td[" \
                              "4]/table/tbody/tr/td[1]/a "
@@ -635,19 +640,13 @@ class CleanAllCase:
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[2]/td["
                                                    "1]/input[2]").click()
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
-                                                   "1]/div/table/tbody/tr[3]/td[2]/input") .send_keys(username)
+                                                   "1]/div/table/tbody/tr[3]/td[2]/input").send_keys(username)
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
                                                    "1]/div/table/tbody/tr[4]/td[2]/input").send_keys(password)
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
                                                    "1]/div/table/tbody/tr[5]/td/input[2]").click()
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
                                                    "1]/div/table/tbody/tr[6]/td/input").click()
-
-
-
-
-
-
 
         # # 3 | click | first row |
         # self.driver.find_element(By.XPATH, first_row_xpath).click()

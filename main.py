@@ -2,9 +2,8 @@
 import netsuite_clean_all_case
 import win32api, win32con
 
-
-
 test1 = netsuite_clean_all_case.CleanAllCase()
+
 var = [
         "To Base Brands CC",
         "Amware Logistics Unknown To Unknown",

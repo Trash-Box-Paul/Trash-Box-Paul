@@ -6,14 +6,14 @@ import time
 from netsuite_clean_all_case import *
 import netsuite_take_tasks as ntt
 from outlook_send_emails import *
-from singleUI import *
 import _thread
+import excel_test
 
 LOG_LINE_NUM = 0
 STATUS_LINE_NUM = 0
 
 
-class Application(tk.Frame, metaclass=SingletonMetaclass):
+class Application(tk.Frame):
 
     def __init__(self, master=None):
         super().__init__(master)
@@ -57,6 +57,9 @@ class Application(tk.Frame, metaclass=SingletonMetaclass):
         self.resend_button = Button(self.master, text="Resend All Listed Tasks", bg="WhiteSmoke", width=20,
                                     command=self.do_resend)  # 调用内部方法  加()为直接调用
         self.resend_button.grid(row=3, column=11)
+        self.update_button = Button(self.master, text="Update All Task Notes", bg="WhiteSmoke", width=20,
+                                    command=self.new_update_thread)  # 调用内部方法  加()为直接调用
+        self.update_button.grid(row=5, column=11)
         self.quit = Button(self.master, text="Quit", fg="red", bg="WhiteSmoke", width=20,
                            command=self.master.destroy)
         self.quit.grid(row=16, column=20)
@@ -100,6 +103,16 @@ class Application(tk.Frame, metaclass=SingletonMetaclass):
     #                        command=self.master.destroy)
     #     self.quit.pack(side="bottom")
 
+
+    def do_update(self):
+        robot = excel_test.TakeTasks()
+        robot.update_all_notes()
+
+    def new_update_thread(self):
+        update_thread = threading.Thread(target=self.do_update)
+        update_thread.start()
+
+
     def new_clean_thread(self):
         take_thread = threading.Thread(target=self.do_clean)
         take_thread.start()
@@ -127,7 +140,8 @@ class Application(tk.Frame, metaclass=SingletonMetaclass):
             "Amazon.ca Unknown To Unknown",
             "Chewy.com Unknown To Unknown",
             "Digi-Key Corporation Unknown To Unknown",
-            "Unknown Unknown To Bestseller"
+            "Unknown Unknown To Bestseller",
+            "Unknown Unknown To Abbyson Living Corporation"
         ]
         for search_key in var:
             robot.change_criteria("contains", search_key)

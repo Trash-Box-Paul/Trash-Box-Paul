@@ -1,4 +1,5 @@
 import os.path
+import time
 
 import netsuite_clean_all_case
 import win32com
@@ -11,7 +12,10 @@ class SendEmails:
 
     def send_amy_log(self):
         pythoncom.CoInitialize()
-        outlook = win32com.client.Dispatch('outlook.application')
+        # try:
+        outlook = win32com.client.Dispatch('Outlook.Application')
+        # except:
+        #     outlook = win32com.client.GetActiveObject('Outlook.Application')
         # 创建一个item
         mail = outlook.CreateItem(0)
         # 接收人
@@ -23,7 +27,7 @@ class SendEmails:
         # Body
         mail.Body = "Attached is the log of noise cases closed by script today."
         # 添加附件
-        filename = "./" + datetime.now().strftime("%b_%d_%Y") + "_clean_list_log.txt"
+        filename = "./" + datetime.today().strftime("%b_%d_%Y") + "_clean_list_log.txt"
         if os.path.exists(filename):
             mail.Attachments.Add(os.path.abspath(filename))
         filename = datetime.now().strftime("%b_%d_%Y") + "_resend_log.txt"

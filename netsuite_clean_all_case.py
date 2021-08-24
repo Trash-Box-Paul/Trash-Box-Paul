@@ -22,7 +22,7 @@ class CleanAllCase:
 
     def __init__(self):
         # Step # | name | target | value
-        chrome_driver = r'.\drivers\chromedriver.exe'
+        chrome_driver = r'C:\Users\paul.wu\PycharmProjects\practice\drivers\chromedriver.exe'
         # chrome_options = Options()
         # chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
         # self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
@@ -57,20 +57,16 @@ class CleanAllCase:
         js_top = "var q=document.documentElement.scrollTop=0"
         self.driver.execute_script(js_top)
         # 1 | scroll | Scroll to the top of window |\
-        element = self.driver.find_element(By.XPATH, "//div[2]/div/div/h2")
+        element = self.wait("//div[2]/div/div/h2")
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
         # 2 | MouseMoveAt | Title: Paul's All Case View | hover element
         refresh_icon = "//div[2]/div/div/div/span[3]"
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, refresh_icon))
-            )
-        finally:
-            element = self.driver.find_element(By.XPATH, refresh_icon)
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element)
-            actions.click(element).perform()
+        element = self.wait(refresh_icon)
+        self.driver.execute_script("arguments[0].style.display='block';", element)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element)
+        actions.click(element).perform()
         # 3 | move mouse and click | Refresh Icon | hover element
 
     def refresh_list_down(self):
@@ -83,17 +79,13 @@ class CleanAllCase:
                                                  "1]/div")
         self.driver.execute_script("arguments[0].style.display='block';", ele)
         self.driver.execute_script("arguments[0].style.display='block';", element)
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, title_list))
-            )
-        finally:
-            element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                                                         "1]/div[2]")
-            self.driver.execute_script("arguments[0].scrollIntoView(true)", element)
-            element = self.driver.find_element(By.XPATH, title_list)
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
+
+        element = self.driver.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
+                                   "1]/div[2]")
+        self.driver.execute_script("arguments[0].scrollIntoView(true)", element)
+        element = self.driver.find_element(By.XPATH, title_list)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
         # 2 | MouseMoveAt | Title: Paul's All Case View | hover element
 
         try:
@@ -681,3 +673,12 @@ class CleanAllCase:
         # html = ele.get_attribute('innerHTML')
         # case_sum = int(html)
         # # 7 |  update the case number
+
+    def wait(self, xpath):
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, xpath))
+            )
+        finally:
+            ele = self.driver.find_element(By.XPATH, xpath)
+            return ele

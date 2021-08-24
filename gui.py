@@ -13,6 +13,11 @@ LOG_LINE_NUM = 0
 STATUS_LINE_NUM = 0
 
 
+def get_current_time():
+    current_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+    return current_time
+
+
 class Application(tk.Frame):
 
     def __init__(self, master=None):
@@ -66,7 +71,7 @@ class Application(tk.Frame):
 
     def write_log_to_text(self, logmsg):
         global LOG_LINE_NUM
-        current_time = self.get_current_time()
+        current_time = get_current_time()
         logmsg_in = str(current_time) + " " + str(logmsg) + "\n"  # 换行
         if LOG_LINE_NUM <= 7:
             self.log_data_Text.insert(END, logmsg_in)
@@ -77,7 +82,7 @@ class Application(tk.Frame):
 
     def write_status_to_text(self, statusmsg):
         global STATUS_LINE_NUM
-        current_time = self.get_current_time()
+        current_time = get_current_time()
         statusmsg_in = str(current_time) + " " + str(statusmsg) + "\n"  # 换行
         if STATUS_LINE_NUM <= 20:
             self.result_data_Text.insert(END, statusmsg_in)
@@ -103,17 +108,27 @@ class Application(tk.Frame):
     #                        command=self.master.destroy)
     #     self.quit.pack(side="bottom")
 
-
     def do_update(self):
         robot = excel_test.TakeTasks()
         robot.update_all_notes()
 
     def new_update_thread(self):
+        self.write_status_to_text("--------------------------------------------------")
+        self.write_status_to_text("Start updating all the PSA tasks:")
         update_thread = threading.Thread(target=self.do_update)
         update_thread.start()
-
+        self.write_status_to_text("Complete updating all the PSA tasks!")
+        self.write_status_to_text("--------------------------------------------------")
+        self.write_log_to_text("Updated all the PSA tasks successfully !")
 
     def new_clean_thread(self):
+        self.write_status_to_text("--------------------------------------------------")
+        self.write_status_to_text("Start taking all the PSA tasks:")
+        robot = ntt.TakeTasks()
+        robot.take_task()
+        self.write_status_to_text("Complete taking all the PSA tasks!")
+        self.write_status_to_text("--------------------------------------------------")
+        self.write_log_to_text("Took all the PSA tasks successfully !")
         take_thread = threading.Thread(target=self.do_clean)
         take_thread.start()
 
@@ -141,7 +156,8 @@ class Application(tk.Frame):
             "Chewy.com Unknown To Unknown",
             "Digi-Key Corporation Unknown To Unknown",
             "Unknown Unknown To Bestseller",
-            "Unknown Unknown To Abbyson Living Corporation"
+            "Unknown Unknown To Abbyson Living Corporation",
+            "CSN Unknown To Unknown"
         ]
         for search_key in var:
             robot.change_criteria("contains", search_key)
@@ -183,8 +199,4 @@ class Application(tk.Frame):
 
     def add_cloudftp(self):
         self.write_log_to_text("Setup a cloudftp for customer successfully !")
-
-    def get_current_time(self):
-        current_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-        return current_time
 

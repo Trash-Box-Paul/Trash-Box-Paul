@@ -11,14 +11,14 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
-
+import webdrivermanager
 
 class TestPsd:
     def __init__(self):
         firefox_driver = r'.\drivers\geckodriver.exe'
         firefox_options = Options()
         firefox_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
-        self.driver = webdriver.Firefox(executable_path=firefox_driver)
+        self.driver = webdriver.Firefox(webdrivermanager.GeckoDriverManager.get_latest_version())
         cur_handle = self.driver.current_window_handle  # get current handle
         all_handle = self.driver.window_handles  # get all handles
         target_url = "http://psdtool.tc.net/psdTool/"

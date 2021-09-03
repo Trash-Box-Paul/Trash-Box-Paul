@@ -2,6 +2,7 @@ import threading
 import tkinter
 import tkinter as tk
 from tkinter import *
+from tkinter import scrolledtext
 import time
 from netsuite_clean_all_case import *
 import netsuite_take_tasks as ntt
@@ -44,9 +45,9 @@ class Application(tk.Frame):
         # 文本框
         self.init_data_Text = Text(self.master, width=65, height=35)  # 原始数据录入框
         self.init_data_Text.grid(row=1, column=0, rowspan=10, columnspan=10)
-        self.result_data_Text = Text(self.master, width=70, height=44)  # 处理结果展示
+        self.result_data_Text = scrolledtext.ScrolledText(self.master, width=100, height=44, wrap=tk.WORD)  # 处理结果展示
         self.result_data_Text.grid(row=1, column=12, rowspan=15, columnspan=10)
-        self.log_data_Text = Text(self.master, width=65, height=9)  # 日志框
+        self.log_data_Text = scrolledtext.ScrolledText(self.master, width=65, height=9, wrap=tk.WORD)  # 日志框
         self.log_data_Text.grid(row=13, column=0, columnspan=10)
 
         # 按钮
@@ -81,15 +82,9 @@ class Application(tk.Frame):
             self.log_data_Text.insert(END, logmsg_in)
 
     def write_status_to_text(self, statusmsg):
-        global STATUS_LINE_NUM
         current_time = get_current_time()
         statusmsg_in = str(current_time) + " " + str(statusmsg) + "\n"  # 换行
-        if STATUS_LINE_NUM <= 20:
-            self.result_data_Text.insert(END, statusmsg_in)
-            STATUS_LINE_NUM = STATUS_LINE_NUM + 1
-        else:
-            self.result_data_Text.delete(1.0, 2.0)
-            self.result_data_Text.insert(END, statusmsg_in)
+        self.result_data_Text.insert(END, statusmsg_in)
     #
     # def create_widgets(self):
     #     self.master.title("Paul's Tool")  # 窗口名
@@ -109,32 +104,26 @@ class Application(tk.Frame):
     #     self.quit.pack(side="bottom")
 
     def do_update(self):
+        self.write_status_to_text("Start updating all the PSA tasks:")
+        self.write_status_to_text("--------------------------------------------------")
         robot = excel_test.TakeTasks()
         robot.update_all_notes()
-
-    def new_update_thread(self):
         self.write_status_to_text("--------------------------------------------------")
-        self.write_status_to_text("Start updating all the PSA tasks:")
-        update_thread = threading.Thread(target=self.do_update)
-        update_thread.start()
         self.write_status_to_text("Complete updating all the PSA tasks!")
-        self.write_status_to_text("--------------------------------------------------")
         self.write_log_to_text("Updated all the PSA tasks successfully !")
 
+    def new_update_thread(self):
+        update_thread = threading.Thread(target=self.do_update)
+        update_thread.start()
+
     def new_clean_thread(self):
-        self.write_status_to_text("--------------------------------------------------")
-        self.write_status_to_text("Start taking all the PSA tasks:")
-        robot = ntt.TakeTasks()
-        robot.take_task()
-        self.write_status_to_text("Complete taking all the PSA tasks!")
-        self.write_status_to_text("--------------------------------------------------")
-        self.write_log_to_text("Took all the PSA tasks successfully !")
         take_thread = threading.Thread(target=self.do_clean)
         take_thread.start()
 
     def do_clean(self):
-        self.write_status_to_text("--------------------------------------------------")
+
         self.write_status_to_text("Start cleaning all the noise cases:")
+        self.write_status_to_text("--------------------------------------------------")
         robot = CleanAllCase()
         var = [
             "To Base Brands CC",
@@ -151,6 +140,7 @@ class Application(tk.Frame):
             "TM File processing",
             # "iTrade Network Unknown To Phillips Foods, Inc",
             "Unknown Unknown To Total Quality Logistics 2",
+            "iTrade Network Unknown To Phillips Foods, Inc fka Phillips Seafood",
             "Amazon Unknown To Unknown",
             "Amazon.ca Unknown To Unknown",
             "Chewy.com Unknown To Unknown",
@@ -164,8 +154,9 @@ class Application(tk.Frame):
             self.write_status_to_text("Closing "+str(robot.clean_all_case())+" cases with key word: "+search_key)
         robot.change_criteria("is not empty", "Hello")
         win32api.MessageBox(0, "No more noise in queue. :)", "Cleaning Done", win32con.MB_OK)
-        self.write_status_to_text("Complete cleaning all the noise cases!")
         self.write_status_to_text("--------------------------------------------------")
+        self.write_status_to_text("Complete cleaning all the noise cases!")
+
         self.write_log_to_text("Cleaned all the noise cases successfully!")
 
     def do_take(self):
@@ -199,4 +190,6 @@ class Application(tk.Frame):
 
     def add_cloudftp(self):
         self.write_log_to_text("Setup a cloudftp for customer successfully !")
+
+
 

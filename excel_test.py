@@ -366,7 +366,7 @@ class TakeTasks:
                 self.wait_id("template_display").send_keys("Paul")
                 self.wait_id("template_display").send_keys(Keys.ENTER)
                 time.sleep(2)
-                self.wait_id('subject').send_keys(tp_name)
+                self.wait_id('subject').send_keys(' '+tp_name)
                 ele = self.wait("/html/body/div[1]/div/div[4]/table[1]/tbody/tr[3]/td/div["
                                 "2]/div/div/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[6]/td/div/span["
                                 "2]/div/div/div/iframe")

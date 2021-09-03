@@ -5,14 +5,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-
+import webdrivermanager
 
 class TestLogin:
     def setup_method(self):
         chrome_options = Options()
         chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
         chrome_driver = r'.\drivers\chromedriver.exe'
-        self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
+        self.driver = webdriver.Chrome(webdrivermanager.ChromeDriverManager.download_and_install(), options=chrome_options)
     # chrome.exe - -remote - debugging - port = 9000 - -user - data -
     # dir = "C:\Users\paul.wu\PycharmProjects\practice\seleinumChrome\AutomationProfile"
 

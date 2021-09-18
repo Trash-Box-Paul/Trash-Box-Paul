@@ -74,12 +74,7 @@ class Application(tk.Frame):
         global LOG_LINE_NUM
         current_time = get_current_time()
         logmsg_in = str(current_time) + " " + str(logmsg) + "\n"  # 换行
-        if LOG_LINE_NUM <= 7:
-            self.log_data_Text.insert(END, logmsg_in)
-            LOG_LINE_NUM = LOG_LINE_NUM + 1
-        else:
-            self.log_data_Text.delete(1.0, 2.0)
-            self.log_data_Text.insert(END, logmsg_in)
+        self.log_data_Text.insert(END, logmsg_in)
 
     def write_status_to_text(self, statusmsg):
         current_time = get_current_time()
@@ -126,6 +121,7 @@ class Application(tk.Frame):
         self.write_status_to_text("--------------------------------------------------")
         robot = CleanAllCase()
         var = [
+            'Bon Tool Company 997 To Amazon',
             "To Base Brands CC",
             "Amware Logistics Unknown To Unknown",
             "Almo Unknown To Unknown",
@@ -147,7 +143,8 @@ class Application(tk.Frame):
             "Digi-Key Corporation Unknown To Unknown",
             "Unknown Unknown To Bestseller",
             "Unknown Unknown To Abbyson Living Corporation",
-            "CSN Unknown To Unknown"
+            "CSN Unknown To Unknown",
+            "Five Below 850 To Jem Accessories, Inc."
         ]
         for search_key in var:
             robot.change_criteria("contains", search_key)

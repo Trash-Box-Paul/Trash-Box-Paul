@@ -2,6 +2,8 @@ import pytest
 import time
 import sys
 import json
+
+import webdrivermanager
 import win32api, win32con
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -19,11 +21,7 @@ from debug_browser import DebugBrowser
 class TakeTasks:
     def __init__(self):
         # Step # | name | target | value
-        chrome_driver = r'.\drivers\chromedriver.exe'
-        # chrome_options = Options()
-        # chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
-        # self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
-        self.driver = webdriver.Chrome(executable_path=chrome_driver, options=DebugBrowser().debug_chrome())
+        self.driver_setup()
         # 1 | open | Chrome with debugger address |\
         # if not self.driver.toString().contains("null"):
         #     self.driver.quit()
@@ -43,6 +41,25 @@ class TakeTasks:
             win32api.MessageBox(0, "Please login first and try again. :)", "Please Login",
                                 win32con.MB_OK)
             sys.exit(0)
+
+    def driver_setup(self):
+        chrome_driver = webdrivermanager.ChromeDriverManager()
+        chrome_driver_test = r'.\drivers\chromedriver.exe'
+        # chrome_options = Options()
+        # chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
+        # self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
+        try:
+            # self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(), options=DebugBrowser().debug_chrome())
+            self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
+                                           options=DebugBrowser().debug_chrome())
+        except:
+            self.driver.quit()
+            chrome_driver.download_and_install(chrome_driver.get_latest_version())
+            time.sleep(3)
+            print("!!!!!!!!!!!!!!!!")
+            time.sleep(3)
+            self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
+                                           options=DebugBrowser().debug_chrome())
 
     def teardown_method(self):
         # Step # | name | target | value

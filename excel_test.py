@@ -1,6 +1,8 @@
 import bs4
 import openpyxl
 import time
+
+import webdrivermanager
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
@@ -11,15 +13,13 @@ import win32api, win32con
 import sys
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
+from debug_browser import DebugBrowser
 
 
 class TakeTasks:
 
     def __init__(self):
-        chrome_options = Options()
-        chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
-        chrome_driver = r'.\drivers\chromedriver.exe'
-        self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
+        self.driver_setup()
         self.workbook = openpyxl.load_workbook('Paul_Spread_Sheet_Senior_Version.xlsm', data_only=True)
         self.testbook = openpyxl.load_workbook('pytest.xlsx', data_only=True)
         self.worksheet = self.workbook.get_sheet_by_name('task')
@@ -27,6 +27,25 @@ class TakeTasks:
         self.cloudsheet = self.testbook.get_sheet_by_name('cloud')
         self.newtpsheet = self.testbook.get_sheet_by_name('newtp')
         self.count = 0
+
+    def driver_setup(self):
+        chrome_driver = webdrivermanager.ChromeDriverManager()
+        chrome_driver_test = r'.\drivers\chromedriver.exe'
+        # chrome_options = Options()
+        # chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
+        # self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
+        try:
+            # self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(), options=DebugBrowser().debug_chrome())
+            self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
+                                           options=DebugBrowser().debug_chrome())
+        except:
+            self.driver.quit()
+            chrome_driver.download_and_install(chrome_driver.get_latest_version())
+            time.sleep(3)
+            print("!!!!!!!!!!!!!!!!")
+            time.sleep(3)
+            self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
+                                           options=DebugBrowser().debug_chrome())
 
     def get_task(self):
         count = 1
@@ -62,7 +81,8 @@ class TakeTasks:
             # print(new_note)
             # time.sleep(10)
             ele = self.driver.find_element(By.XPATH,
-                                           "/html/body/div[1]/div[2]/div[3]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input")
+                                           "/html/body/div[1]/div[2]/div[3]/table[2]/tbody/tr/td/table/tbody/tr/td["
+                                           "1]/table/tbody/tr/td[2]/input")
             ele.click()
             time.sleep(1)
             self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
@@ -384,7 +404,7 @@ class TakeTasks:
                                                                                              "please "
                                                                                              "provide the following "
                                                                                              "information:")
-                time.sleep(1)
+                time.sleep(3)
                 self.driver.switch_to.window(current_handle)
                 self.wait("/html/body/div[1]/div/div[4]/form/table/tbody/tr["
                           "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input").click()

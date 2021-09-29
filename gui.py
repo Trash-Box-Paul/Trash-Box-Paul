@@ -123,6 +123,7 @@ class Application(tk.Frame):
         var = [
             'Bon Tool Company 997 To Amazon',
             "To Base Brands CC",
+            "Bon Tool Company 997 To Amazon",
             "Amware Logistics Unknown To Unknown",
             "Almo Unknown To Unknown",
             "Home Depot Canada Unknown To Unknown",

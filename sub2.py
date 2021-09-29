@@ -3,12 +3,12 @@ import win32api, win32con
 import excel_test
 
 test1 = excel_test.TakeTasks()
-# test1.cloud_ftp("Fudgeamentals - Test Profile")
+test1.cloud_ftp("Mottahedeh - Test Account")
 # test1.resend_all_case()
 # email_list=[]
 # email_list.append("paul.wu@truecommerce.com")
 # test1.send_initial_emails(email_list, "Volkswagen.De")
-test1.send_all_tps()
+# test1.send_all_tps()
 # import unittest
 #
 #

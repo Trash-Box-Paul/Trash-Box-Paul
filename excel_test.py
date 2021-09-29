@@ -22,7 +22,7 @@ class TakeTasks:
         self.driver_setup()
         self.workbook = openpyxl.load_workbook('Paul_Spread_Sheet_Senior_Version.xlsm', data_only=True)
         self.testbook = openpyxl.load_workbook('pytest.xlsx', data_only=True)
-        self.worksheet = self.workbook.get_sheet_by_name('task')
+        self.worksheet = self.workbook.get_sheet_by_name('in progress')
         self.testsheet = self.testbook.get_sheet_by_name('Sheet1')
         self.cloudsheet = self.testbook.get_sheet_by_name('cloud')
         self.newtpsheet = self.testbook.get_sheet_by_name('newtp')
@@ -410,6 +410,8 @@ class TakeTasks:
                           "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input").click()
 
                 break
+
+
 
     def send_all_tps(self):
         print(1)

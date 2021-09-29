@@ -40,7 +40,7 @@ class TestLogin:
 
     def read_task(self):
         self.driver.get("https://907826.app.netsuite.com")
-        self.driver.set_window_size(550, 691)
+        self.driver.maximize_window()
 
         try:
             WebDriverWait(self.driver, 10).until(

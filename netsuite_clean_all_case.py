@@ -28,16 +28,16 @@ class CleanAllCase:
         # 1 | open | Chrome with debugger address |\
         # if not self.driver.toString().contains("null"):
         #     self.driver.quit()
-        cur_handle = self.driver.current_window_handle  # get current handle
-        all_handle = self.driver.window_handles  # get all handles
+        # cur_handle = self.driver.current_window_handle  # get current handle
+        # all_handle = self.driver.window_handles  # get all handles
         target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
-        for h in all_handle:
-            if h != cur_handle:
-                self.driver.switch_to.window(h)  # Switch to the new pop-up window
-                break
+        # for h in all_handle:
+        #     if h != cur_handle:
+        #         self.driver.switch_to.window(h)  # Switch to the new pop-up window
+        #         break
         # 2 | open | /app/center/card.nl?sc=-29&whence= |\
         time.sleep(2)
-        self.driver.set_window_size(960, 1080)
+        self.driver.maximize_window()
         self.driver.set_window_position(0, 0)
         self.driver.get(target_url)
         if not ("https://907826.app.netsuite.com/app/center/" in self.driver.current_url):
@@ -56,7 +56,6 @@ class CleanAllCase:
             self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
                                            options=DebugBrowser().debug_chrome())
         except:
-            self.driver.quit()
             chrome_driver.download_and_install(chrome_driver.get_latest_version())
             time.sleep(3)
             print("!!!!!!!!!!!!!!!!")
@@ -241,16 +240,24 @@ class CleanAllCase:
         return log
         # 7 |  update the case number
 
+    def open_new_window(self):
+        self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+        cmd = 'window.open ("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=", "newwindow", "height=1080, width=960, top=0,left=960, toolbar=no, ' \
+              'menubar=no, scrollbars=no, resizable=no,location=no, status=no") '
+        self.driver.execute_script(cmd)
+        cur_handle = self.driver.current_window_handle  # get current handle
+        all_handle = self.driver.window_handles  # get all handles
+        target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
+        for h in all_handle:
+            if h != cur_handle:
+                self.driver.switch_to.window(h)  # Switch to the new pop-up window
+                break
+
     def change_criteria(self, search_type, key_word):
         js_top = "var q=document.documentElement.scrollTop=0"
         self.driver.execute_script(js_top)
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[4]/li[2]/a/span"
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, tab_case))
-            )
-        finally:
-            self.driver.find_element(By.XPATH, tab_case).click()
+        self.wait(tab_case).click()
         title = "//div[2]/div/div/h2"
         try:
             WebDriverWait(self.driver, 10).until(
@@ -258,29 +265,24 @@ class CleanAllCase:
             )
         finally:
             element = self.driver.find_element(By.XPATH, title)
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
+
             # 1 | mouseMoveAt | Title: Paul's All case view | hover element
             # element.click()
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                                                          "1]/div[1]/div/div"))
-            )
-        finally:
-            element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                                                         "1]/div[1]/div/div")
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
-            element.click()
-            # 2 | mouseMoveAt | Configure Icon | hover element
-        ele = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[2]/div["
-                                                 "1]/div")
+        title = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/h2"
+        element = self.wait(title)
 
-        self.driver.execute_script("arguments[0].style.display='block';", ele)
+        while element.get_attribute("innerHTML") is None:
+            element = self.driver.find_element(By.XPATH, title)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
+            # 2 | mouseMoveAt | Configure Icon | hover element
+
         ele_temp = self.driver.find_element(By.XPATH,
                                             "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div")
         self.driver.execute_script("arguments[0].style.display='block';", ele_temp)
+        ele = self.driver.find_element(By.XPATH,
+                                       "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a")
+        self.driver.execute_script("arguments[0].style.display='block';", ele)
         element = self.driver.find_element(By.XPATH,"/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div/ul" )
         self.driver.execute_script("arguments[0].style.display='block';", element)
 
@@ -336,13 +338,13 @@ class CleanAllCase:
             element.click()
 
         iframe = "/html/body/div[9]/div[2]/div[1]/div/div/iframe"
+        current_handle = self.driver.current_window_handle
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, iframe))
             )
         finally:
             # 4 | mouseMoveAt and click | Arrow | hover element
-
             element = self.driver.find_element(By.XPATH, iframe)
             self.driver.switch_to.frame(element)
 
@@ -365,25 +367,16 @@ class CleanAllCase:
             self.driver.find_element(By.XPATH, textbox_1_1).send_keys(search_type)
             # 3 | Input | Search Type
         self.driver.find_element(By.NAME, textbox_2).click()
-        self.driver.find_element(By.NAME, textbox_2).send_keys(Keys.CONTROL + "a");
+        self.driver.find_element(By.NAME, textbox_2).send_keys(Keys.CONTROL + "a")
         self.driver.find_element(By.NAME, textbox_2).send_keys(key_word)
         # 4 | Input | Search Key Words
         element = "/html/body/div[1]/div/div[4]/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[" \
                   "1]/table/tbody/tr/td[2]/input"
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, element))
-            )
-        finally:
-            self.driver.find_element(By.XPATH, element).click()
+        self.wait(element).click()
             # 5 | Click | Edit
-        element = "/html/body/div[1]/div[2]/div[3]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input"
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, element))
-            )
-        finally:
-            self.driver.find_element(By.XPATH, element).click()
+        self.driver.switch_to.parent_frame()
+        template = "/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input"
+        self.wait(template).click()
         # 6 | Click | Save
 
     def take_task(self):

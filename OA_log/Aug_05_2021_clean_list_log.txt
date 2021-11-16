@@ -1,0 +1,287 @@
+13753298	Error: Base Brands 810 To Base Brands CC LogId 1095112260
+13753294	Error: Base Brands 810 To Base Brands CC LogId 1095112267
+13753280	Error: Base Brands 812 To Base Brands CC LogId 1095095045
+13753309	Error: Base Brands 820 To Base Brands CC LogId 1095120624
+13753119	Error: Base Brands 850 To Base Brands CC LogId 1095025308
+13753194	Error: Base Brands 850 To Base Brands CC LogId 1095056290
+13753030	Error: Base Brands 940 To Base Brands CC LogId 1094979655
+13753065	Error: Base Brands 940 To Base Brands CC LogId 1094993894
+13753147	Error: Base Brands 945 To Base Brands CC LogId 1095040605
+13753316	Error: Base Brands 945 To Base Brands CC LogId 1095123945
+13753068	Error: Base Brands 997 To Base Brands CC LogId 1094994966
+13753076	Error: Base Brands 997 To Base Brands CC LogId 1095001894
+13753127	Error: Base Brands 997 To Base Brands CC LogId 1095025807
+13753161	Error: Base Brands 997 To Base Brands CC LogId 1095041009
+13753200	Error: Base Brands 997 To Base Brands CC LogId 1095056617
+13753277	Error: Base Brands 997 To Base Brands CC LogId 1095095420
+13753293	Error: Base Brands 997 To Base Brands CC LogId 1095112398
+13753297	Error: Base Brands 997 To Base Brands CC LogId 1095112401
+13753314	Error: Base Brands 997 To Base Brands CC LogId 1095120829
+13753306	Error: Base Brands 997 To Base Brands CC LogId 1095124124
+13753294	Error: Base Brands 810 To Base Brands CC LogId 1095112267
+13753309	Error: Base Brands 820 To Base Brands CC LogId 1095120624
+13753119	Error: Base Brands 850 To Base Brands CC LogId 1095025308
+13753194	Error: Base Brands 850 To Base Brands CC LogId 1095056290
+13753065	Error: Base Brands 940 To Base Brands CC LogId 1094993894
+13753147	Error: Base Brands 945 To Base Brands CC LogId 1095040605
+13753068	Error: Base Brands 997 To Base Brands CC LogId 1094994966
+13753200	Error: Base Brands 997 To Base Brands CC LogId 1095056617
+13753293	Error: Base Brands 997 To Base Brands CC LogId 1095112398
+13753306	Error: Base Brands 997 To Base Brands CC LogId 1095124124
+13753064	Error: Amware Logistics Unknown To Unknown LogId 1094990044
+13753061	Error: Amware Logistics Unknown To Unknown LogId 1094990334
+13753169	Error: Amware Logistics Unknown To Unknown LogId 1095044856
+13753176	Error: Amware Logistics Unknown To Unknown LogId 1095044870
+13753223	Error: Amware Logistics Unknown To Unknown LogId 1095062420
+13753231	Error: Amware Logistics Unknown To Unknown LogId 1095062527
+13753230	Error: Amware Logistics Unknown To Unknown LogId 1095062544
+13753222	Error: Amware Logistics Unknown To Unknown LogId 1095062549
+13753282	Error: Amware Logistics Unknown To Unknown LogId 1095101226
+13753286	Error: Amware Logistics Unknown To Unknown LogId 1095101235
+13753283	Error: Amware Logistics Unknown To Unknown LogId 1095101304
+13753307	Error: Amware Logistics Unknown To Unknown LogId 1095117457
+13753332	Error: Amware Logistics Unknown To Unknown LogId 1095134741
+13753286	Error: Amware Logistics Unknown To Unknown LogId 1095101235
+13753307	Error: Amware Logistics Unknown To Unknown LogId 1095117457
+13752832	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1094929652
+13753272	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1095093484
+13752805	Error: Unknown Unknown To Unknown LogId 1094910097
+13752821	Error: Unknown Unknown To Unknown LogId 1094917359
+13752871	Error: Unknown Unknown To Unknown LogId 1094938320
+13752867	Error: Unknown Unknown To Unknown LogId 1094939077
+13752946	Error: Unknown Unknown To Unknown LogId 1094955285
+13752928	Error: Unknown Unknown To Unknown LogId 1094955287
+13752925	Error: Unknown Unknown To Unknown LogId 1094955288
+13752930	Error: Unknown Unknown To Unknown LogId 1094955291
+13752939	Error: Unknown Unknown To Unknown LogId 1094955293
+13752937	Error: Unknown Unknown To Unknown LogId 1094955295
+13752944	Error: Unknown Unknown To Unknown LogId 1094955297
+13752942	Error: Unknown Unknown To Unknown LogId 1094955300
+13752934	Error: Unknown Unknown To Unknown LogId 1094955301
+13752958	Error: Unknown Unknown To Unknown LogId 1094955304
+13752945	Error: Unknown Unknown To Unknown LogId 1094955306
+13752941	Error: Unknown Unknown To Unknown LogId 1094955308
+13752953	Error: Unknown Unknown To Unknown LogId 1094955309
+13752940	Error: Unknown Unknown To Unknown LogId 1094955311
+13752951	Error: Unknown Unknown To Unknown LogId 1094955313
+13752954	Error: Unknown Unknown To Unknown LogId 1094957371
+13752993	Error: Unknown Unknown To Unknown LogId 1094963889
+13752990	Error: Unknown Unknown To Unknown LogId 1094963957
+13753195	Error: Unknown Unknown To Unknown LogId 1095060713
+13753198	Error: Unknown Unknown To Unknown LogId 1095060769
+13753202	Error: Unknown Unknown To Unknown LogId 1095060772
+13753207	Error: Unknown Unknown To Unknown LogId 1095060778
+13753203	Error: Unknown Unknown To Unknown LogId 1095060782
+13753205	Error: Unknown Unknown To Unknown LogId 1095060786
+13753208	Error: Unknown Unknown To Unknown LogId 1095060791
+13753209	Error: Unknown Unknown To Unknown LogId 1095060794
+13752821	Error: Unknown Unknown To Unknown LogId 1094917359
+13752867	Error: Unknown Unknown To Unknown LogId 1094939077
+13752946	Error: Unknown Unknown To Unknown LogId 1094955285
+13752928	Error: Unknown Unknown To Unknown LogId 1094955287
+13752939	Error: Unknown Unknown To Unknown LogId 1094955293
+13752937	Error: Unknown Unknown To Unknown LogId 1094955295
+13752942	Error: Unknown Unknown To Unknown LogId 1094955300
+13752934	Error: Unknown Unknown To Unknown LogId 1094955301
+13752958	Error: Unknown Unknown To Unknown LogId 1094955304
+13752945	Error: Unknown Unknown To Unknown LogId 1094955306
+13752941	Error: Unknown Unknown To Unknown LogId 1094955308
+13752951	Error: Unknown Unknown To Unknown LogId 1094955313
+13752954	Error: Unknown Unknown To Unknown LogId 1094957371
+13752993	Error: Unknown Unknown To Unknown LogId 1094963889
+13752990	Error: Unknown Unknown To Unknown LogId 1094963957
+13753198	Error: Unknown Unknown To Unknown LogId 1095060769
+13753202	Error: Unknown Unknown To Unknown LogId 1095060772
+13753203	Error: Unknown Unknown To Unknown LogId 1095060782
+13753205	Error: Unknown Unknown To Unknown LogId 1095060786
+13753206	Error: Unknown Unknown To Unknown LogId 1095060797
+13753248	Error: Unknown Unknown To Unknown LogId 1095075175
+13753251	Error: Unknown Unknown To Unknown LogId 1095075186
+13753246	Error: Unknown Unknown To Unknown LogId 1095075204
+13753249	Error: Unknown Unknown To Unknown LogId 1095075208
+13753250	Error: Unknown Unknown To Unknown LogId 1095075219
+13753240	Error: Unknown Unknown To Unknown LogId 1095075224
+13753241	Error: Unknown Unknown To Unknown LogId 1095075238
+13753252	Error: Unknown Unknown To Unknown LogId 1095075248
+13753238	Error: Unknown Unknown To Unknown LogId 1095075260
+13753242	Error: Unknown Unknown To Unknown LogId 1095075267
+13752958	Error: Unknown Unknown To Unknown LogId 1094955304
+13752951	Error: Unknown Unknown To Unknown LogId 1094955313
+13752954	Error: Unknown Unknown To Unknown LogId 1094957371
+13753251	Error: Unknown Unknown To Unknown LogId 1095075186
+13753250	Error: Unknown Unknown To Unknown LogId 1095075219
+13753252	Error: Unknown Unknown To Unknown LogId 1095075248
+13753244	Error: Unknown Unknown To Unknown LogId 1095075275
+13753253	Error: Unknown Unknown To Unknown LogId 1095075284
+13753255	Error: Unknown Unknown To Unknown LogId 1095075293
+13753239	Error: Unknown Unknown To Unknown LogId 1095075300
+13753243	Error: Unknown Unknown To Unknown LogId 1095075304
+13753245	Error: Unknown Unknown To Unknown LogId 1095075311
+13753254	Error: Unknown Unknown To Unknown LogId 1095075317
+13753155	Error: Walmart Unknown To Unknown LogId 1095040929
+13753284	Error: Walmart Unknown To Unknown LogId 1095099681
+13753329	Error: Walmart Unknown To Unknown LogId 1095136851
+13752765	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094890347
+13752768	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094895948
+13752784	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094900865
+13752822	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094921541
+13752831	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094927571
+13752860	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094930579
+13752865	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094936179
+13752872	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094940391
+13752927	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094945308
+13752996	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094968884
+13753002	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094970443
+13753029	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094974960
+13753043	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094979283
+13753038	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094984134
+13753062	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094988690
+13753077	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094994013
+13753070	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1095000632
+13753097	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1095016911
+13753263	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1095083004
+13752784	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094900865
+13752927	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094945308
+13753002	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094970443
+13753029	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094974960
+13753043	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094979283
+13753062	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1094988690
+13753070	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1095000632
+13753097	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1095016911
+13753174	Error: Amazon Unknown To Unknown LogId 1095047919
+13753178	Error: Amazon Unknown To Unknown LogId 1095047921
+13753182	Error: Amazon Unknown To Unknown LogId 1095047923
+13753180	Error: Amazon Unknown To Unknown LogId 1095047925
+13753181	Error: Amazon Unknown To Unknown LogId 1095047928
+13753365	Error: Amazon Unknown To Unknown LogId 1095153015
+13753318	Error: Chewy.com Unknown To Unknown LogId 1095123314
+13753304	Error: Chewy.com Unknown To Unknown LogId 1095123315
+13753319	Error: Chewy.com Unknown To Unknown LogId 1095123320
+13753310	Error: Chewy.com Unknown To Unknown LogId 1095123740
+13753317	Error: Chewy.com Unknown To Unknown LogId 1095123934
+13753357	Error: Chewy.com Unknown To Unknown LogId 1095139832
+13753356	Error: Chewy.com Unknown To Unknown LogId 1095140358
+13753379	Error: Base Brands 945 To Base Brands CC LogId 1095166383
+13753380	Error: Base Brands 997 To Base Brands CC LogId 1095166481
+13753492	Error: Medline Unknown To Unknown LogId 1095240301
+13753489	Error: Medline Unknown To Unknown LogId 1095240613
+13753494	Error: Medline Unknown To Unknown LogId 1095240614
+13753495	Error: Medline Unknown To Unknown LogId 1095240618
+13753488	Error: Medline Unknown To Unknown LogId 1095241537
+13753493	Error: Medline Unknown To Unknown LogId 1095241539
+13753503	Error: Medline Unknown To Unknown LogId 1095248705
+13753522	Error: Medline Unknown To Unknown LogId 1095250207
+13753519	Error: Medline Unknown To Unknown LogId 1095252432
+13753539	Error: Medline Unknown To Unknown LogId 1095255051
+13753532	Error: Medline Unknown To Unknown LogId 1095255059
+13753543	Error: Medline Unknown To Unknown LogId 1095255598
+13753540	Error: Medline Unknown To Unknown LogId 1095255599
+13753531	Error: Medline Unknown To Unknown LogId 1095255601
+13753557	Error: Medline Unknown To Unknown LogId 1095258581
+13753567	Error: Medline Unknown To Unknown LogId 1095261723
+13753591	Error: Medline Unknown To Unknown LogId 1095262769
+13753494	Error: Medline Unknown To Unknown LogId 1095240614
+13753495	Error: Medline Unknown To Unknown LogId 1095240618
+13753493	Error: Medline Unknown To Unknown LogId 1095241539
+13753540	Error: Medline Unknown To Unknown LogId 1095255599
+13753567	Error: Medline Unknown To Unknown LogId 1095261723
+13753591	Error: Medline Unknown To Unknown LogId 1095262769
+13753387	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1095174269
+13753409	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1095186568
+13753422	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1095198000
+13753426	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1095206171
+13753393	Error: Unknown Unknown To Unknown LogId 1095174805
+13753558	Error: Unknown Unknown To Unknown LogId 1095258214
+13753589	Error: Unknown Unknown To Unknown LogId 1095263333
+13753623	Error: Unknown Unknown To Unknown LogId 1095270394
+13753619	Error: Unknown Unknown To Unknown LogId 1095270396
+13753658	Error: Unknown Unknown To Unknown LogId 1095274932
+13753681	Error: Unknown Unknown To Unknown LogId 1095281152
+13753401	Error: Walmart Unknown To Unknown LogId 1095180834
+13753406	Error: Walmart Unknown To Unknown LogId 1095180839
+13753472	Error: Walmart Unknown To Unknown LogId 1095232656
+13753477	Error: Walmart Unknown To Unknown LogId 1095232704
+13753474	Error: Walmart Unknown To Unknown LogId 1095232999
+13753538	Error: Digi-Key Corporation Unknown To Unknown LogId 1095255179
+13753607	Error: Digi-Key Corporation Unknown To Unknown LogId 1095268070
+13753770	Error: Base Brands 850 To Base Brands CC LogId 1095294794
+13753715	Error: Base Brands 940 To Base Brands CC LogId 1095286795
+13753719	Error: Base Brands 997 To Base Brands CC LogId 1095287048
+13753750	Error: Base Brands 997 To Base Brands CC LogId 1095295060
+13753794	Error: Amware Logistics Unknown To Unknown LogId 1095299639
+13753785	Error: Amware Logistics Unknown To Unknown LogId 1095299645
+13753788	Error: Amware Logistics Unknown To Unknown LogId 1095299654
+13753787	Error: Amware Logistics Unknown To Unknown LogId 1095299666
+13753784	Error: Amware Logistics Unknown To Unknown LogId 1095299672
+13753798	Error: Amware Logistics Unknown To Unknown LogId 1095299729
+13753790	Error: Amware Logistics Unknown To Unknown LogId 1095299786
+13753805	Error: Amware Logistics Unknown To Unknown LogId 1095299793
+13753800	Error: Amware Logistics Unknown To Unknown LogId 1095299852
+13753796	Error: Amware Logistics Unknown To Unknown LogId 1095299877
+13753791	Error: Amware Logistics Unknown To Unknown LogId 1095299913
+13753789	Error: Amware Logistics Unknown To Unknown LogId 1095299921
+13753804	Error: Amware Logistics Unknown To Unknown LogId 1095299944
+13753792	Error: Amware Logistics Unknown To Unknown LogId 1095299953
+13753806	Error: Amware Logistics Unknown To Unknown LogId 1095299973
+13753793	Error: Amware Logistics Unknown To Unknown LogId 1095299981
+13753808	Error: Amware Logistics Unknown To Unknown LogId 1095299987
+13753814	Error: Amware Logistics Unknown To Unknown LogId 1095300013
+13753803	Error: Amware Logistics Unknown To Unknown LogId 1095300037
+13753826	Error: Amware Logistics Unknown To Unknown LogId 1095300065
+13753797	Error: Amware Logistics Unknown To Unknown LogId 1095300101
+13753809	Error: Amware Logistics Unknown To Unknown LogId 1095300121
+13753825	Error: Amware Logistics Unknown To Unknown LogId 1095300198
+13753819	Error: Amware Logistics Unknown To Unknown LogId 1095300238
+13753795	Error: Amware Logistics Unknown To Unknown LogId 1095300252
+13753818	Error: Amware Logistics Unknown To Unknown LogId 1095300254
+13753822	Error: Amware Logistics Unknown To Unknown LogId 1095300264
+13753824	Error: Amware Logistics Unknown To Unknown LogId 1095300275
+13753802	Error: Amware Logistics Unknown To Unknown LogId 1095300277
+13753799	Error: Amware Logistics Unknown To Unknown LogId 1095300279
+13753785	Error: Amware Logistics Unknown To Unknown LogId 1095299645
+13753787	Error: Amware Logistics Unknown To Unknown LogId 1095299666
+13753805	Error: Amware Logistics Unknown To Unknown LogId 1095299793
+13753791	Error: Amware Logistics Unknown To Unknown LogId 1095299913
+13753789	Error: Amware Logistics Unknown To Unknown LogId 1095299921
+13753804	Error: Amware Logistics Unknown To Unknown LogId 1095299944
+13753806	Error: Amware Logistics Unknown To Unknown LogId 1095299973
+13753793	Error: Amware Logistics Unknown To Unknown LogId 1095299981
+13753814	Error: Amware Logistics Unknown To Unknown LogId 1095300013
+13753826	Error: Amware Logistics Unknown To Unknown LogId 1095300065
+13753797	Error: Amware Logistics Unknown To Unknown LogId 1095300101
+13753809	Error: Amware Logistics Unknown To Unknown LogId 1095300121
+13753825	Error: Amware Logistics Unknown To Unknown LogId 1095300198
+13753819	Error: Amware Logistics Unknown To Unknown LogId 1095300238
+13753818	Error: Amware Logistics Unknown To Unknown LogId 1095300254
+13753822	Error: Amware Logistics Unknown To Unknown LogId 1095300264
+13753824	Error: Amware Logistics Unknown To Unknown LogId 1095300275
+13753799	Error: Amware Logistics Unknown To Unknown LogId 1095300279
+13753807	Error: Amware Logistics Unknown To Unknown LogId 1095300338
+13753827	Error: Amware Logistics Unknown To Unknown LogId 1095300371
+13753801	Error: Amware Logistics Unknown To Unknown LogId 1095300397
+13753833	Error: Amware Logistics Unknown To Unknown LogId 1095300450
+13753829	Error: Amware Logistics Unknown To Unknown LogId 1095300469
+13753830	Error: Amware Logistics Unknown To Unknown LogId 1095300474
+13753820	Error: Amware Logistics Unknown To Unknown LogId 1095300483
+13753811	Error: Amware Logistics Unknown To Unknown LogId 1095300489
+13753815	Error: Amware Logistics Unknown To Unknown LogId 1095300493
+13753831	Error: Amware Logistics Unknown To Unknown LogId 1095300500
+13753813	Error: Amware Logistics Unknown To Unknown LogId 1095300591
+13753816	Error: Amware Logistics Unknown To Unknown LogId 1095300598
+13753827	Error: Amware Logistics Unknown To Unknown LogId 1095300371
+13753801	Error: Amware Logistics Unknown To Unknown LogId 1095300397
+13753820	Error: Amware Logistics Unknown To Unknown LogId 1095300483
+13753811	Error: Amware Logistics Unknown To Unknown LogId 1095300489
+13753813	Error: Amware Logistics Unknown To Unknown LogId 1095300591
+13753816	Error: Amware Logistics Unknown To Unknown LogId 1095300598
+13753810	Error: Amware Logistics Unknown To Unknown LogId 1095300643
+13753821	Error: Amware Logistics Unknown To Unknown LogId 1095300715
+13753812	Error: Amware Logistics Unknown To Unknown LogId 1095300752
+13753834	Error: Amware Logistics Unknown To Unknown LogId 1095300773
+13753817	Error: Amware Logistics Unknown To Unknown LogId 1095300778
+13753700	Error: Unknown Unknown To Unknown LogId 1095285457
+13753723	Error: Unknown Unknown To Unknown LogId 1095286824
+13753721	Error: Unknown Unknown To Unknown LogId 1095286826
+13753752	Error: Unknown Unknown To Unknown LogId 1095294698
+13753753	Error: Unknown Unknown To Unknown LogId 1095294701
+13753751	Error: Walmart Unknown To Unknown LogId 1095293273

@@ -18,7 +18,17 @@ class TestPsd:
         firefox_driver = r'.\drivers\geckodriver.exe'
         firefox_options = Options()
         firefox_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
-        self.driver = webdriver.Firefox(webdrivermanager.GeckoDriverManager.get_latest_version())
+        firefox_driver = webdrivermanager.GeckoDriverManager()
+        try:
+            self.driver = webdriver.Chrome(executable_path=firefox_driver.get_driver_filename(),
+                                           options=firefox_options)
+        except:
+            firefox_driver.download_and_install(firefox_driver.get_latest_version())
+            time.sleep(3)
+            print("!!!!!!!!!!!!!!!!")
+            time.sleep(3)
+            self.driver = webdriver.Chrome(executable_path=firefox_driver.get_driver_filename(),
+                                           options=firefox_options)
         cur_handle = self.driver.current_window_handle  # get current handle
         all_handle = self.driver.window_handles  # get all handles
         target_url = "http://psdtool.tc.net/psdTool/"

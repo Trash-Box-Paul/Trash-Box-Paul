@@ -1,7 +1,7 @@
 import bs4
 import openpyxl
 import time
-
+from datetime import datetime
 import webdrivermanager
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
@@ -20,12 +20,17 @@ class TakeTasks:
 
     def __init__(self):
         self.driver_setup()
-        self.workbook = openpyxl.load_workbook('Paul_Spread_Sheet_Senior_Version.xlsm', data_only=True)
-        self.testbook = openpyxl.load_workbook('pytest.xlsx', data_only=True)
-        self.worksheet = self.workbook.get_sheet_by_name('in progress')
-        self.testsheet = self.testbook.get_sheet_by_name('Sheet1')
-        self.cloudsheet = self.testbook.get_sheet_by_name('cloud')
-        self.newtpsheet = self.testbook.get_sheet_by_name('newtp')
+        self.spread_sheet_read = openpyxl.load_workbook('Latest_Spread_Sheet.xlsm', data_only=True)
+        self.spread_sheet_write = openpyxl.load_workbook('Latest_Spread_Sheet.xlsm', data_only=False)
+        self.in_progress_sheet_read = self.spread_sheet_read.get_sheet_by_name('in progress')
+        self.in_progress_sheet_write = self.spread_sheet_write.get_sheet_by_name('in progress')
+        # ------------------------------------------------------------------------------------------------------
+        self.info_collect_list_read = openpyxl.load_workbook('pytest.xlsx', data_only=True)
+        self.info_collect_list_write = openpyxl.load_workbook('pytest.xlsx', data_only=False)
+        self.testsheet = self.info_collect_list_write.get_sheet_by_name('Sheet1')
+        self.cloudsheet = self.info_collect_list_read.get_sheet_by_name('cloud')
+        self.newtp_read_sheet = self.info_collect_list_read.get_sheet_by_name('newtp')
+        self.newtp_write_sheet = self.info_collect_list_write.get_sheet_by_name('newtp')
         self.count = 0
 
     def driver_setup(self):
@@ -35,11 +40,11 @@ class TakeTasks:
         # chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
         # self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
         try:
-            # self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(), options=DebugBrowser().debug_chrome())
+            # self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
+            # options=DebugBrowser().debug_chrome())
             self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
                                            options=DebugBrowser().debug_chrome())
         except:
-            self.driver.quit()
             chrome_driver.download_and_install(chrome_driver.get_latest_version())
             time.sleep(3)
             print("!!!!!!!!!!!!!!!!")
@@ -47,19 +52,50 @@ class TakeTasks:
             self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
                                            options=DebugBrowser().debug_chrome())
 
-    def get_task(self):
-        count = 1
-        for item in list(self.worksheet.columns)[0]:
-            if item.value == 'PSA Task Name':
-                continue
+    def grab_task_name_ID(self):
+        all_handle = self.driver.window_handles  # get all handles
+        target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
+        self.driver.switch_to.window(all_handle[-1])  # Switch to the new pop-up window
+        # 2 | open | /app/center/card.nl?sc=-29&whence= |\
+        # time.sleep(2)
+        self.driver.get(target_url)
+        if not ("https://907826.app.netsuite.com/app/center/" in self.driver.current_url):
+            win32api.MessageBox(0, "Please login first and try again. :)", "Please Login",
+                                win32con.MB_OK)
+            return 'Mission Failed'
+        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
+                        "2]/div/div/div/div"
 
-            if item.value is None:
-                break
-            print(str(item.value))
-            self.testsheet['A' + str(count)] = str(item.value)
-            count += 1
+        number_sum = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[" \
+                     "2]/table/tbody/tr/td/table/tbody/tr/td/a "
+        ele = self.wait(number_sum)
+        html = ele.get_attribute('innerHTML')
+        case_sum = int(html)
+        ele = self.wait(table_content)
+        html = ele.get_attribute('innerHTML')
+        soup = BeautifulSoup(html, 'html5lib')
+        tables = soup.findAll('table')
+        tab = tables[0]
+        table_body = tab.tbody
+        tr_group = table_body.find_all('tr')
+        target = int(len(tr_group) - 1)  # number of tr
+        task_name = []
+        task_id = []
+        print(target)
+        for tr in tr_group:
+            if not ("text" in tr['class']):
+                td_group = tr.find_all('td')
+                task_name.append(td_group[2].text)
+                task_id.append(str(td_group[1].find['a'].href).split('=')[1])
+        print(task_id)
+        print(task_name)
+        # for num in range(0, case_sum):
+        #     for excel_num in range(0, case_sum):
+        #         if str.strip(self.in_progress_sheet_read['A' + str(excel_num + 2)].value) == str.strip(task_name[num]):
+        #             if self.in_progress_sheet_read['E' + str(excel_num + 2)].value is not None:
+        #                 self.edit_note(num + 1, self.in_progress_sheet_read['E' + str(excel_num + 2)].value)
+        #             break
 
-        self.testbook.save('pytest.xlsx')
 
     def edit_note(self, task_num, new_note):
         edit_icon = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/table/tbody/tr["
@@ -67,7 +103,7 @@ class TakeTasks:
         table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
                         "2]/div/div/div/div"
         ele = self.wait(edit_icon + str(task_num) + edit_icon_ex)
-        ele.click()
+        self.driver.get(ele.get_attribute("href"))
         text_box = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[" \
                    "1]/div/div/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/span[2]/span/textarea "
         # time.sleep(1)
@@ -86,17 +122,13 @@ class TakeTasks:
             ele.click()
             time.sleep(1)
             self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
-
         ele = self.wait(table_content)
 
     def update_all_notes(self):
         cur_handle = self.driver.current_window_handle  # get current handle
         all_handle = self.driver.window_handles  # get all handles
         target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
-        for h in all_handle:
-            if h != cur_handle:
-                self.driver.switch_to.window(h)  # Switch to the new pop-up window
-                break
+        self.driver.switch_to.window(all_handle[-1])  # Switch to the new pop-up window
         # 2 | open | /app/center/card.nl?sc=-29&whence= |\
         # time.sleep(2)
         self.driver.get(target_url)
@@ -112,13 +144,7 @@ class TakeTasks:
         ele = self.wait(number_sum)
         html = ele.get_attribute('innerHTML')
         case_sum = int(html)
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, table_content))
-            )
-        finally:
-            # time.sleep(1)
-            ele = self.driver.find_element(By.XPATH, table_content)
+        ele = self.wait(table_content)
         html = ele.get_attribute('innerHTML')
         soup = BeautifulSoup(html, 'html5lib')
         tables = soup.findAll('table')
@@ -135,19 +161,19 @@ class TakeTasks:
         print(task_name)
         for num in range(0, case_sum):
             for excel_num in range(0, case_sum):
-                if str.strip(self.worksheet['A' + str(excel_num + 2)].value) == str.strip(task_name[num]):
-                    if self.worksheet['D' + str(excel_num + 2)].value is not None:
-                        self.edit_note(num + 1, self.worksheet['D' + str(excel_num + 2)].value)
+                if str.strip(self.in_progress_sheet_read['A' + str(excel_num + 2)].value) == str.strip(task_name[num]):
+                    if self.in_progress_sheet_read['E' + str(excel_num + 2)].value is not None:
+                        self.edit_note(num + 1, self.in_progress_sheet_read['E' + str(excel_num + 2)].value)
                     break
 
     def grab_pend_task(self):
-        cur_handle = self.driver.current_window_handle  # get current handle
-        all_handle = self.driver.window_handles  # get all handles
         target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
-        for h in all_handle:
-            if h != cur_handle:
-                self.driver.switch_to.window(h)  # Switch to the new pop-up window
-                break
+        # cur_handle = self.driver.current_window_handle  # get current handle
+        # all_handle = self.driver.window_handles  # get all handles
+        # for h in all_handle:
+        #     if h != cur_handle:
+        #         self.driver.switch_to.window(h)  # Switch to the new pop-up window
+        #         break
         # 2 | open | /app/center/card.nl?sc=-29&whence= |\
         # time.sleep(2)
         self.driver.get(target_url)
@@ -161,72 +187,33 @@ class TakeTasks:
         js_top = "var q=document.documentElement.scrollTop=0"
         self.driver.execute_script(js_top)
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[3]/li/a"
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, tab_case))
-            )
-        finally:
-            self.driver.find_element(By.XPATH, tab_case).click()
+        self.wait(tab_case).click()
         title = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/h2"
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, title))
-            )
-        finally:
-            element = self.driver.find_element(By.XPATH, title)
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
-            # 1 | mouseMoveAt | Title: Paul's All case view | hover element
-            # element.click()
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                                                          "1]/div[1]/div/div"))
-            )
-        finally:
-            element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                                                         "1]/div[1]/div/div")
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
-            element.click()
-            # 2 | mouseMoveAt | Configure Icon | hover element
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located(
-                    (By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                               "1]/div[1]/div/div/ul/li[3]/a"))
-            )
-        finally:
-
+        element = self.wait(title)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
+        # 1 | mouseMoveAt | Title: Paul's All case view | hover element
+        # element.click()
+        element = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div")
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
+        element.click()
+        # 2 | mouseMoveAt | Configure Icon | hover element
+        element = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div/ul/li[3]/a")
+        while element.get_attribute("innerHTML") is None:
             element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
                                                          "1]/div[1]/div/div/ul/li[3]/a")
-            while element.get_attribute("innerHTML") is None:
-                element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                                                             "1]/div[1]/div/div/ul/li[3]/a")
-            while not ("Edit" in element.get_attribute("innerHTML")):
-                element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
-                                                             "1]/div[1]/div/div/ul/li[3]/a")
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
-            element.click()
-            # 3 | mouseMoveAt and click | Edit Icon | hover element
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located(
-                    (By.XPATH, "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a"))
-            )
-        finally:
-            self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr["
-                                               "1]/td/table/tbody/tr/td[2]/a").click()
+        while not ("Edit" in element.get_attribute("innerHTML")):
+            element = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div["
+                                                         "1]/div[1]/div/div/ul/li[3]/a")
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
+        element.click()
+        # 3 | mouseMoveAt and click | Edit Icon | hover element
+        self.wait("/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a").click()
         criteria_subject = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[" \
                            "2]/td/div/div[8]/div/form/div[6]/table/tbody/tr[4]/td[1] "
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located(
-                    (By.XPATH, criteria_subject))
-            )
-        finally:
-            self.driver.find_element(By.XPATH, criteria_subject).click()
+        self.wait(criteria_subject).click()
         # actions = ActionChains(self.driver)
         # actions.move_to_element(criteria_subject).perform()
         arrow = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[2]/td/div/div[" \
@@ -411,22 +398,20 @@ class TakeTasks:
 
                 break
 
-
-
     def send_all_tps(self):
         print(1)
         total_count = 1
-        for item in list(self.newtpsheet.columns)[0]:
+        for item in list(self.newtp_read_sheet.columns)[0]:
             if item is not None and item.value is not None:
                 self.new_window("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
                 ele = self.wait("/html/body/div[1]/div[1]/div[1]/div[4]/input[1]")
-                search_name = str(self.newtpsheet['B'+str(total_count)].value)
+                search_name = str(self.newtp_read_sheet['B' + str(total_count)].value)
                 print(search_name)
                 ele.send_keys("part: "+search_name)
                 ele.send_keys(Keys.ENTER)
                 time.sleep(3)
                 if 'globalsearch' in str(self.driver.current_url):
-                    self.newtpsheet['C' + str(total_count)] = "Multiple Records"
+                    self.newtp_write_sheet['C' + str(total_count)] = "Multiple Records"
                     total_count += 1
                     self.driver.close()
                     continue
@@ -446,24 +431,24 @@ class TakeTasks:
                     tr_group = table_body.find_all('tr')
                     td_group = tr_group[0].find_all('td')
                     if td_group[0].text == "No records to show.":
-                        self.newtpsheet['C' + str(total_count)] = "No Contacts"
+                        self.newtp_write_sheet['C' + str(total_count)] = "No Contacts"
                         total_count += 1
                         self.driver.close()
                         continue
                     print(str(td_group[5].find_all('a')[1].text))
-                    self.newtpsheet['C'+str(total_count)] = td_group[5].find_all('a')[1].text
+                    self.newtp_write_sheet['C' + str(total_count)] = td_group[5].find_all('a')[1].text
                     email_list.append(td_group[5].find_all('a')[1].text)
                     if len(tr_group) > 1:
                         td_group = tr_group[1].find_all('td')
-                        self.newtpsheet['D' + str(total_count)] = td_group[5].find_all('a')[1].text
+                        self.newtp_write_sheet['D' + str(total_count)] = td_group[5].find_all('a')[1].text
                         print(str(td_group[5].find_all('a')[1].text))
                         email_list.append(td_group[5].find_all('a')[1].text)
                     current_handle = self.driver.current_window_handle
                     self.send_initial_emails(email_list, search_name)
                     self.driver.switch_to.window(current_handle)
-                    self.newtpsheet['E' + str(total_count)] = "done"
+                    self.newtp_write_sheet['E' + str(total_count)] = "done"
                 except:
-                    self.newtpsheet['C' + str(total_count)] = "No Contacts"
+                    self.newtp_write_sheet['C' + str(total_count)] = "No Contacts"
                     total_count += 1
                     self.driver.close()
                     continue
@@ -495,7 +480,7 @@ class TakeTasks:
                 self.driver.close()
             else:
                 break
-        self.testbook.save('pytest.xlsx')
+        self.info_collect_list_write.save(datetime.now().strftime("%b_%d_%Y") + 'pytest.xlsx')
 
     def wait(self, xpath):
         try:

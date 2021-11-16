@@ -27,7 +27,7 @@ class SendEmails:
         # Body
         mail.Body = "Attached is the log of noise cases closed by script today."
         # 添加附件
-        filename = "./" + datetime.today().strftime("%b_%d_%Y") + "_clean_list_log.txt"
+        filename = "./OA_log/" + datetime.today().strftime("%b_%d_%Y") + "_clean_list_log.txt"
         if os.path.exists(filename):
             mail.Attachments.Add(os.path.abspath(filename))
         filename = datetime.now().strftime("%b_%d_%Y") + "_resend_log.txt"

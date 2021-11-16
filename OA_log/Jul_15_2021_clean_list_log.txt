@@ -1,0 +1,182 @@
+13706255	Error: Base Brands 810 To Base Brands CC LogId 1080812190
+13706257	Error: Base Brands 810 To Base Brands CC LogId 1080812200
+13706251	Error: Base Brands 810 To Base Brands CC LogId 1080812206
+13706252	Error: Base Brands 810 To Base Brands CC LogId 1080812239
+13705965	Error: Base Brands 820 To Base Brands CC LogId 1080698337
+13705807	Error: Base Brands 850 To Base Brands CC LogId 1080609077
+13705828	Error: Base Brands 850 To Base Brands CC LogId 1080619423
+13706586	Error: Base Brands 850 To Base Brands CC LogId 1080885861
+13706238	Error: Base Brands 855 To Base Brands CC LogId 1080809452
+13706244	Error: Base Brands 856 To Base Brands CC LogId 1080809362
+13706345	Error: Base Brands 856 To Base Brands CC LogId 1080842496
+13706420	Error: Base Brands 860 To Base Brands CC LogId 1080861976
+13705927	Error: Base Brands 875 To Base Brands CC LogId 1080672805
+13705921	Error: Base Brands 940 To Base Brands CC LogId 1080671526
+13706258	Error: Base Brands 940 To Base Brands CC LogId 1080813650
+13706560	Error: Base Brands 940 To Base Brands CC LogId 1080881853
+13706280	Error: Base Brands 943 To Base Brands CC LogId 1080824632
+13706138	Error: Base Brands 944 To Base Brands CC LogId 1080750410
+13705679	Error: Base Brands 945 To Base Brands CC LogId 1080559458
+13705860	Error: Base Brands 945 To Base Brands CC LogId 1080624103
+13705923	Error: Base Brands 945 To Base Brands CC LogId 1080674791
+13705961	Error: Base Brands 945 To Base Brands CC LogId 1080697863
+13706156	Error: Base Brands 945 To Base Brands CC LogId 1080758732
+13706161	Error: Base Brands 945 To Base Brands CC LogId 1080765402
+13706214	Error: Base Brands 945 To Base Brands CC LogId 1080800563
+13706231	Error: Base Brands 945 To Base Brands CC LogId 1080805687
+13705699	Error: Base Brands 997 To Base Brands CC LogId 1080560317
+13705805	Error: Base Brands 997 To Base Brands CC LogId 1080609597
+13705824	Error: Base Brands 997 To Base Brands CC LogId 1080619826
+13705846	Error: Base Brands 997 To Base Brands CC LogId 1080625009
+13706255	Error: Base Brands 810 To Base Brands CC LogId 1080812190
+13706257	Error: Base Brands 810 To Base Brands CC LogId 1080812200
+13706252	Error: Base Brands 810 To Base Brands CC LogId 1080812239
+13705965	Error: Base Brands 820 To Base Brands CC LogId 1080698337
+13705828	Error: Base Brands 850 To Base Brands CC LogId 1080619423
+13706586	Error: Base Brands 850 To Base Brands CC LogId 1080885861
+13706238	Error: Base Brands 855 To Base Brands CC LogId 1080809452
+13706244	Error: Base Brands 856 To Base Brands CC LogId 1080809362
+13706345	Error: Base Brands 856 To Base Brands CC LogId 1080842496
+13706420	Error: Base Brands 860 To Base Brands CC LogId 1080861976
+13705927	Error: Base Brands 875 To Base Brands CC LogId 1080672805
+13706560	Error: Base Brands 940 To Base Brands CC LogId 1080881853
+13705679	Error: Base Brands 945 To Base Brands CC LogId 1080559458
+13705860	Error: Base Brands 945 To Base Brands CC LogId 1080624103
+13705923	Error: Base Brands 945 To Base Brands CC LogId 1080674791
+13705961	Error: Base Brands 945 To Base Brands CC LogId 1080697863
+13706156	Error: Base Brands 945 To Base Brands CC LogId 1080758732
+13706161	Error: Base Brands 945 To Base Brands CC LogId 1080765402
+13706214	Error: Base Brands 945 To Base Brands CC LogId 1080800563
+13706231	Error: Base Brands 945 To Base Brands CC LogId 1080805687
+13705805	Error: Base Brands 997 To Base Brands CC LogId 1080609597
+13705824	Error: Base Brands 997 To Base Brands CC LogId 1080619826
+13705846	Error: Base Brands 997 To Base Brands CC LogId 1080625009
+13705925	Error: Base Brands 997 To Base Brands CC LogId 1080672035
+13705920	Error: Base Brands 997 To Base Brands CC LogId 1080673280
+13705915	Error: Base Brands 997 To Base Brands CC LogId 1080675188
+13705964	Error: Base Brands 997 To Base Brands CC LogId 1080698142
+13705956	Error: Base Brands 997 To Base Brands CC LogId 1080698671
+13706130	Error: Base Brands 997 To Base Brands CC LogId 1080750718
+13706155	Error: Base Brands 997 To Base Brands CC LogId 1080758841
+13706252	Error: Base Brands 810 To Base Brands CC LogId 1080812239
+13705965	Error: Base Brands 820 To Base Brands CC LogId 1080698337
+13706244	Error: Base Brands 856 To Base Brands CC LogId 1080809362
+13706345	Error: Base Brands 856 To Base Brands CC LogId 1080842496
+13706420	Error: Base Brands 860 To Base Brands CC LogId 1080861976
+13705860	Error: Base Brands 945 To Base Brands CC LogId 1080624103
+13706161	Error: Base Brands 945 To Base Brands CC LogId 1080765402
+13706214	Error: Base Brands 945 To Base Brands CC LogId 1080800563
+13705805	Error: Base Brands 997 To Base Brands CC LogId 1080609597
+13705846	Error: Base Brands 997 To Base Brands CC LogId 1080625009
+13705925	Error: Base Brands 997 To Base Brands CC LogId 1080672035
+13705964	Error: Base Brands 997 To Base Brands CC LogId 1080698142
+13706130	Error: Base Brands 997 To Base Brands CC LogId 1080750718
+13706155	Error: Base Brands 997 To Base Brands CC LogId 1080758841
+13706163	Error: Base Brands 997 To Base Brands CC LogId 1080765514
+13706212	Error: Base Brands 997 To Base Brands CC LogId 1080800701
+13706226	Error: Base Brands 997 To Base Brands CC LogId 1080805738
+13706242	Error: Base Brands 997 To Base Brands CC LogId 1080809455
+13706256	Error: Base Brands 997 To Base Brands CC LogId 1080812229
+13706260	Error: Base Brands 997 To Base Brands CC LogId 1080812387
+13706259	Error: Base Brands 997 To Base Brands CC LogId 1080813884
+13706253	Error: Base Brands 997 To Base Brands CC LogId 1080814943
+13706272	Error: Base Brands 997 To Base Brands CC LogId 1080818147
+13706284	Error: Base Brands 997 To Base Brands CC LogId 1080824729
+13706357	Error: Base Brands 997 To Base Brands CC LogId 1080846896
+13706412	Error: Base Brands 997 To Base Brands CC LogId 1080861987
+13706421	Error: Base Brands 997 To Base Brands CC LogId 1080862235
+13706559	Error: Base Brands 997 To Base Brands CC LogId 1080882042
+13706592	Error: Base Brands 997 To Base Brands CC LogId 1080886009
+13706163	Error: Base Brands 997 To Base Brands CC LogId 1080765514
+13706226	Error: Base Brands 997 To Base Brands CC LogId 1080805738
+13706242	Error: Base Brands 997 To Base Brands CC LogId 1080809455
+13706253	Error: Base Brands 997 To Base Brands CC LogId 1080814943
+13706272	Error: Base Brands 997 To Base Brands CC LogId 1080818147
+13706284	Error: Base Brands 997 To Base Brands CC LogId 1080824729
+13706412	Error: Base Brands 997 To Base Brands CC LogId 1080861987
+13706421	Error: Base Brands 997 To Base Brands CC LogId 1080862235
+13706559	Error: Base Brands 997 To Base Brands CC LogId 1080882042
+13706592	Error: Base Brands 997 To Base Brands CC LogId 1080886009
+13705703	Error: Amware Logistics Unknown To Unknown LogId 1080564381
+13705701	Error: Amware Logistics Unknown To Unknown LogId 1080564390
+13705770	Error: Amware Logistics Unknown To Unknown LogId 1080589483
+13705825	Error: Amware Logistics Unknown To Unknown LogId 1080615861
+13705904	Error: Amware Logistics Unknown To Unknown LogId 1080657487
+13705938	Error: Amware Logistics Unknown To Unknown LogId 1080677832
+13705971	Error: Amware Logistics Unknown To Unknown LogId 1080701087
+13705968	Error: Amware Logistics Unknown To Unknown LogId 1080701098
+13705998	Error: Amware Logistics Unknown To Unknown LogId 1080717201
+13706007	Error: Amware Logistics Unknown To Unknown LogId 1080717222
+13706001	Error: Amware Logistics Unknown To Unknown LogId 1080717240
+13706000	Error: Amware Logistics Unknown To Unknown LogId 1080717255
+13706085	Error: Amware Logistics Unknown To Unknown LogId 1080734995
+13706570	Error: Amware Logistics Unknown To Unknown LogId 1080883122
+13705968	Error: Amware Logistics Unknown To Unknown LogId 1080701098
+13706001	Error: Amware Logistics Unknown To Unknown LogId 1080717240
+13706000	Error: Amware Logistics Unknown To Unknown LogId 1080717255
+13706085	Error: Amware Logistics Unknown To Unknown LogId 1080734995
+13706570	Error: Amware Logistics Unknown To Unknown LogId 1080883122
+13706355	Error: Medline Unknown To Unknown LogId 1080844974
+13706353	Error: Medline Unknown To Unknown LogId 1080845283
+13706352	Error: Medline Unknown To Unknown LogId 1080845284
+13706364	Error: Medline Unknown To Unknown LogId 1080850468
+13706399	Error: Medline Unknown To Unknown LogId 1080858045
+13706400	Error: Medline Unknown To Unknown LogId 1080859134
+13706347	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1080845504
+13705852	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1080632472
+13705705	Error: Unknown Unknown To Unknown LogId 1080561687
+13705704	Error: Unknown Unknown To Unknown LogId 1080570444
+13705736	Error: Unknown Unknown To Unknown LogId 1080583723
+13705759	Error: Unknown Unknown To Unknown LogId 1080596087
+13705760	Error: Unknown Unknown To Unknown LogId 1080596094
+13705761	Error: Unknown Unknown To Unknown LogId 1080596101
+13705875	Error: Unknown Unknown To Unknown LogId 1080643892
+13706185	Error: Unknown Unknown To Unknown LogId 1080775427
+13706201	Error: Unknown Unknown To Unknown LogId 1080786939
+13706236	Error: Unknown Unknown To Unknown LogId 1080808678
+13706266	Error: Unknown Unknown To Unknown LogId 1080817401
+13706414	Error: Unknown Unknown To Unknown LogId 1080860369
+13706413	Error: Unknown Unknown To Unknown LogId 1080860372
+13706442	Error: Unknown Unknown To Unknown LogId 1080866768
+13706447	Error: Unknown Unknown To Unknown LogId 1080866769
+13706488	Error: Unknown Unknown To Unknown LogId 1080871303
+13706485	Error: Unknown Unknown To Unknown LogId 1080871306
+13706490	Error: Unknown Unknown To Unknown LogId 1080872539
+13706529	Error: Unknown Unknown To Unknown LogId 1080875982
+13706563	Error: Unknown Unknown To Unknown LogId 1080881340
+13706554	Error: Unknown Unknown To Unknown LogId 1080881345
+13706590	Error: Unknown Unknown To Unknown LogId 1080886769
+13705704	Error: Unknown Unknown To Unknown LogId 1080570444
+13706185	Error: Unknown Unknown To Unknown LogId 1080775427
+13706236	Error: Unknown Unknown To Unknown LogId 1080808678
+13706266	Error: Unknown Unknown To Unknown LogId 1080817401
+13706414	Error: Unknown Unknown To Unknown LogId 1080860369
+13706413	Error: Unknown Unknown To Unknown LogId 1080860372
+13706442	Error: Unknown Unknown To Unknown LogId 1080866768
+13706447	Error: Unknown Unknown To Unknown LogId 1080866769
+13706488	Error: Unknown Unknown To Unknown LogId 1080871303
+13706485	Error: Unknown Unknown To Unknown LogId 1080871306
+13706490	Error: Unknown Unknown To Unknown LogId 1080872539
+13706529	Error: Unknown Unknown To Unknown LogId 1080875982
+13706554	Error: Unknown Unknown To Unknown LogId 1080881345
+13705698	Error: Walmart Unknown To Unknown LogId 1080564207
+13705811	Error: Walmart Unknown To Unknown LogId 1080611146
+13705960	Error: Walmart Unknown To Unknown LogId 1080696600
+13706008	Error: Walmart Unknown To Unknown LogId 1080722709
+13706154	Error: Walmart Unknown To Unknown LogId 1080756077
+13706273	Error: Walmart Unknown To Unknown LogId 1080819489
+13706281	Error: Walmart Unknown To Unknown LogId 1080820776
+13706278	Error: Walmart Unknown To Unknown LogId 1080821448
+13706596	Error: Walmart Unknown To Unknown LogId 1080885855
+13705708	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1080571491
+13705734	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1080575012
+13705727	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1080580018
+13705672	Error: Amazon Unknown To Unknown LogId 1080557225
+13705872	Error: Amazon Unknown To Unknown LogId 1080642698
+13705957	Error: Chewy.com Unknown To Unknown LogId 1080694995
+13705954	Error: Chewy.com Unknown To Unknown LogId 1080695046
+13706006	Error: Chewy.com Unknown To Unknown LogId 1080721553
+13706005	Error: Chewy.com Unknown To Unknown LogId 1080721598
+13705997	Error: Chewy.com Unknown To Unknown LogId 1080721623
+13706011	Error: Chewy.com Unknown To Unknown LogId 1080721867
+13706004	Error: Chewy.com Unknown To Unknown LogId 1080722380

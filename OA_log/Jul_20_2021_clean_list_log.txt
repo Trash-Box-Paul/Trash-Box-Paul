@@ -1,0 +1,130 @@
+13716509	Error: Base Brands 810 To Base Brands CC LogId 1083849927
+13716508	Error: Base Brands 810 To Base Brands CC LogId 1083849947
+13716513	Error: Base Brands 810 To Base Brands CC LogId 1083850009
+13716514	Error: Base Brands 810 To Base Brands CC LogId 1083850022
+13716516	Error: Base Brands 810 To Base Brands CC LogId 1083850091
+13716610	Error: Base Brands 812 To Base Brands CC LogId 1083896028
+13716488	Error: Base Brands 820 To Base Brands CC LogId 1083841564
+13716658	Error: Base Brands 856 To Base Brands CC LogId 1083926023
+13716907	Error: Base Brands 860 To Base Brands CC LogId 1084022615
+13716903	Error: Base Brands 860 To Base Brands CC LogId 1084024485
+13716567	Error: Base Brands 940 To Base Brands CC LogId 1083876725
+13716246	Error: Base Brands 945 To Base Brands CC LogId 1083716572
+13716383	Error: Base Brands 945 To Base Brands CC LogId 1083756867
+13716477	Error: Base Brands 945 To Base Brands CC LogId 1083837386
+13716597	Error: Base Brands 945 To Base Brands CC LogId 1083889463
+13716653	Error: Base Brands 945 To Base Brands CC LogId 1083924214
+13716261	Error: Base Brands 997 To Base Brands CC LogId 1083717729
+13716380	Error: Base Brands 997 To Base Brands CC LogId 1083757286
+13716475	Error: Base Brands 997 To Base Brands CC LogId 1083837731
+13716493	Error: Base Brands 997 To Base Brands CC LogId 1083842036
+13716518	Error: Base Brands 997 To Base Brands CC LogId 1083850142
+13716515	Error: Base Brands 997 To Base Brands CC LogId 1083850557
+13716530	Error: Base Brands 997 To Base Brands CC LogId 1083865379
+13716571	Error: Base Brands 997 To Base Brands CC LogId 1083876016
+13716568	Error: Base Brands 997 To Base Brands CC LogId 1083876901
+13716598	Error: Base Brands 997 To Base Brands CC LogId 1083889650
+13716606	Error: Base Brands 997 To Base Brands CC LogId 1083896237
+13716648	Error: Base Brands 997 To Base Brands CC LogId 1083924405
+13716680	Error: Base Brands 997 To Base Brands CC LogId 1083950733
+13716909	Error: Base Brands 997 To Base Brands CC LogId 1084022764
+13716509	Error: Base Brands 810 To Base Brands CC LogId 1083849927
+13716508	Error: Base Brands 810 To Base Brands CC LogId 1083849947
+13716513	Error: Base Brands 810 To Base Brands CC LogId 1083850009
+13716514	Error: Base Brands 810 To Base Brands CC LogId 1083850022
+13716516	Error: Base Brands 810 To Base Brands CC LogId 1083850091
+13716610	Error: Base Brands 812 To Base Brands CC LogId 1083896028
+13716488	Error: Base Brands 820 To Base Brands CC LogId 1083841564
+13716907	Error: Base Brands 860 To Base Brands CC LogId 1084022615
+13716903	Error: Base Brands 860 To Base Brands CC LogId 1084024485
+13716567	Error: Base Brands 940 To Base Brands CC LogId 1083876725
+13716383	Error: Base Brands 945 To Base Brands CC LogId 1083756867
+13716597	Error: Base Brands 945 To Base Brands CC LogId 1083889463
+13716653	Error: Base Brands 945 To Base Brands CC LogId 1083924214
+13716475	Error: Base Brands 997 To Base Brands CC LogId 1083837731
+13716515	Error: Base Brands 997 To Base Brands CC LogId 1083850557
+13716530	Error: Base Brands 997 To Base Brands CC LogId 1083865379
+13716568	Error: Base Brands 997 To Base Brands CC LogId 1083876901
+13716598	Error: Base Brands 997 To Base Brands CC LogId 1083889650
+13716606	Error: Base Brands 997 To Base Brands CC LogId 1083896237
+13716648	Error: Base Brands 997 To Base Brands CC LogId 1083924405
+13716680	Error: Base Brands 997 To Base Brands CC LogId 1083950733
+13716909	Error: Base Brands 997 To Base Brands CC LogId 1084022764
+13716905	Error: Base Brands 997 To Base Brands CC LogId 1084024683
+13717014	Error: Base Brands 997 To Base Brands CC LogId 1084040539
+13716610	Error: Base Brands 812 To Base Brands CC LogId 1083896028
+13716488	Error: Base Brands 820 To Base Brands CC LogId 1083841564
+13716567	Error: Base Brands 940 To Base Brands CC LogId 1083876725
+13716383	Error: Base Brands 945 To Base Brands CC LogId 1083756867
+13716568	Error: Base Brands 997 To Base Brands CC LogId 1083876901
+13717014	Error: Base Brands 997 To Base Brands CC LogId 1084040539
+13716374	Error: Amware Logistics Unknown To Unknown LogId 1083748489
+13716372	Error: Amware Logistics Unknown To Unknown LogId 1083748522
+13716385	Error: Amware Logistics Unknown To Unknown LogId 1083748546
+13716384	Error: Amware Logistics Unknown To Unknown LogId 1083748575
+13716454	Error: Amware Logistics Unknown To Unknown LogId 1083795187
+13716450	Error: Amware Logistics Unknown To Unknown LogId 1083795203
+13716520	Error: Amware Logistics Unknown To Unknown LogId 1083850786
+13716539	Error: Amware Logistics Unknown To Unknown LogId 1083868260
+13716535	Error: Amware Logistics Unknown To Unknown LogId 1083868299
+13716541	Error: Amware Logistics Unknown To Unknown LogId 1083868309
+13716372	Error: Amware Logistics Unknown To Unknown LogId 1083748522
+13716794	Error: Owens & Minor 850 To Nurse Assist, Inc. LogId 1083995023
+13716625	Error: Medline Unknown To Unknown LogId 1083904673
+13716752	Error: Medline Unknown To Unknown LogId 1083990470
+13716754	Error: Medline Unknown To Unknown LogId 1083990595
+13716765	Error: Medline Unknown To Unknown LogId 1083992109
+13716775	Error: Medline Unknown To Unknown LogId 1083995768
+13716773	Error: Medline Unknown To Unknown LogId 1083995969
+13716848	Error: Medline Unknown To Unknown LogId 1084008172
+13716843	Error: Medline Unknown To Unknown LogId 1084008173
+13716840	Error: Medline Unknown To Unknown LogId 1084009151
+13716850	Error: Medline Unknown To Unknown LogId 1084009463
+13716845	Error: Medline Unknown To Unknown LogId 1084009467
+13716844	Error: Medline Unknown To Unknown LogId 1084009481
+13716858	Error: Medline Unknown To Unknown LogId 1084010595
+13716752	Error: Medline Unknown To Unknown LogId 1083990470
+13716754	Error: Medline Unknown To Unknown LogId 1083990595
+13716843	Error: Medline Unknown To Unknown LogId 1084008173
+13716845	Error: Medline Unknown To Unknown LogId 1084009467
+13716727	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981449
+13716726	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981457
+13716721	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981460
+13716729	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981468
+13716725	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981474
+13716730	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981479
+13716728	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981483
+13716731	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1083981488
+13716375	Error: Unknown Unknown To Unknown LogId 1083751484
+13716656	Error: Unknown Unknown To Unknown LogId 1083923350
+13716762	Error: Unknown Unknown To Unknown LogId 1083992132
+13716810	Error: Unknown Unknown To Unknown LogId 1083997789
+13716920	Error: Unknown Unknown To Unknown LogId 1084027319
+13716938	Error: Unknown Unknown To Unknown LogId 1084032419
+13716956	Error: Unknown Unknown To Unknown LogId 1084034285
+13716972	Error: Unknown Unknown To Unknown LogId 1084036951
+13717008	Error: Unknown Unknown To Unknown LogId 1084040591
+13717010	Error: Unknown Unknown To Unknown LogId 1084041130
+13716972	Error: Unknown Unknown To Unknown LogId 1084036951
+13716214	Error: Walmart Unknown To Unknown LogId 1083695853
+13716229	Error: Walmart Unknown To Unknown LogId 1083695874
+13716230	Error: Walmart Unknown To Unknown LogId 1083695875
+13716234	Error: Walmart Unknown To Unknown LogId 1083705843
+13716232	Error: Walmart Unknown To Unknown LogId 1083715294
+13716529	Error: Walmart Unknown To Unknown LogId 1083865827
+13716534	Error: Walmart Unknown To Unknown LogId 1083870474
+13716594	Error: Walmart Unknown To Unknown LogId 1083886629
+13716696	Error: Walmart Unknown To Unknown LogId 1083962347
+13716702	Error: Walmart Unknown To Unknown LogId 1083969621
+13716701	Error: Walmart Unknown To Unknown LogId 1083969962
+13716704	Error: Walmart Unknown To Unknown LogId 1083970499
+13716229	Error: Walmart Unknown To Unknown LogId 1083695874
+13716232	Error: Walmart Unknown To Unknown LogId 1083715294
+13716696	Error: Walmart Unknown To Unknown LogId 1083962347
+13715998	TM File Processing Error. Sender ProfileId: 2901 FileName: Blick Art Materials - P2P~11231~15632~850~439083000~21071916404932.xedi
+13715896	TM File Processing Error. Sender ProfileId: 31794 FileName: BissellHomecare~67476~29257~850~9~21071916224188.xedi
+13716212	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1083696261
+13716416	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1083775711
+13716415	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1083775728
+13716866	Error: Digi-Key Corporation Unknown To Unknown LogId 1084014631
+13716868	Error: Digi-Key Corporation Unknown To Unknown LogId 1084017341

@@ -35,7 +35,6 @@ class TakeTasks:
         # 2 | open | /app/center/card.nl?sc=-29&whence= |\
         time.sleep(2)
         self.driver.maximize_window()
-        self.driver.set_window_position(0, 0)
         self.driver.get(target_url)
         if not ("https://907826.app.netsuite.com/app/center/" in self.driver.current_url):
             win32api.MessageBox(0, "Please login first and try again. :)", "Please Login",

@@ -1,4 +1,5 @@
 import threading
+import win32gui
 from netsuite_take_tasks import TakeTasks
 import win32api, win32con
 import tkinter as tk
@@ -24,6 +25,8 @@ from datetime import datetime
 
 # Module level GLOBALS
 GLOBAL_CONST = 42
+
+# Create Backup Folder
 fDir = path.dirname(path.dirname(__file__))
 netDir = fDir + '\\Backup'
 if not path.exists(netDir):
@@ -42,39 +45,35 @@ class OOP():
     def __init__(self):  # Initializer method
         # Create instance
         self.excel_robot = excel_test.TakeTasks()
-        self.NSrobot = CleanAllCase()
+        self.clean_robot = CleanAllCase()
+        self.root_browser = self.clean_robot.driver
         self.win = tk.Tk()
-
+        # Single thread
         self.run_thread = None
-
         # Add a title       
-        self.win.title("TPS Automation 1.0.0")
-
+        self.win.title("TPS Automation Tool 0.0.1")
         # Create a Queue
         self.gui_queue = Queue()
-
         self.create_widgets()
-
+        # Initial the address of File Entries
         self.defaultFileEntries()
 
     def defaultFileEntries(self):
         self.fileEntry.delete(0, tk.END)
-        self.fileEntry.insert(0, fDir + '\Paul_Spread_Sheet_Senior_Version.xlsm')
+        self.fileEntry.insert(0, fDir + '\\Latest_Spread_Sheet.xlsm')
+        self.fileEntry.config(state='readonly')
         if len(fDir) > self.entryLen:
-            #             self.fileEntry.config(width=len(fDir) + 3)
             self.fileEntry.config(width=self.entryLen)  # limit width to adjust GUI
-            self.fileEntry.config(state='readonly')
-
         self.netwEntry.delete(0, tk.END)
         self.netwEntry.insert(0, netDir)
+        self.netwEntry.config(state='readonly')
         if len(netDir) > self.entryLen:
-            #             self.netwEntry.config(width=len(netDir) + 3)
             self.netwEntry.config(width=self.entryLen)  # limit width to adjust GUI
 
     def thread_go(self, thread):
         if self.run_thread is not None:
             if self.run_thread.is_alive():
-                win32api.MessageBox(0, "Please wait until last mission complete)", "Please Wait",
+                win32api.MessageBox(0, "Please wait until last mission complete !", "Please Wait",
                                     win32con.MB_OK)
             else:
                 self.run_thread = thread
@@ -82,6 +81,9 @@ class OOP():
         else:
             self.run_thread = thread
             thread.start()
+
+    # def open_or_not(self,filename):
+    #     if(win32gui.FindWindow(None,"excel")
 
     def open_spread_thread(self):
         thread_temp = Thread(os.startfile(self.fileEntry.get()))
@@ -91,40 +93,46 @@ class OOP():
     def do_clean(self):
         self.progress_bar.start()
         self.write_status_to_text("Start cleaning all the noise cases:")
+        self.clean_robot.open_new_window()
         var = [
             "Bon Tool Company 997 To Amazon",
-            "To Base Brands CC",
             "Amware Logistics Unknown To Unknown",
             "Almo Unknown To Unknown",
+            "Amazon Unknown To Unknown",
+            "Amazon.ca Unknown To Unknown",
+            "Chewy.com Unknown To Unknown",
             "Home Depot Canada Unknown To Unknown",
-            "To Nurse Assist, Inc.",
             "Medline Unknown To Unknown",
             "P2P - Cat5 Commerce Unknown To Unknown",
             "Tractor Supply Drop Ship Unknown To Unknown",
             "Unknown Unknown To Unknown",
             "Walmart Unknown To Unknown",
-            "Kroger Unknown To Unknown",
-            "TM File processing",
-            # "iTrade Network Unknown To Phillips Foods, Inc",
-            "Unknown Unknown To Total Quality Logistics 2",
-            "iTrade Network Unknown To Phillips Foods, Inc fka Phillips Seafood",
-            "Amazon Unknown To Unknown",
-            "Amazon.ca Unknown To Unknown",
-            "Chewy.com Unknown To Unknown",
-            "Digi-Key Corporation Unknown To Unknown",
-            "Unknown Unknown To Bestseller",
-            "Unknown Unknown To Abbyson Living Corporation",
-            "CSN Unknown To Unknown",
-            "Five Below 850 To Jem Accessories, Inc."
+            "Kroger Unknown To Unknown"
+            # ,
+            # "To For Life Products",
+            # "TM File processing",
+            # "To Base Brands CC",
+            # "To Nurse Assist, Inc.",
+            # "3PL Central 997 To Cali Bamboo",
+            # # "iTrade Network Unknown To Phillips Foods, Inc",
+            # "Unknown Unknown To Total Quality Logistics 2",
+            # "iTrade Network Unknown To Phillips Foods, Inc fka Phillips Seafood",
+            # "Digi-Key Corporation Unknown To Unknown",
+            # "Unknown Unknown To Bestseller",
+            # "Unknown Unknown To Abbyson Living Corporation",
+            # "CSN Unknown To Unknown",
+            # "Five Below 850 To Jem Accessories, Inc.",
+            # "Ace Bayou Corp 846 To Amazon"
         ]
         for search_key in var:
-            self.NSrobot.change_criteria("contains", search_key)
-            self.write_status_to_text("Closing " + str(self.NSrobot.clean_all_case()) + " cases with key word: " + search_key)
-        self.NSrobot.change_criteria("is not empty", "Hello")
+            self.clean_robot.change_criteria("contains", search_key)
+            self.write_status_to_text("Closing " + str(self.clean_robot.clean_all_case()) + " cases with key word: " + search_key)
+        self.clean_robot.change_criteria("is not empty", "Hello")
         win32api.MessageBox(0, "No more noise in queue. :)", "Cleaning Done", win32con.MB_OK)
         self.progress_bar.stop()
+        self.clean_robot.close_script_window()
         self.write_status_to_text("Complete cleaning all the noise cases!")
-        self.write_status_to_text("--------------------------------------------")
+        self.write_status_to_text("------------------------------------------------------------------------------------------------")
 
     def new_clean_thread(self):
         clean_thread = threading.Thread(target=self.do_clean)
@@ -133,11 +141,13 @@ class OOP():
 
     def do_update(self):
         self.write_status_to_text("Start updating all the notes for PSA tasks in NetSuite...")
+        self.clean_robot.open_new_window()
         self.progress_bar.start()
         self.excel_robot.update_all_notes()
+        self.clean_robot.close_script_window()
         self.progress_bar.stop()
         self.write_status_to_text("Updated all the notes for PSA tasks in NetSuite successfully !")
-        self.write_status_to_text("--------------------------------------------")
+        self.write_status_to_text("------------------------------------------------------------------------------------------------")
 
     def update_spread_thread(self):
         thread_update = threading.Thread(target=self.do_update)
@@ -145,13 +155,14 @@ class OOP():
         self.thread_go(thread_update)
 
     def do_grab(self):
-
         self.write_status_to_text("Start taking all the PSA tasks...")
         self.progress_bar.start()
-        self.NSrobot.take_task()
+        self.clean_robot.open_new_window()
+        self.clean_robot.take_task()
         self.progress_bar.stop()
+        self.clean_robot.close_script_window()
         self.write_status_to_text("Complete taking all the PSA tasks!")
-        self.write_status_to_text("--------------------------------------------")
+        self.write_status_to_text("------------------------------------------------------------------------------------------------")
 
     def grab_task_thread(self):
         thread_grab = threading.Thread(target=self.do_grab)
@@ -240,11 +251,13 @@ class OOP():
 
     def do_collect(self):
         self.write_status_to_text("Start collecting emails for PSA tasks in NetSuite...")
+        self.clean_robot.open_new_window()
         self.progress_bar.start()
         self.excel_robot.send_all_tps()
+        self.clean_robot.close_script_window()
         self.progress_bar.stop()
         self.write_status_to_text("Complete collecting emails for PSA tasks in NetSuite")
-        self.write_status_to_text("--------------------------------------------")
+        self.write_status_to_text("------------------------------------------------------------------------------------------------")
 
     def new_collect_thread(self):
         thread_temp = Thread(target=self.do_collect)
@@ -252,7 +265,7 @@ class OOP():
         self.thread_go(thread_temp)
 
     def new_open_thread(self):
-        self.NSrobot.open_new_window()
+        self.clean_robot.open_new_window()
         # thread_temp = Thread(target=self.NSrobot.open_new_window)
         # thread_temp.setDaemon(True)
         # self.thread_go(thread_temp)
@@ -340,7 +353,7 @@ class OOP():
 
         # Add a Progressbar to Tab 2
         self.progress_bar = ttk.Progressbar(self.buttons_frame, orient='horizontal', length=515, mode='determinate')
-        self.progress_bar.grid(column=0, row=2, columnspan=3)
+        self.progress_bar.grid(column=0, row=3, columnspan=3)
 
         # Add Buttons for Progressbar commands
         # ttk.Button(self.buttons_frame, text=" Run Progressbar   ", command=self.run_progressbar,
@@ -354,13 +367,17 @@ class OOP():
         ttk.Button(self.buttons_frame, text=" Grab all PSA tasks  ", command=self.grab_task_thread,
                    width=self.button_len).grid(column=1, row=1, sticky='W')
         ttk.Button(self.buttons_frame, text=" Update Netsuite Note ", command=self.update_spread_thread,
-                   width=self.button_len).grid(column=1, row=0, sticky='W')
+                   width=self.button_len).grid(column=0, row=0, sticky='W')
         ttk.Button(self.buttons_frame, text=" Clean Noise Cases ", command=self.new_clean_thread,
-                   width=self.button_len).grid(column=2, row=0, sticky='W')
+                   width=self.button_len).grid(column=1, row=0, sticky='W')
         ttk.Button(self.buttons_frame, text="New TP EDI Collection ", command=self.new_collect_thread,
                    width=self.button_len).grid(column=0, row=1, sticky='W')
+        ttk.Button(self.buttons_frame, text="Display Script Browser Window ", command=self.clean_robot.display_script_window,
+                   width=self.button_len).grid(column=2, row=0, sticky='W')
         ttk.Button(self.buttons_frame, text="Open New Browser Window ", command=self.new_open_thread,
-                   width=self.button_len).grid(column=0, row=0, sticky='W')
+                   width=self.button_len).grid(column=0, row=2, sticky='W')
+        ttk.Button(self.buttons_frame, text="Hide Script Browser Window ", command=self.clean_robot.hide_script_window,
+                   width=self.button_len).grid(column=2, row=1, sticky='W')
         #
         # for child in self.buttons_frame.winfo_children():
         #     child.grid_configure(padx=2, pady=2)
@@ -373,6 +390,7 @@ class OOP():
                    width=self.button_len).grid(column=2,
                                                row=3,
                                                sticky='W')
+
 
         def new_send_thread():
             take_thread = threading.Thread(target=do_send)

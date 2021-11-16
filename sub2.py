@@ -3,7 +3,7 @@ import win32api, win32con
 import excel_test
 
 test1 = excel_test.TakeTasks()
-test1.cloud_ftp("Mottahedeh - Test Account")
+test1.cloud_ftp("Sears Seating - Test Account")
 # test1.resend_all_case()
 # email_list=[]
 # email_list.append("paul.wu@truecommerce.com")

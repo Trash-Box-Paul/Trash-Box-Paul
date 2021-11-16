@@ -1,0 +1,297 @@
+13692406	Error: Base Brands 810 To Base Brands CC LogId 1076659687
+13692395	Error: Base Brands 810 To Base Brands CC LogId 1076659710
+13692413	Error: Base Brands 820 To Base Brands CC LogId 1076664742
+13692382	Error: Base Brands 856 To Base Brands CC LogId 1076651041
+13692386	Error: Base Brands 856 To Base Brands CC LogId 1076651076
+13692127	Error: Base Brands 940 To Base Brands CC LogId 1076518176
+13692182	Error: Base Brands 940 To Base Brands CC LogId 1076551251
+13692453	Error: Base Brands 940 To Base Brands CC LogId 1076675030
+13692180	Error: Base Brands 945 To Base Brands CC LogId 1076551971
+13692383	Error: Base Brands 945 To Base Brands CC LogId 1076651307
+13692407	Error: Base Brands 945 To Base Brands CC LogId 1076660368
+13692432	Error: Base Brands 945 To Base Brands CC LogId 1076666779
+13692445	Error: Base Brands 945 To Base Brands CC LogId 1076674144
+13692093	Error: Base Brands 997 To Base Brands CC LogId 1076510624
+13692125	Error: Base Brands 997 To Base Brands CC LogId 1076518504
+13692184	Error: Base Brands 997 To Base Brands CC LogId 1076551780
+13692178	Error: Base Brands 997 To Base Brands CC LogId 1076552339
+13692389	Error: Base Brands 997 To Base Brands CC LogId 1076651587
+13692400	Error: Base Brands 997 To Base Brands CC LogId 1076660559
+13692411	Error: Base Brands 997 To Base Brands CC LogId 1076664997
+13692428	Error: Base Brands 997 To Base Brands CC LogId 1076666290
+13692426	Error: Base Brands 997 To Base Brands CC LogId 1076666973
+13692430	Error: Base Brands 997 To Base Brands CC LogId 1076667247
+13692442	Error: Base Brands 997 To Base Brands CC LogId 1076674365
+13692448	Error: Base Brands 997 To Base Brands CC LogId 1076675400
+13692406	Error: Base Brands 810 To Base Brands CC LogId 1076659687
+13692395	Error: Base Brands 810 To Base Brands CC LogId 1076659710
+13692413	Error: Base Brands 820 To Base Brands CC LogId 1076664742
+13692382	Error: Base Brands 856 To Base Brands CC LogId 1076651041
+13692386	Error: Base Brands 856 To Base Brands CC LogId 1076651076
+13692453	Error: Base Brands 940 To Base Brands CC LogId 1076675030
+13692180	Error: Base Brands 945 To Base Brands CC LogId 1076551971
+13692383	Error: Base Brands 945 To Base Brands CC LogId 1076651307
+13692407	Error: Base Brands 945 To Base Brands CC LogId 1076660368
+13692432	Error: Base Brands 945 To Base Brands CC LogId 1076666779
+13692445	Error: Base Brands 945 To Base Brands CC LogId 1076674144
+13692389	Error: Base Brands 997 To Base Brands CC LogId 1076651587
+13692411	Error: Base Brands 997 To Base Brands CC LogId 1076664997
+13692428	Error: Base Brands 997 To Base Brands CC LogId 1076666290
+13692430	Error: Base Brands 997 To Base Brands CC LogId 1076667247
+13692442	Error: Base Brands 997 To Base Brands CC LogId 1076674365
+13692448	Error: Base Brands 997 To Base Brands CC LogId 1076675400
+13692413	Error: Base Brands 820 To Base Brands CC LogId 1076664742
+13692180	Error: Base Brands 945 To Base Brands CC LogId 1076551971
+13692407	Error: Base Brands 945 To Base Brands CC LogId 1076660368
+13692411	Error: Base Brands 997 To Base Brands CC LogId 1076664997
+13692094	Error: Amware Logistics Unknown To Unknown LogId 1076501665
+13692150	Error: Amware Logistics Unknown To Unknown LogId 1076529509
+13692152	Error: Amware Logistics Unknown To Unknown LogId 1076529551
+13692273	Error: Amware Logistics Unknown To Unknown LogId 1076576515
+13692287	Error: Amware Logistics Unknown To Unknown LogId 1076576527
+13692333	Error: Amware Logistics Unknown To Unknown LogId 1076595753
+13692381	Error: Amware Logistics Unknown To Unknown LogId 1076644412
+13692385	Error: Amware Logistics Unknown To Unknown LogId 1076644425
+13692447	Error: Amware Logistics Unknown To Unknown LogId 1076675703
+13692452	Error: Amware Logistics Unknown To Unknown LogId 1076675730
+13692385	Error: Amware Logistics Unknown To Unknown LogId 1076644425
+13692394	Error: Twin Med Partner 850 To Nurse Assist, Inc. LogId 1076659093
+13692317	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076593167
+13692313	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076593174
+13692168	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076543825
+13692212	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076556121
+13692412	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076665419
+13691928	Error: Unknown Unknown To Unknown LogId 1076478235
+13691949	Error: Unknown Unknown To Unknown LogId 1076487058
+13691947	Error: Unknown Unknown To Unknown LogId 1076487306
+13692014	Error: Unknown Unknown To Unknown LogId 1076490243
+13692063	Error: Unknown Unknown To Unknown LogId 1076499078
+13692061	Error: Unknown Unknown To Unknown LogId 1076499110
+13692066	Error: Unknown Unknown To Unknown LogId 1076499137
+13692059	Error: Unknown Unknown To Unknown LogId 1076499163
+13692060	Error: Unknown Unknown To Unknown LogId 1076499181
+13692065	Error: Unknown Unknown To Unknown LogId 1076499206
+13692064	Error: Unknown Unknown To Unknown LogId 1076499242
+13692067	Error: Unknown Unknown To Unknown LogId 1076499276
+13692070	Error: Unknown Unknown To Unknown LogId 1076499310
+13692068	Error: Unknown Unknown To Unknown LogId 1076499345
+13692077	Error: Unknown Unknown To Unknown LogId 1076499398
+13692085	Error: Unknown Unknown To Unknown LogId 1076499409
+13692103	Error: Unknown Unknown To Unknown LogId 1076499421
+13692104	Error: Unknown Unknown To Unknown LogId 1076499437
+13692075	Error: Unknown Unknown To Unknown LogId 1076499452
+13692078	Error: Unknown Unknown To Unknown LogId 1076499472
+13692069	Error: Unknown Unknown To Unknown LogId 1076499486
+13692074	Error: Unknown Unknown To Unknown LogId 1076499501
+13692083	Error: Unknown Unknown To Unknown LogId 1076499620
+13692084	Error: Unknown Unknown To Unknown LogId 1076499631
+13692098	Error: Unknown Unknown To Unknown LogId 1076505459
+13692091	Error: Unknown Unknown To Unknown LogId 1076507465
+13692096	Error: Unknown Unknown To Unknown LogId 1076508367
+13692139	Error: Unknown Unknown To Unknown LogId 1076521124
+13692137	Error: Unknown Unknown To Unknown LogId 1076524372
+13692203	Error: Unknown Unknown To Unknown LogId 1076554372
+13691949	Error: Unknown Unknown To Unknown LogId 1076487058
+13691947	Error: Unknown Unknown To Unknown LogId 1076487306
+13692014	Error: Unknown Unknown To Unknown LogId 1076490243
+13692063	Error: Unknown Unknown To Unknown LogId 1076499078
+13692061	Error: Unknown Unknown To Unknown LogId 1076499110
+13692066	Error: Unknown Unknown To Unknown LogId 1076499137
+13692059	Error: Unknown Unknown To Unknown LogId 1076499163
+13692064	Error: Unknown Unknown To Unknown LogId 1076499242
+13692067	Error: Unknown Unknown To Unknown LogId 1076499276
+13692068	Error: Unknown Unknown To Unknown LogId 1076499345
+13692077	Error: Unknown Unknown To Unknown LogId 1076499398
+13692075	Error: Unknown Unknown To Unknown LogId 1076499452
+13692078	Error: Unknown Unknown To Unknown LogId 1076499472
+13692069	Error: Unknown Unknown To Unknown LogId 1076499486
+13692074	Error: Unknown Unknown To Unknown LogId 1076499501
+13692083	Error: Unknown Unknown To Unknown LogId 1076499620
+13692084	Error: Unknown Unknown To Unknown LogId 1076499631
+13692098	Error: Unknown Unknown To Unknown LogId 1076505459
+13692096	Error: Unknown Unknown To Unknown LogId 1076508367
+13692139	Error: Unknown Unknown To Unknown LogId 1076521124
+13692137	Error: Unknown Unknown To Unknown LogId 1076524372
+13692202	Error: Unknown Unknown To Unknown LogId 1076558474
+13692388	Error: Unknown Unknown To Unknown LogId 1076644622
+13692423	Error: Unknown Unknown To Unknown LogId 1076665913
+13692449	Error: Unknown Unknown To Unknown LogId 1076676059
+13692059	Error: Unknown Unknown To Unknown LogId 1076499163
+13692068	Error: Unknown Unknown To Unknown LogId 1076499345
+13692078	Error: Unknown Unknown To Unknown LogId 1076499472
+13692074	Error: Unknown Unknown To Unknown LogId 1076499501
+13692083	Error: Unknown Unknown To Unknown LogId 1076499620
+13692098	Error: Unknown Unknown To Unknown LogId 1076505459
+13692020	Error: Rebels Refinery - Walmart Unknown To Unknown LogId 1076490380
+13692062	Error: Walmart Unknown To Unknown LogId 1076498473
+13692247	Error: Walmart Unknown To Unknown LogId 1076560800
+13692311	Error: Walmart Unknown To Unknown LogId 1076586587
+13692310	Error: Walmart Unknown To Unknown LogId 1076586800
+13692390	Error: Walmart Unknown To Unknown LogId 1076651800
+13692397	Error: Walmart Unknown To Unknown LogId 1076655124
+13692458	Error: Walmart Unknown To Unknown LogId 1076677686
+13692455	Error: Walmart Unknown To Unknown LogId 1076679804
+13692498	Error: Walmart Unknown To Unknown LogId 1076680775
+13692062	Error: Walmart Unknown To Unknown LogId 1076498473
+13692307	TM File Processing Error. Sender ProfileId: 22886 FileName: Logistic Edge~31278~15844~997~132703000~21070818361237.xedi
+13691914	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076465089
+13691923	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076471301
+13691931	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076476193
+13691944	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076480758
+13691951	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076486156
+13692092	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076508204
+13692123	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076512436
+13692437	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1076667565
+13692534	Error: Base Brands 812 To Base Brands CC LogId 1076704524
+13692983	Error: Base Brands 820 To Base Brands CC LogId 1076799885
+13692980	Error: Base Brands 850 To Base Brands CC LogId 1076797654
+13692592	Error: Base Brands 856 To Base Brands CC LogId 1076720097
+13692535	Error: Base Brands 945 To Base Brands CC LogId 1076706472
+13692727	Error: Base Brands 945 To Base Brands CC LogId 1076736885
+13692538	Error: Base Brands 997 To Base Brands CC LogId 1076704770
+13692536	Error: Base Brands 997 To Base Brands CC LogId 1076705033
+13692532	Error: Base Brands 997 To Base Brands CC LogId 1076706582
+13692568	Error: Base Brands 997 To Base Brands CC LogId 1076717594
+13692728	Error: Base Brands 997 To Base Brands CC LogId 1076737094
+13692731	Error: Base Brands 997 To Base Brands CC LogId 1076737283
+13692981	Error: Base Brands 997 To Base Brands CC LogId 1076797780
+13692979	Error: Base Brands 997 To Base Brands CC LogId 1076799941
+13692983	Error: Base Brands 820 To Base Brands CC LogId 1076799885
+13692592	Error: Base Brands 856 To Base Brands CC LogId 1076720097
+13692535	Error: Base Brands 945 To Base Brands CC LogId 1076706472
+13692727	Error: Base Brands 945 To Base Brands CC LogId 1076736885
+13692536	Error: Base Brands 997 To Base Brands CC LogId 1076705033
+13692532	Error: Base Brands 997 To Base Brands CC LogId 1076706582
+13692728	Error: Base Brands 997 To Base Brands CC LogId 1076737094
+13692979	Error: Base Brands 997 To Base Brands CC LogId 1076799941
+13692829	Error: Medline Unknown To Unknown LogId 1076774930
+13692855	Error: Medline Unknown To Unknown LogId 1076783556
+13692881	Error: Medline Unknown To Unknown LogId 1076783564
+13692885	Error: Medline Unknown To Unknown LogId 1076783565
+13692931	Error: Medline Unknown To Unknown LogId 1076789525
+13692944	Error: Medline Unknown To Unknown LogId 1076790287
+13692884	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780912
+13692853	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780913
+13692871	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780914
+13692890	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780915
+13692889	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780916
+13692859	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780917
+13692875	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780918
+13692882	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780919
+13692858	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780920
+13692892	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780922
+13692860	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780929
+13692891	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780930
+13692895	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780933
+13692866	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780937
+13692870	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780938
+13692886	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780939
+13692868	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780940
+13692879	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780941
+13692904	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780942
+13692883	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780943
+13692898	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780944
+13692878	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780945
+13692873	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780946
+13692857	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780947
+13692864	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780948
+13692861	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780949
+13692888	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780951
+13692862	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780953
+13692897	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780954
+13692902	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780955
+13692884	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780912
+13692853	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780913
+13692871	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780914
+13692890	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780915
+13692889	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780916
+13692859	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780917
+13692875	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780918
+13692858	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780920
+13692860	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780929
+13692891	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780930
+13692895	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780933
+13692866	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780937
+13692870	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780938
+13692886	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780939
+13692868	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780940
+13692879	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780941
+13692904	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780942
+13692898	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780944
+13692878	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780945
+13692873	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780946
+13692888	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780951
+13692862	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780953
+13692897	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780954
+13692942	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791395
+13692939	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791396
+13692941	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791398
+13692937	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791399
+13692945	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791403
+13692929	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791408
+13692933	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791409
+13692884	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780912
+13692853	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780913
+13692890	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780915
+13692889	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780916
+13692891	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780930
+13692895	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780933
+13692866	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780937
+13692886	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780939
+13692879	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780941
+13692904	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780942
+13692898	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780944
+13692873	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780946
+13692897	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780954
+13692939	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791396
+13692941	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791398
+13692937	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791399
+13692945	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791403
+13692929	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791408
+13692933	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791409
+13692947	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791411
+13692948	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791412
+13692935	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791415
+13692949	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791416
+13692930	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791417
+13692891	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780930
+13692886	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780939
+13692879	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076780941
+13692937	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791399
+13692947	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791411
+13692948	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791412
+13692949	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791416
+13692930	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791417
+13692937	Error: P2P - Cat5 Commerce Unknown To Unknown LogId 1076791399
+13692598	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076721528
+13692746	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076740679
+13692761	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076743616
+13692769	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076750797
+13692780	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1076759435
+13692529	Error: Unknown Unknown To Unknown LogId 1076703808
+13692531	Error: Unknown Unknown To Unknown LogId 1076703923
+13692827	Error: Unknown Unknown To Unknown LogId 1076776307
+13692903	Error: Unknown Unknown To Unknown LogId 1076778203
+13692934	Error: Unknown Unknown To Unknown LogId 1076790598
+13692965	Error: Unknown Unknown To Unknown LogId 1076795648
+13692967	Error: Unknown Unknown To Unknown LogId 1076795649
+13692997	Error: Unknown Unknown To Unknown LogId 1076801177
+13692965	Error: Unknown Unknown To Unknown LogId 1076795648
+13692521	Error: Walmart Unknown To Unknown LogId 1076693786
+13692762	Error: Walmart Unknown To Unknown LogId 1076743058
+13692844	Error: Walmart Unknown To Unknown LogId 1076768250
+13692843	Error: Walmart Unknown To Unknown LogId 1076769188
+13692834	Error: Walmart Unknown To Unknown LogId 1076769481
+13693100	Error: Base Brands 940 To Base Brands CC LogId 1076817760
+13693105	Error: Base Brands 997 To Base Brands CC LogId 1076817843
+13693136	Error: Amware Logistics Unknown To Unknown LogId 1076820662
+13693142	Error: Amware Logistics Unknown To Unknown LogId 1076820668
+13693137	Error: Amware Logistics Unknown To Unknown LogId 1076820709
+13693141	Error: Amware Logistics Unknown To Unknown LogId 1076820726
+13693031	Error: Unknown Unknown To Unknown LogId 1076807433
+13693071	Error: Unknown Unknown To Unknown LogId 1076812782
+13693078	Error: Unknown Unknown To Unknown LogId 1076812783
+13693102	Error: Unknown Unknown To Unknown LogId 1076816926
+13693098	Error: Unknown Unknown To Unknown LogId 1076817604
+13693156	Error: Unknown Unknown To Unknown LogId 1076826918
+13693151	Error: Unknown Unknown To Unknown LogId 1076826919

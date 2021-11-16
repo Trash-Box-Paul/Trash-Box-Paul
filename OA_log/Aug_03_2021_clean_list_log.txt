@@ -1,0 +1,310 @@
+13748179	Error: Base Brands 810 To Base Brands CC LogId 1093460196
+13748188	Error: Base Brands 810 To Base Brands CC LogId 1093460216
+13748101	Error: Base Brands 812 To Base Brands CC LogId 1093422048
+13748436	Error: Base Brands 812 To Base Brands CC LogId 1093511145
+13748170	Error: Base Brands 820 To Base Brands CC LogId 1093448750
+13747869	Error: Base Brands 850 To Base Brands CC LogId 1093304853
+13748248	Error: Base Brands 940 To Base Brands CC LogId 1093486957
+13748573	Error: Base Brands 943 To Base Brands CC LogId 1093566458
+13747937	Error: Base Brands 945 To Base Brands CC LogId 1093342207
+13747988	Error: Base Brands 945 To Base Brands CC LogId 1093359516
+13748163	Error: Base Brands 945 To Base Brands CC LogId 1093458316
+13748489	Error: Base Brands 945 To Base Brands CC LogId 1093517099
+13748576	Error: Base Brands 945 To Base Brands CC LogId 1093569427
+13747871	Error: Base Brands 997 To Base Brands CC LogId 1093305255
+13747944	Error: Base Brands 997 To Base Brands CC LogId 1093342637
+13747985	Error: Base Brands 997 To Base Brands CC LogId 1093360430
+13748122	Error: Base Brands 997 To Base Brands CC LogId 1093422392
+13748167	Error: Base Brands 997 To Base Brands CC LogId 1093449165
+13748165	Error: Base Brands 997 To Base Brands CC LogId 1093458793
+13748181	Error: Base Brands 997 To Base Brands CC LogId 1093460316
+13748219	Error: Base Brands 997 To Base Brands CC LogId 1093472167
+13748250	Error: Base Brands 997 To Base Brands CC LogId 1093487201
+13748438	Error: Base Brands 997 To Base Brands CC LogId 1093511285
+13748495	Error: Base Brands 997 To Base Brands CC LogId 1093517191
+13748571	Error: Base Brands 997 To Base Brands CC LogId 1093566614
+13748574	Error: Base Brands 997 To Base Brands CC LogId 1093569865
+13748179	Error: Base Brands 810 To Base Brands CC LogId 1093460196
+13748101	Error: Base Brands 812 To Base Brands CC LogId 1093422048
+13748436	Error: Base Brands 812 To Base Brands CC LogId 1093511145
+13748170	Error: Base Brands 820 To Base Brands CC LogId 1093448750
+13748248	Error: Base Brands 940 To Base Brands CC LogId 1093486957
+13748573	Error: Base Brands 943 To Base Brands CC LogId 1093566458
+13747937	Error: Base Brands 945 To Base Brands CC LogId 1093342207
+13748489	Error: Base Brands 945 To Base Brands CC LogId 1093517099
+13748576	Error: Base Brands 945 To Base Brands CC LogId 1093569427
+13747871	Error: Base Brands 997 To Base Brands CC LogId 1093305255
+13747944	Error: Base Brands 997 To Base Brands CC LogId 1093342637
+13748167	Error: Base Brands 997 To Base Brands CC LogId 1093449165
+13748165	Error: Base Brands 997 To Base Brands CC LogId 1093458793
+13748250	Error: Base Brands 997 To Base Brands CC LogId 1093487201
+13748571	Error: Base Brands 997 To Base Brands CC LogId 1093566614
+13748574	Error: Base Brands 997 To Base Brands CC LogId 1093569865
+13748248	Error: Base Brands 940 To Base Brands CC LogId 1093486957
+13747937	Error: Base Brands 945 To Base Brands CC LogId 1093342207
+13748189	Error: Amware Logistics Unknown To Unknown LogId 1093461396
+13748183	Error: Amware Logistics Unknown To Unknown LogId 1093461412
+13748226	Error: Amware Logistics Unknown To Unknown LogId 1093479422
+13748222	Error: Amware Logistics Unknown To Unknown LogId 1093479443
+13747814	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093277461
+13747915	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093314760
+13747956	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093345769
+13747970	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093357809
+13748083	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093413102
+13748166	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093447751
+13748507	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093520038
+13748541	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093554442
+13747795	Error: Unknown Unknown To Unknown LogId 1093259292
+13747788	Error: Unknown Unknown To Unknown LogId 1093273844
+13747826	Error: Unknown Unknown To Unknown LogId 1093284726
+13747822	Error: Unknown Unknown To Unknown LogId 1093284753
+13747827	Error: Unknown Unknown To Unknown LogId 1093284757
+13747825	Error: Unknown Unknown To Unknown LogId 1093284767
+13747832	Error: Unknown Unknown To Unknown LogId 1093284781
+13747852	Error: Unknown Unknown To Unknown LogId 1093284788
+13747830	Error: Unknown Unknown To Unknown LogId 1093284803
+13747838	Error: Unknown Unknown To Unknown LogId 1093284811
+13747833	Error: Unknown Unknown To Unknown LogId 1093284817
+13747837	Error: Unknown Unknown To Unknown LogId 1093284827
+13747829	Error: Unknown Unknown To Unknown LogId 1093284842
+13747834	Error: Unknown Unknown To Unknown LogId 1093284847
+13747836	Error: Unknown Unknown To Unknown LogId 1093284858
+13747835	Error: Unknown Unknown To Unknown LogId 1093284867
+13747853	Error: Unknown Unknown To Unknown LogId 1093284878
+13747842	Error: Unknown Unknown To Unknown LogId 1093284897
+13747828	Error: Unknown Unknown To Unknown LogId 1093284963
+13747841	Error: Unknown Unknown To Unknown LogId 1093284968
+13747839	Error: Unknown Unknown To Unknown LogId 1093284975
+13747846	Error: Unknown Unknown To Unknown LogId 1093284979
+13747843	Error: Unknown Unknown To Unknown LogId 1093284991
+13747840	Error: Unknown Unknown To Unknown LogId 1093285002
+13747847	Error: Unknown Unknown To Unknown LogId 1093285010
+13747844	Error: Unknown Unknown To Unknown LogId 1093285027
+13747845	Error: Unknown Unknown To Unknown LogId 1093285050
+13747998	Error: Unknown Unknown To Unknown LogId 1093365901
+13748000	Error: Unknown Unknown To Unknown LogId 1093366022
+13748004	Error: Unknown Unknown To Unknown LogId 1093366227
+13747795	Error: Unknown Unknown To Unknown LogId 1093259292
+13747788	Error: Unknown Unknown To Unknown LogId 1093273844
+13747822	Error: Unknown Unknown To Unknown LogId 1093284753
+13747832	Error: Unknown Unknown To Unknown LogId 1093284781
+13747852	Error: Unknown Unknown To Unknown LogId 1093284788
+13747830	Error: Unknown Unknown To Unknown LogId 1093284803
+13747829	Error: Unknown Unknown To Unknown LogId 1093284842
+13747834	Error: Unknown Unknown To Unknown LogId 1093284847
+13747836	Error: Unknown Unknown To Unknown LogId 1093284858
+13747835	Error: Unknown Unknown To Unknown LogId 1093284867
+13747853	Error: Unknown Unknown To Unknown LogId 1093284878
+13747842	Error: Unknown Unknown To Unknown LogId 1093284897
+13747839	Error: Unknown Unknown To Unknown LogId 1093284975
+13747846	Error: Unknown Unknown To Unknown LogId 1093284979
+13747840	Error: Unknown Unknown To Unknown LogId 1093285002
+13747847	Error: Unknown Unknown To Unknown LogId 1093285010
+13747845	Error: Unknown Unknown To Unknown LogId 1093285050
+13747998	Error: Unknown Unknown To Unknown LogId 1093365901
+13748000	Error: Unknown Unknown To Unknown LogId 1093366022
+13747993	Error: Unknown Unknown To Unknown LogId 1093366295
+13748517	Error: Unknown Unknown To Unknown LogId 1093528162
+13747822	Error: Unknown Unknown To Unknown LogId 1093284753
+13747840	Error: Unknown Unknown To Unknown LogId 1093285002
+13747847	Error: Unknown Unknown To Unknown LogId 1093285010
+13747851	Error: Walmart Unknown To Unknown LogId 1093289975
+13747888	Error: Walmart Unknown To Unknown LogId 1093302048
+13747999	Error: Walmart Unknown To Unknown LogId 1093371232
+13748021	Error: Walmart Unknown To Unknown LogId 1093372949
+13748032	Error: Walmart Unknown To Unknown LogId 1093385847
+13748053	Error: Walmart Unknown To Unknown LogId 1093388151
+13748155	Error: Walmart Unknown To Unknown LogId 1093440500
+13748218	Error: Walmart Unknown To Unknown LogId 1093477930
+13748227	Error: Walmart Unknown To Unknown LogId 1093481683
+13748543	TM File Processing Error. Sender ProfileId: 70093 FileName: Shamrock Foods~21719~44235~810~4~21080218583784.xedi
+13748513	TM File Processing Error. Sender ProfileId: 70093 FileName: Shamrock Foods~21719~44235~810~4~21080218583784.xedi
+13748256	TM File Processing Error. Sender ProfileId: 70093 FileName: Shamrock Foods~21719~44235~810~4~21080218583784.xedi
+13748176	TM File Processing Error. Sender ProfileId: 70093 FileName: Shamrock Foods~21719~44235~810~4~21080218583784.xedi
+13748044	TM File Processing Error. Sender ProfileId: 70093 FileName: Shamrock Foods~21719~44235~810~4~21080218583784.xedi
+13747778	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093259486
+13747767	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093270499
+13747821	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093282106
+13747849	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093288648
+13747863	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093294549
+13747868	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093301902
+13747876	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093306635
+13747901	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093310751
+13747909	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093321580
+13747930	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1093331086
+13747882	Error: Unknown Unknown To Bestseller LogId 1093306788
+13747885	Error: Unknown Unknown To Bestseller LogId 1093307336
+13747917	Error: Unknown Unknown To Bestseller LogId 1093324208
+13747914	Error: Unknown Unknown To Bestseller LogId 1093324774
+13747908	Error: Unknown Unknown To Bestseller LogId 1093324995
+13747918	Error: Unknown Unknown To Bestseller LogId 1093325007
+13747913	Error: Unknown Unknown To Bestseller LogId 1093325048
+13747910	Error: Unknown Unknown To Bestseller LogId 1093325364
+13747919	Error: Unknown Unknown To Bestseller LogId 1093325430
+13747939	Error: Unknown Unknown To Bestseller LogId 1093337756
+13747932	Error: Unknown Unknown To Bestseller LogId 1093338196
+13747933	Error: Unknown Unknown To Bestseller LogId 1093339311
+13747943	Error: Unknown Unknown To Bestseller LogId 1093339321
+13747938	Error: Unknown Unknown To Bestseller LogId 1093342807
+13747966	Error: Unknown Unknown To Bestseller LogId 1093343378
+13747965	Error: Unknown Unknown To Bestseller LogId 1093343468
+13747954	Error: Unknown Unknown To Bestseller LogId 1093344061
+13747958	Error: Unknown Unknown To Bestseller LogId 1093352628
+13747969	Error: Unknown Unknown To Bestseller LogId 1093353109
+13747962	Error: Unknown Unknown To Bestseller LogId 1093354972
+13747990	Error: Unknown Unknown To Bestseller LogId 1093359585
+13747994	Error: Unknown Unknown To Bestseller LogId 1093359936
+13747996	Error: Unknown Unknown To Bestseller LogId 1093361287
+13747992	Error: Unknown Unknown To Bestseller LogId 1093361998
+13747986	Error: Unknown Unknown To Bestseller LogId 1093362950
+13747991	Error: Unknown Unknown To Bestseller LogId 1093369309
+13748017	Error: Unknown Unknown To Bestseller LogId 1093373504
+13748018	Error: Unknown Unknown To Bestseller LogId 1093373819
+13748024	Error: Unknown Unknown To Bestseller LogId 1093373830
+13748029	Error: Unknown Unknown To Bestseller LogId 1093373834
+13747882	Error: Unknown Unknown To Bestseller LogId 1093306788
+13747885	Error: Unknown Unknown To Bestseller LogId 1093307336
+13747908	Error: Unknown Unknown To Bestseller LogId 1093324995
+13747918	Error: Unknown Unknown To Bestseller LogId 1093325007
+13747919	Error: Unknown Unknown To Bestseller LogId 1093325430
+13747939	Error: Unknown Unknown To Bestseller LogId 1093337756
+13747932	Error: Unknown Unknown To Bestseller LogId 1093338196
+13747943	Error: Unknown Unknown To Bestseller LogId 1093339321
+13747938	Error: Unknown Unknown To Bestseller LogId 1093342807
+13747954	Error: Unknown Unknown To Bestseller LogId 1093344061
+13747958	Error: Unknown Unknown To Bestseller LogId 1093352628
+13747969	Error: Unknown Unknown To Bestseller LogId 1093353109
+13747962	Error: Unknown Unknown To Bestseller LogId 1093354972
+13747990	Error: Unknown Unknown To Bestseller LogId 1093359585
+13747996	Error: Unknown Unknown To Bestseller LogId 1093361287
+13748017	Error: Unknown Unknown To Bestseller LogId 1093373504
+13748018	Error: Unknown Unknown To Bestseller LogId 1093373819
+13748024	Error: Unknown Unknown To Bestseller LogId 1093373830
+13748029	Error: Unknown Unknown To Bestseller LogId 1093373834
+13748019	Error: Unknown Unknown To Bestseller LogId 1093374202
+13748023	Error: Unknown Unknown To Bestseller LogId 1093374203
+13748026	Error: Unknown Unknown To Bestseller LogId 1093377793
+13748027	Error: Unknown Unknown To Bestseller LogId 1093380447
+13748028	Error: Unknown Unknown To Bestseller LogId 1093380802
+13748030	Error: Unknown Unknown To Bestseller LogId 1093381611
+13748034	Error: Unknown Unknown To Bestseller LogId 1093381616
+13748035	Error: Unknown Unknown To Bestseller LogId 1093381617
+13748046	Error: Unknown Unknown To Bestseller LogId 1093388460
+13748049	Error: Unknown Unknown To Bestseller LogId 1093388464
+13748054	Error: Unknown Unknown To Bestseller LogId 1093393816
+13747885	Error: Unknown Unknown To Bestseller LogId 1093307336
+13747919	Error: Unknown Unknown To Bestseller LogId 1093325430
+13747938	Error: Unknown Unknown To Bestseller LogId 1093342807
+13748029	Error: Unknown Unknown To Bestseller LogId 1093373834
+13748019	Error: Unknown Unknown To Bestseller LogId 1093374202
+13748023	Error: Unknown Unknown To Bestseller LogId 1093374203
+13748026	Error: Unknown Unknown To Bestseller LogId 1093377793
+13748030	Error: Unknown Unknown To Bestseller LogId 1093381611
+13748034	Error: Unknown Unknown To Bestseller LogId 1093381616
+13748054	Error: Unknown Unknown To Bestseller LogId 1093393816
+13748056	Error: Unknown Unknown To Bestseller LogId 1093394041
+13748063	Error: Unknown Unknown To Bestseller LogId 1093401573
+13748080	Error: Unknown Unknown To Bestseller LogId 1093409384
+13748073	Error: Unknown Unknown To Bestseller LogId 1093409815
+13748067	Error: Unknown Unknown To Bestseller LogId 1093410081
+13748068	Error: Unknown Unknown To Bestseller LogId 1093412798
+13748077	Error: Unknown Unknown To Bestseller LogId 1093413724
+13748082	Error: Unknown Unknown To Bestseller LogId 1093413833
+13748115	Error: Unknown Unknown To Bestseller LogId 1093418615
+13748103	Error: Unknown Unknown To Bestseller LogId 1093420183
+13748099	Error: Unknown Unknown To Bestseller LogId 1093420518
+13748108	Error: Unknown Unknown To Bestseller LogId 1093424181
+13748106	Error: Unknown Unknown To Bestseller LogId 1093424182
+13748128	Error: Unknown Unknown To Bestseller LogId 1093428854
+13748135	Error: Unknown Unknown To Bestseller LogId 1093430785
+13748132	Error: Unknown Unknown To Bestseller LogId 1093431169
+13748130	Error: Unknown Unknown To Bestseller LogId 1093431217
+13748149	Error: Unknown Unknown To Bestseller LogId 1093436064
+13748153	Error: Unknown Unknown To Bestseller LogId 1093440053
+13748154	Error: Unknown Unknown To Bestseller LogId 1093440236
+13748034	Error: Unknown Unknown To Bestseller LogId 1093381616
+13748056	Error: Unknown Unknown To Bestseller LogId 1093394041
+13748067	Error: Unknown Unknown To Bestseller LogId 1093410081
+13748068	Error: Unknown Unknown To Bestseller LogId 1093412798
+13748082	Error: Unknown Unknown To Bestseller LogId 1093413833
+13748099	Error: Unknown Unknown To Bestseller LogId 1093420518
+13748106	Error: Unknown Unknown To Bestseller LogId 1093424182
+13748132	Error: Unknown Unknown To Bestseller LogId 1093431169
+13748130	Error: Unknown Unknown To Bestseller LogId 1093431217
+13748153	Error: Unknown Unknown To Bestseller LogId 1093440053
+13748154	Error: Unknown Unknown To Bestseller LogId 1093440236
+13748151	Error: Unknown Unknown To Bestseller LogId 1093440245
+13748145	Error: Unknown Unknown To Bestseller LogId 1093440271
+13748144	Error: Unknown Unknown To Bestseller LogId 1093440273
+13748157	Error: Unknown Unknown To Bestseller LogId 1093440554
+13748158	Error: Unknown Unknown To Bestseller LogId 1093440556
+13748146	Error: Unknown Unknown To Bestseller LogId 1093443532
+13748156	Error: Unknown Unknown To Bestseller LogId 1093443744
+13748148	Error: Unknown Unknown To Bestseller LogId 1093443749
+13748164	Error: Unknown Unknown To Bestseller LogId 1093448843
+13748172	Error: Unknown Unknown To Bestseller LogId 1093458639
+13748182	Error: Unknown Unknown To Bestseller LogId 1093460715
+13748191	Error: Unknown Unknown To Bestseller LogId 1093461357
+13748184	Error: Unknown Unknown To Bestseller LogId 1093461358
+13748190	Error: Unknown Unknown To Bestseller LogId 1093463444
+13748199	Error: Unknown Unknown To Bestseller LogId 1093467794
+13748192	Error: Unknown Unknown To Bestseller LogId 1093467855
+13748193	Error: Unknown Unknown To Bestseller LogId 1093468667
+13748209	Error: Unknown Unknown To Bestseller LogId 1093469176
+13748210	Error: Unknown Unknown To Bestseller LogId 1093471071
+13748151	Error: Unknown Unknown To Bestseller LogId 1093440245
+13748145	Error: Unknown Unknown To Bestseller LogId 1093440271
+13748157	Error: Unknown Unknown To Bestseller LogId 1093440554
+13748158	Error: Unknown Unknown To Bestseller LogId 1093440556
+13748146	Error: Unknown Unknown To Bestseller LogId 1093443532
+13748156	Error: Unknown Unknown To Bestseller LogId 1093443744
+13748172	Error: Unknown Unknown To Bestseller LogId 1093458639
+13748199	Error: Unknown Unknown To Bestseller LogId 1093467794
+13748215	Error: Unknown Unknown To Bestseller LogId 1093471306
+13748694	Error: Base Brands 860 To Base Brands CC LogId 1093635550
+13748710	Error: Base Brands 997 To Base Brands CC LogId 1093635652
+13748648	Error: Owens & Minor 850 To Nurse Assist, Inc. LogId 1093611255
+13748620	Error: Medline Unknown To Unknown LogId 1093606590
+13748631	Error: Medline Unknown To Unknown LogId 1093607789
+13748639	Error: Medline Unknown To Unknown LogId 1093614637
+13748645	Error: Medline Unknown To Unknown LogId 1093614642
+13748646	Error: Medline Unknown To Unknown LogId 1093614644
+13748647	Error: Medline Unknown To Unknown LogId 1093614652
+13748644	Error: Medline Unknown To Unknown LogId 1093615765
+13748653	Error: Medline Unknown To Unknown LogId 1093617613
+13748662	Error: Medline Unknown To Unknown LogId 1093619424
+13748659	Error: Medline Unknown To Unknown LogId 1093619682
+13748658	Error: Medline Unknown To Unknown LogId 1093619684
+13748661	Error: Medline Unknown To Unknown LogId 1093621828
+13748665	Error: Medline Unknown To Unknown LogId 1093623384
+13748653	Error: Medline Unknown To Unknown LogId 1093617613
+13748659	Error: Medline Unknown To Unknown LogId 1093619682
+13748665	Error: Medline Unknown To Unknown LogId 1093623384
+13748591	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093579105
+13748594	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093582542
+13748603	Error: Tractor Supply Drop Ship Unknown To Unknown LogId 1093591797
+13748633	Error: Unknown Unknown To Unknown LogId 1093610352
+13748641	Error: Unknown Unknown To Unknown LogId 1093614416
+13748678	Error: Unknown Unknown To Unknown LogId 1093626698
+13748698	Error: Unknown Unknown To Unknown LogId 1093632546
+13748699	Error: Unknown Unknown To Unknown LogId 1093632547
+13748724	Error: Unknown Unknown To Unknown LogId 1093640975
+13748723	Error: Unknown Unknown To Unknown LogId 1093640977
+13748737	Error: Unknown Unknown To Unknown LogId 1093646531
+13748741	Error: Unknown Unknown To Unknown LogId 1093646533
+13748765	Error: Unknown Unknown To Unknown LogId 1093653581
+13748764	Error: Unknown Unknown To Unknown LogId 1093653582
+13748599	Error: Walmart Unknown To Unknown LogId 1093587849
+13748607	Error: Walmart Unknown To Unknown LogId 1093595460
+13748608	Error: Walmart Unknown To Unknown LogId 1093595816
+13748606	Error: Walmart Unknown To Unknown LogId 1093596380
+13748617	Error: Walmart Unknown To Unknown LogId 1093596695
+13748627	TM File Processing Error. Sender ProfileId: 70093 FileName: Shamrock Foods~21719~44235~810~4~21080218583784.xedi
+13748597	TM File Processing Error. Sender ProfileId: 70093 FileName: Shamrock Foods~21719~44235~810~4~21080218583784.xedi
+13748668	Error: Digi-Key Corporation Unknown To Unknown LogId 1093624731
+13748686	Error: Digi-Key Corporation Unknown To Unknown LogId 1093629158
+13748687	Error: Digi-Key Corporation Unknown To Unknown LogId 1093629647
+13748803	Error: Base Brands 940 To Base Brands CC LogId 1093661261
+13748799	Error: Base Brands 997 To Base Brands CC LogId 1093661428
+13748802	Error: Unknown Unknown To Unknown LogId 1093661265
+13748801	Error: Unknown Unknown To Unknown LogId 1093661267

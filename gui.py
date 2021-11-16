@@ -184,6 +184,8 @@ class Application(tk.Frame):
         take_thread.start()
 
     def do_resend(self):
+        robot = CleanAllCase()
+        robot.resend_all_case()
         self.write_log_to_text("Resent all the transactions in list successfully !")
 
     def add_cloudftp(self):

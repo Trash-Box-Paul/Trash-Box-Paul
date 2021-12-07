@@ -18,12 +18,14 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from debug_browser import DebugBrowser
 import testraw
+from pynput.keyboard import Key, Controller
 
 
 class CleanAllCase:
 
     def __init__(self):
         # Step # | name | target | value
+        self.keyboard = Controller()
         self.driver = None
         self.driver_setup()
         #  Use selenium manager to check the version of chrome and selenium
@@ -34,12 +36,16 @@ class CleanAllCase:
             win32api.MessageBox(0, "Please login first and try again. :)", "Please Login",
                                 win32con.MB_OK)
             sys.exit(0)
+        self.root = self.driver.current_window_handle
 
     def driver_setup(self):
+        print("22222222222222")
         chrome_driver = webdrivermanager.ChromeDriverManager()
         try:
+            print("1111111111111111")
             self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
                                            options=DebugBrowser().debug_chrome())
+            print("????????????????")
         except:
             chrome_driver.download_and_install(chrome_driver.get_latest_version())
             time.sleep(3)
@@ -78,7 +84,7 @@ class CleanAllCase:
         refresh_icon = "//div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/span[3]"
         element = self.wait(refresh_icon)
         self.show1(element)
-        element.click()
+        self.driver.execute_script('arguments[0].click()', element)
         # 3 | move mouse and click | Refresh Icon | hover element
 
     def refresh_list_down(self):
@@ -87,11 +93,9 @@ class CleanAllCase:
         title_list = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[2]/div[1]/h2"
         refresh_icon = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[2]/div[1]/div/span[3]"
         ele = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[2]/div[1]/div")
-        self.show(ele)
-        ele_temp = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div")
-        self.show(ele_temp)
-        element = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div/ul")
-        self.show(element)
+        self.show1(ele)
+        element = self.wait(refresh_icon)
+        self.show1(element)
         element = self.wait(title_list)
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
@@ -99,7 +103,7 @@ class CleanAllCase:
         element = self.wait(refresh_icon)
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
-        element.click()
+        self.driver.execute_script('arguments[0].click()', element)
         # 3 | move mouse and click | Refresh Icon | hover element
         element = self.wait(title_list)
         self.driver.execute_script("arguments[0].scrollIntoView(true)", element)
@@ -107,9 +111,9 @@ class CleanAllCase:
     def clean_all_case(self):
         # Step # | name | target | value
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[4]/li[2]/a/span"
-        filename = "./OA_log/"+datetime.now().strftime("%b_%d_%Y") + "_clean_list_log.txt"
+        filename = "./OA_log/" + datetime.now().strftime("%b_%d_%Y") + "_clean_list_log.txt"
         file1 = open(filename, "a+")
-        self.wait(tab_case).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(tab_case))
         # 1 | click | case tab |
         number_sum = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[2]/table[" \
                      "2]/tbody/tr/td/table/tbody/tr/td/a"
@@ -158,36 +162,44 @@ class CleanAllCase:
             # 2 | count | case number in one page |
             first_row_xpath = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
                               "2]/div/div/div/div/table/tbody/tr[1]/td[8]/span "
-            "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/table/tbody/tr[1]/td[8]/span"
+
             last_row_xpath = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
-                             "2]/div/div/div/div/table/tbody/tr[" + str(target) + "]/td[8]/span"
+                             "2]/div/div/div/div/table/tbody/tr[" + str(target) + "]/td[8]"
             # print(last_row_xpath)
             input_box = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
-                        "2]/div/div/div/div/table/tbody/tr[1]/td[8]/span/div/span/div[1]/input"
+                        "2]/div/div/div/div/table/tbody/tr[" + str(target) + "]/td[8]/span/div/span/div[1]/input "
             select_close = "/html/body/div[7]/div/div/div[15]"
             # 3 | click | first row |
-            ele = self.wait(first_row_xpath)
-            action_chains = ActionChains(self.driver)
-            action_chains.move_to_element(ele).click(ele).perform()
-            time.sleep(1)
-            self.wait(input_box).send_keys("Closed")
-            time.sleep(1)
-            self.wait(input_box).click()
-            # 4 | shift + last line
+            self.current = self.driver.current_window_handle
             ele = self.wait(last_row_xpath)
-            action_chains = ActionChains(self.driver)
-            action_chains.key_down(Keys.SHIFT).click(ele).key_up(Keys.SHIFT).perform()
+            self.driver.execute_script('arguments[0].click()', ele)
+            time.sleep(1)
+            ele = self.wait(input_box)
+            self.driver.execute_script('arguments[0].click()', ele)
+            ele.send_keys("Closed")
+            self.driver.switch_to.window(self.current)
+            time.sleep(1)
+            # 4 | shift + last line
+            ele = self.wait(first_row_xpath)
+            if last_row_xpath != first_row_xpath:
+                self.driver.execute_script("arguments[0].scrollIntoView(true)", ele)
+                self.driver.execute_script('scrollBy(0,-100)')
+                actions = ActionChains(self.driver)
+                actions.key_down(Keys.SHIFT).click(ele).move_to_element(ele).perform()
+            # self.keyboard.press(Key.shift)
+            # self.driver.execute_script('arguments[0].click()', ele)
+            time.sleep(1)
             # 5 | click | id=uir_totalcount |
             js_top = "var q=document.documentElement.scrollTop=0"
             self.driver.execute_script(js_top)
-            self.driver.find_element(By.ID, "uir_totalcount").click()
+            self.driver.execute_script('arguments[0].click()', self.driver.find_element(By.ID, "uir_totalcount"))
             # 6 |  refresh the list
             self.refresh_list()
             time.sleep(2)
             self.refresh_list()
             time.sleep(2)
             self.refresh_list()
-            self.driver.find_element(By.XPATH, tab_case).click()
+            self.driver.execute_script('arguments[0].click()', self.driver.find_element(By.XPATH, tab_case))
             ele = self.wait(number_sum)
             html = ele.get_attribute('innerHTML')
             case_sum = int(html)
@@ -196,53 +208,52 @@ class CleanAllCase:
         # 7 |  update the case number
 
     def open_new_window(self):
+        self.driver.switch_to.window(self.root)
         self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
-        self.cur_handle = self.driver.current_window_handle  # get current handle
         cmd = 'window.open ("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=", "newwindow", ' \
               '"height=1080, width=960, top=0, left=960, toolbar=no, menubar=no, scrollbars=no, resizable=no,' \
               'location=no, status=no")'
         self.driver.execute_script(cmd)
-        time.sleep(1)
+        time.sleep(2)
         all_handle = self.driver.window_handles  # get all handles
         target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
         self.driver.switch_to.window(all_handle[-1])  # Switch to the new pop-up window
 
     def display_script_window(self):
-        self.driver.set_window_size(1920,1080)
-        self.driver.set_window_position(0,0)
+        self.driver.set_window_size(1920, 1080)
+        self.driver.set_window_position(0, 0)
 
     def hide_script_window(self):
-        self.driver.set_window_size(1920,1080)
-        self.driver.set_window_position(-1920,0)
+        self.driver.set_window_size(1920, 1080)
+        self.driver.set_window_position(-1920, 0)
 
     def close_script_window(self):
         self.driver.close()
-        self.driver.switch_to.window(self.cur_handle)
+        self.driver.switch_to.window(self.root)
 
     def change_criteria(self, search_type, key_word):
         js_top = "var q=document.documentElement.scrollTop=0"
         self.driver.execute_script(js_top)
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[4]/li[2]/a/span"
-        self.wait(tab_case).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(tab_case))
         title = "//div[2]/div/div/h2"
         self.wait(title)
         title = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/h2"
         element = self.wait(title)
         while element.get_attribute("innerHTML") is None:
             element = self.driver.find_element(By.XPATH, title)
-        # actions = ActionChains(self.driver)
-        # actions.move_to_element(element).perform()
         # 2 | mouseMoveAt | Configure Icon | hover element
-        ele1 = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[2]/table[1]")
+        self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[2]/table[1]")
         # self.hide(ele1)
-        ele2 = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[2]/table[2]")
+        ele2 = self.wait(
+            "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[2]/table[2]")
         self.hide(ele2)
         ele_temp = self.driver.find_element(By.XPATH,
                                             "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div")
         self.show(ele_temp)
-        element = self.driver.find_element(By.XPATH,
-                                           "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div/ul")
-        self.show(element)
+        ele = self.driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div["
+                                                 "1]/div/div/ul")
+        self.show(ele)
         ele = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div/ul/li[3]")
         self.show(ele)
         element = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div/ul/li[3]/a")
@@ -261,19 +272,21 @@ class CleanAllCase:
             # print(3)
         # 3 | mouseMoveAt and click | Edit Icon | hover element
         # please ch time.sleep(1)
-        self.wait("/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a").click()
-        criteria_subject = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[" \
-                           "2]/td/div/div[8]/div/form/div[6]/table/tbody/tr[4]/td[1]"
-        self.wait(criteria_subject).click()
+        self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div[2]/div[3]/table["
+                                                                     "1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a"))
+        criteria_subject = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a"
+        self.driver.execute_script(self.wait(criteria_subject).get_attribute("onclick"))
         # actions = ActionChains(self.driver)
         # actions.move_to_element(criteria_subject).perform()
+        first_line = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[" \
+                     "2]/td/div/div[8]/div/form/div[6]/table/tbody/tr[4]/td[1] "
+        ele = self.wait(first_line)
+        self.driver.execute_script('arguments[0].click()', ele)
         arrow = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[2]/td/div/div[" \
                 "8]/div/form/div[6]/table/tbody/tr[4]/td[1]/div/div/span/span[2]/a"
         element = self.wait(arrow)
         self.show(element)
-        actions = ActionChains(self.driver)
-        actions.move_to_element(element).perform()
-        element.click()
+        self.driver.execute_script('arguments[0].click()', element)
 
         iframe = "/html/body/div[9]/div[2]/div[1]/div/div/iframe"
         current_handle = self.driver.current_window_handle
@@ -285,21 +298,22 @@ class CleanAllCase:
         textbox_1_1 = "/html/body/div[1]/div/div[4]/form/table/tbody/tr[" \
                       "2]/td/table/tbody/tr/td/table/tbody/tr/td/div[1]/span[2]/span/div[1]/input "
         textbox_2 = "Case_TITLE"
-        self.wait(textbox_1).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(textbox_1))
         self.wait(textbox_1_1).send_keys(search_type)
         # 3 | Input | Search Type
-        self.driver.find_element(By.NAME, textbox_2).click()
+        self.driver.execute_script('arguments[0].click()', self.driver.find_element(By.NAME, textbox_2))
         self.driver.find_element(By.NAME, textbox_2).send_keys(Keys.CONTROL + "a")
         self.driver.find_element(By.NAME, textbox_2).send_keys(key_word)
         # 4 | Input | Search Key Words
-        element = "/html/body/div[1]/div/div[4]/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[" \
-                  "1]/table/tbody/tr/td[2]/input"
-        self.wait(element).click()
+        element = self.wait("/html/body/div[1]/div/div[4]/form/table/tbody/tr["
+                            "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input")
+        self.driver.execute_script('arguments[0].click()', element)
         # 5 | Click | Edit
         self.driver.switch_to.parent_frame()
         template = "/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[" \
                    "1]/table/tbody/tr/td[2]/input "
-        self.wait(template).click()
+        element = self.wait(template)
+        self.driver.execute_script('arguments[0].click()', element)
         # 6 | Click | Save
 
     def take_task(self):
@@ -308,7 +322,7 @@ class CleanAllCase:
         # self.driver.find_element(By.XPATH, tab_home).click()
         target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=#"
         self.driver.get(target_url)
-        self.wait(tab_home).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(tab_home))
         self.refresh_list_down()
         # 1 | click | case tab |
         number_sum = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[2]/div[2]/div/div/form/div[" \
@@ -337,7 +351,7 @@ class CleanAllCase:
                     # win32api.MessageBox(0, "No more case in queue. :)", "Cleaning Done", win32con.MB_OK)
                     # sys.exit(0)
                 first_pencil = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[2]/div[" \
-                               "2]/div/div/div/div/table/tbody/tr[1]/td[2]/a[1]"
+                               "2]/div/div/div/div/table/tbody/tr[1]/td[2]/a[1] "
                 input_name = "/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr[2]/td/table/tbody/tr[" \
                              "1]/td/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/div/span[2]/span/div[1]/input"
                 my_name = "/html/body/div[8]/div/div/table/tbody/tr/td"
@@ -348,24 +362,18 @@ class CleanAllCase:
                 self.driver.execute_script("arguments[0].scrollIntoView(true)", element)
                 # print(last_row_xpath)
                 # 3 | click | first row |
-                try:
-                    WebDriverWait(self.driver, 10).until(
-                        EC.presence_of_element_located((By.XPATH, first_pencil))
-                    )
-                finally:
-                    time.sleep(3)
-                    element = self.driver.find_element(By.XPATH, first_pencil)
-                    element.click()
+                self.driver.get(self.wait(first_pencil).get_attribute("href"))
                 self.wait(input_name).send_keys(Keys.CONTROL + "a")
                 self.driver.find_element(By.XPATH, input_name).send_keys("Paul Wu")
                 time.sleep(3)
                 self.driver.find_element(By.XPATH, input_name).send_keys(Keys.ENTER)
                 time.sleep(2)
                 # 4 | shift + last line
-                self.wait(save_icon).click()
+                self.driver.execute_script(self.wait(save_icon).get_attribute('onclick'))
+                self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
                 time.sleep(1)
                 self.refresh_list_down()
-                self.wait(tab_home).click()
+                self.driver.execute_script('arguments[0].click()', self.wait(tab_home))
                 ele = self.wait(number_sum)
                 self.driver.execute_script("arguments[0].scrollIntoView(true)", ele)
                 html = ele.get_attribute('innerHTML')
@@ -376,19 +384,13 @@ class CleanAllCase:
         filename = datetime.now().strftime("%b_%d_%Y") + "_resend_log.txt"
         file1 = open(filename, "a+")
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[4]/li[2]/a/span"
-        self.wait(tab_case).click()
-        self.wait(tab_case).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(tab_case))
+        self.driver.execute_script('arguments[0].click()', self.wait(tab_case))
         # 1 | click | case tab |
         number_sum = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[2]/table[" \
                      "2]/tbody/tr/td/table/tbody/tr/td/a "
         # first_table = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/table"
-        try:
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, number_sum))
-            )
-        finally:
-            time.sleep(1)
-            ele = self.driver.find_element(By.XPATH, number_sum)
+        ele = self.wait(number_sum)
         html = ele.get_attribute('innerHTML')
         case_sum = int(html)
         # 2 | read | case number |
@@ -425,23 +427,19 @@ class CleanAllCase:
                 select_close = "/html/body/div[7]/div/div/div[15]"
                 tr_group = table_body.find_all('tr')
                 log_group = []
-                self.wait(first_row_xpath).click()
-                try:
-                    WebDriverWait(self.driver, 10).until(
-                        EC.presence_of_element_located((By.XPATH, input_box))
-                    )
-                finally:
-                    self.driver.find_element(By.XPATH, input_box).send_keys("Closed")
-                    time.sleep(1)
-                    self.driver.find_element(By.XPATH, input_box).click()
+                self.driver.execute_script('arguments[0].click()', self.wait(first_row_xpath))
+                self.wait(input_box).send_keys("Closed" + Keys.ENTER)
+                time.sleep(1)
+                # self.driver.execute_script('arguments[0].click()',self.wait("/html/body/div[7]/div/div/div[15]"))
+                # self.wait("/html/body/div[7]/div/div/div[15]").click()
+                # time.sleep(2)
                 # 4 | shift + last line
-                ele = self.driver.find_element(By.XPATH, last_row_xpath)
                 action_chains = ActionChains(self.driver)
-                action_chains.key_down(Keys.SHIFT).click(ele).key_up(Keys.SHIFT).perform()
+                action_chains.key_down(Keys.SHIFT).move_to_element(ele).click(ele).key_up(Keys.SHIFT).perform()
                 # 5 | click | id=uir_totalcount |
                 js_top = "var q=document.documentElement.scrollTop=0"
                 self.driver.execute_script(js_top)
-                self.driver.find_element(By.ID, "uir_totalcount").click()
+                self.driver.execute_script('arguments[0].click()',self.driver.find_element(By.ID, "uir_totalcount"))
                 # 6 |  refresh the list
                 for tr in tr_group:
                     if not ("text" in tr['class']):
@@ -457,7 +455,7 @@ class CleanAllCase:
                 resend_worker.psd_resend(log_group)
                 resend_worker.teardown_method()
                 self.refresh_list()
-                self.driver.find_element(By.XPATH, tab_case).click()
+                self.driver.execute_script('arguments[0].click()', self.wait(tab_case))
                 self.refresh_list()
                 ele = self.wait(number_sum)
                 html = ele.get_attribute('innerHTML')
@@ -472,7 +470,8 @@ class CleanAllCase:
 
         ele = self.wait(search_input)
         ele.send_keys(profile_name)
-        self.wait("/html/body/form/table/tbody/tr[2]/td[2]/div/table/tbody/tr/td[3]/input").click()
+        self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr[2]/td["
+                                                                     "2]/div/table/tbody/tr/td[3]/input"))
         notes_input = "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[3]/td/table/tbody/tr[2]/td/div[1]/div[" \
                       "2]/div/table/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/textarea "
         try:
@@ -498,9 +497,10 @@ class CleanAllCase:
             password = var[0] + profile_id + "!"
             print(password)
             ele.send_keys("P: " + password)
-            self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
-                                               "3]/td/table/tbody/tr[2]/td/div[1]/div[2]/div/table/tbody/tr["
-                                               "3]/td/input").click()
+            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr["
+                                                                         "3]/td/div/table/tbody/tr["
+                                                                         "3]/td/table/tbody/tr[2]/td/div[1]/div["
+                                                                         "2]/div/table/tbody/tr[3]/td/input"))
 
             profile_manage = "/html/body/form/table/tbody/tr[2]/td[1]/table/tbody/tr/td/table/tbody/tr/td[" \
                              "4]/table/tbody/tr/td[1]/a "
@@ -517,16 +517,16 @@ class CleanAllCase:
             actions.click(ele).perform()
             ele = self.wait(setup_inbox)
             ele.send_keys(profile_name)
-            self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[2]/td["
-                                               "1]/input[2]").click()
+            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr["
+                                                                         "3]/td/div/table/tbody/tr[2]/td[1]/input[2]"))
             self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
                                                "1]/div/table/tbody/tr[3]/td[2]/input").send_keys(username)
             self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
                                                "1]/div/table/tbody/tr[4]/td[2]/input").send_keys(password)
-            self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
-                                               "1]/div/table/tbody/tr[5]/td/input[2]").click()
-            self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
-                                               "1]/div/table/tbody/tr[6]/td/input").click()
+            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr[3]/td/div/div["
+                                                                         "1]/div/table/tbody/tr[5]/td/input[2]"))
+            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr[3]/td/div/div["
+                                                                         "1]/div/table/tbody/tr[6]/td/input"))
 
     def wait(self, xpath):
         try:

@@ -19,11 +19,15 @@ from debug_browser import DebugBrowser
 class TakeTasks:
 
     def __init__(self):
+        self.driver = None
         self.driver_setup()
         self.spread_sheet_read = openpyxl.load_workbook('Latest_Spread_Sheet.xlsm', data_only=True)
         self.spread_sheet_write = openpyxl.load_workbook('Latest_Spread_Sheet.xlsm', data_only=False)
+        self.status_sheet_read = self.spread_sheet_read.get_sheet_by_name('general')
         self.in_progress_sheet_read = self.spread_sheet_read.get_sheet_by_name('in progress')
+        self.pend_sheet_read = self.spread_sheet_read.get_sheet_by_name('pending')
         self.in_progress_sheet_write = self.spread_sheet_write.get_sheet_by_name('in progress')
+        self.pend_sheet_write = self.spread_sheet_write.get_sheet_by_name('pending')
         # ------------------------------------------------------------------------------------------------------
         self.info_collect_list_read = openpyxl.load_workbook('pytest.xlsx', data_only=True)
         self.info_collect_list_write = openpyxl.load_workbook('pytest.xlsx', data_only=False)
@@ -34,16 +38,13 @@ class TakeTasks:
         self.count = 0
 
     def driver_setup(self):
+        print("22222222222222")
         chrome_driver = webdrivermanager.ChromeDriverManager()
-        chrome_driver_test = r'.\drivers\chromedriver.exe'
-        # chrome_options = Options()
-        # chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
-        # self.driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
         try:
-            # self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
-            # options=DebugBrowser().debug_chrome())
+            print("1111111111111111")
             self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
                                            options=DebugBrowser().debug_chrome())
+            print("????????????????")
         except:
             chrome_driver.download_and_install(chrome_driver.get_latest_version())
             time.sleep(3)
@@ -53,24 +54,23 @@ class TakeTasks:
                                            options=DebugBrowser().debug_chrome())
 
     def grab_task_name_ID(self):
-        all_handle = self.driver.window_handles  # get all handles
+        # all_handle = self.driver.window_handles  # get all handles
         target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
-        self.driver.switch_to.window(all_handle[-1])  # Switch to the new pop-up window
-        # 2 | open | /app/center/card.nl?sc=-29&whence= |\
-        # time.sleep(2)
+        # self.driver.switch_to.window(all_handle[-1])  # Switch to the new pop-up window
+        # # 2 | open | /app/center/card.nl?sc=-29&whence= |\
+        # # time.sleep(2)
         self.driver.get(target_url)
-        if not ("https://907826.app.netsuite.com/app/center/" in self.driver.current_url):
-            win32api.MessageBox(0, "Please login first and try again. :)", "Please Login",
-                                win32con.MB_OK)
-            return 'Mission Failed'
-        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
-                        "2]/div/div/div/div"
-
+        # if not ("https://907826.app.netsuite.com/app/center/" in self.driver.current_url):
+        #     win32api.MessageBox(0, "Please login first and try again. :)", "Please Login",
+        #                         win32con.MB_OK)
+        #     return 'Mission Failed'
+        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div"
         number_sum = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[" \
                      "2]/table/tbody/tr/td/table/tbody/tr/td/a "
         ele = self.wait(number_sum)
         html = ele.get_attribute('innerHTML')
         case_sum = int(html)
+        time.sleep(1)
         ele = self.wait(table_content)
         html = ele.get_attribute('innerHTML')
         soup = BeautifulSoup(html, 'html5lib')
@@ -81,48 +81,91 @@ class TakeTasks:
         target = int(len(tr_group) - 1)  # number of tr
         task_name = []
         task_id = []
+        task_customer = []
         print(target)
         for tr in tr_group:
             if not ("text" in tr['class']):
                 td_group = tr.find_all('td')
                 task_name.append(td_group[2].text)
-                task_id.append(str(td_group[1].find['a'].href).split('=')[1])
+                task_id.append(str(td_group[1].find_all('a')[1]['href']).split('=')[1])
+                task_customer.append(td_group[8].find('a').text)
+                # .get_attribute("href").split('=')[1]
         print(task_id)
         print(task_name)
-        # for num in range(0, case_sum):
-        #     for excel_num in range(0, case_sum):
-        #         if str.strip(self.in_progress_sheet_read['A' + str(excel_num + 2)].value) == str.strip(task_name[num]):
-        #             if self.in_progress_sheet_read['E' + str(excel_num + 2)].value is not None:
-        #                 self.edit_note(num + 1, self.in_progress_sheet_read['E' + str(excel_num + 2)].value)
-        #             break
-
+        print(task_customer)
+        for num in range(0, case_sum):
+            self.pend_sheet_write['A' + str(num + 2)] = task_name[num].strip()
+            self.pend_sheet_write['B' + str(num + 2)] = task_id[num].strip()
+            self.pend_sheet_write['C' + str(num + 2)] = task_customer[num].split('[')[0].strip()
+        self.spread_sheet_write.save('Latest_Spread_Sheet(after).xlsx')
 
     def edit_note(self, task_num, new_note):
         edit_icon = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/table/tbody/tr["
         edit_icon_ex = "]/td[2]/a[1]"
-        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
-                        "2]/div/div/div/div"
+        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div"
+        time.sleep(2)
         ele = self.wait(edit_icon + str(task_num) + edit_icon_ex)
         self.driver.get(ele.get_attribute("href"))
         text_box = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[" \
-                   "1]/div/div/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/span[2]/span/textarea "
+                   "1]/div/div/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/span[2]/span/textarea"
         # time.sleep(1)
         ele = self.wait(text_box)
-        if ele.text is not None and ele.text == new_note:
+        current_handle = self.driver.current_window_handle
+        if ele.text is not None and ele.text.strip() == new_note.strip():
             self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
         else:
-            ele.click()
+            self.driver.execute_script('arguments[0].click()', ele)
             ele.send_keys(Keys.CONTROL + 'a')
             ele.send_keys(new_note)
+            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div[2]/div["
+                                                                         "3]/form/table/tbody/tr["
+                                                                         "2]/td/table/tbody/tr[4]/td[ "
+                                                                         "2]/table/tbody/tr[8]/td/div/span["
+                                                                         "2]/span/input"))
             # print(new_note)
             # time.sleep(10)
-            ele = self.driver.find_element(By.XPATH,
-                                           "/html/body/div[1]/div[2]/div[3]/table[2]/tbody/tr/td/table/tbody/tr/td["
-                                           "1]/table/tbody/tr/td[2]/input")
-            ele.click()
-            time.sleep(1)
+            ele = self.wait("/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr["
+                            "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input")
+            while "&e=T" in self.driver.current_url:
+                try:
+                    self.driver.execute_script(ele.get_attribute('onclick'))
+                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+                except:
+                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+
+    def grab_note(self, task_num, new_note):
+        edit_icon = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/table/tbody/tr["
+        edit_icon_ex = "]/td[2]/a[1]"
+        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div"
+        time.sleep(2)
+        ele = self.wait(edit_icon + str(task_num) + edit_icon_ex)
+        self.driver.get(ele.get_attribute("href"))
+        text_box = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[" \
+                   "1]/div/div/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/span[2]/span/textarea"
+        # time.sleep(1)
+        ele = self.wait(text_box)
+        current_handle = self.driver.current_window_handle
+        if ele.text is not None and ele.text.strip() == new_note.strip():
             self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
-        ele = self.wait(table_content)
+        else:
+            self.driver.execute_script('arguments[0].click()', ele)
+            ele.send_keys(Keys.CONTROL + 'a')
+            ele.send_keys(new_note)
+            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div[2]/div["
+                                                                         "3]/form/table/tbody/tr["
+                                                                         "2]/td/table/tbody/tr[4]/td[ "
+                                                                         "2]/table/tbody/tr[8]/td/div/span["
+                                                                         "2]/span/input"))
+            # print(new_note)
+            # time.sleep(10)
+            ele = self.wait("/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr["
+                            "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input")
+            while "&e=T" in self.driver.current_url:
+                try:
+                    self.driver.execute_script(ele.get_attribute('onclick'))
+                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+                except:
+                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
 
     def update_all_notes(self):
         cur_handle = self.driver.current_window_handle  # get current handle
@@ -138,12 +181,12 @@ class TakeTasks:
             return 'Mission Failed'
         table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
                         "2]/div/div/div/div"
-
         number_sum = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/form/div[" \
                      "2]/table/tbody/tr/td/table/tbody/tr/td/a "
         ele = self.wait(number_sum)
         html = ele.get_attribute('innerHTML')
         case_sum = int(html)
+        excel_sum = int(self.status_sheet_read['B1'].value) - 1
         ele = self.wait(table_content)
         html = ele.get_attribute('innerHTML')
         soup = BeautifulSoup(html, 'html5lib')
@@ -160,11 +203,11 @@ class TakeTasks:
                 task_name.append(td_group[2].text)
         print(task_name)
         for num in range(0, case_sum):
-            for excel_num in range(0, case_sum):
+            for excel_num in range(0, excel_sum):
                 if str.strip(self.in_progress_sheet_read['A' + str(excel_num + 2)].value) == str.strip(task_name[num]):
                     if self.in_progress_sheet_read['E' + str(excel_num + 2)].value is not None:
                         self.edit_note(num + 1, self.in_progress_sheet_read['E' + str(excel_num + 2)].value)
-                    break
+                        break
 
     def grab_pend_task(self):
         target_url = "https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence="
@@ -187,7 +230,7 @@ class TakeTasks:
         js_top = "var q=document.documentElement.scrollTop=0"
         self.driver.execute_script(js_top)
         tab_case = "/html/body/div[1]/div[1]/div[2]/ul[3]/li/a"
-        self.wait(tab_case).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(tab_case))
         title = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/h2"
         element = self.wait(title)
         actions = ActionChains(self.driver)
@@ -197,7 +240,7 @@ class TakeTasks:
         element = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div")
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
-        element.click()
+        self.driver.execute_script('arguments[0].click()', element.click)
         # 2 | mouseMoveAt | Configure Icon | hover element
         element = self.wait("/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[1]/div/div/ul/li[3]/a")
         while element.get_attribute("innerHTML") is None:
@@ -208,12 +251,13 @@ class TakeTasks:
                                                          "1]/div[1]/div/div/ul/li[3]/a")
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
-        element.click()
+        self.driver.execute_script('arguments[0].click()', element)
         # 3 | mouseMoveAt and click | Edit Icon | hover element
-        self.wait("/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a").click()
+        self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div[2]/div[3]/table["
+                                                                     "1]/tbody/tr[1]/td/table/tbody/tr/td[2]/a"))
         criteria_subject = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[" \
                            "2]/td/div/div[8]/div/form/div[6]/table/tbody/tr[4]/td[1] "
-        self.wait(criteria_subject).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(criteria_subject))
         # actions = ActionChains(self.driver)
         # actions.move_to_element(criteria_subject).perform()
         arrow = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr[2]/td/div/div[" \
@@ -222,8 +266,7 @@ class TakeTasks:
         element = self.wait(arrow)
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
-        element.click()
-
+        self.driver.execute_script('arguments[0].click()', element)
         iframe = "/html/body/div[9]/div[2]/div[1]/div/div/iframe"
         element = self.wait(iframe)
         self.driver.switch_to.frame(element)
@@ -232,19 +275,18 @@ class TakeTasks:
         progress_line = "/html/body/div[1]/div/div[4]/form/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[" \
                         "2]/td/div/span[2]/span/div[2]/table/tbody/tr[3]/td/a "
         if status == "pending":
-            self.wait(pending_line).click()
+            self.driver.execute_script('arguments[0].click()', self.wait(pending_line))
             # 4 | Input | Search Key Words
-
         else:
-            self.wait(progress_line).click()
+            self.driver.execute_script('arguments[0].click()', self.wait(progress_line))
         # 4 | Input | Search Key Words
         temp_element = "/html/body/div[1]/div/div[4]/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[" \
                        "1]/table/tbody/tr/td[2]/input"
-        self.wait(temp_element).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(temp_element))
         # 5 | Click | Set
         temp_element = "/html/body/div[1]/div[2]/div[3]/table[2]/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[" \
                        "2]/input "
-        self.wait(temp_element).click()
+        self.driver.execute_script('arguments[0].click()', self.wait(temp_element))
         # 6 | Click | Save
 
     def cloud_ftp(self, profile_name):
@@ -257,7 +299,6 @@ class TakeTasks:
                 break
         self.driver.get(target_url)
         search_input = "/html/body/form/table/tbody/tr[2]/td[2]/div/table/tbody/tr/td[2]/input"
-
         ele = self.wait(search_input)
         ele.send_keys(profile_name)
         self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[2]"
@@ -265,12 +306,11 @@ class TakeTasks:
 
         psd_title = "/html/body/form/table/tbody/tr[3]/td/div/div[1]/div/div[1]"
         if "ProfileDetails" not in self.driver.current_url:
-            ele = self.wait("/html/body/form/table/tbody/tr[3]/td/div/div["
-                            "2]/div/div/div/div/table/tbody/tr[2]/td[2]/a")
+            ele = self.wait("/html/body/form/table/tbody/tr[3]/td/div/div[2]/div/div/div/div/table/tbody/tr[2]/td[2]/a")
             time.sleep(2)
-            ele.click()
+            self.driver.execute_script('arguments[0].click()', ele)
         notes_input = "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[3]/td/table/tbody/tr[2]/td/div[" \
-                      "1]/div[2]/div/table/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/textarea "
+                      "1]/div[2]/div/table/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/textarea"
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, notes_input))
@@ -294,12 +334,13 @@ class TakeTasks:
             password = var[0] + var[1] + profile_id + "!"
             print(password)
             ele.send_keys("P: " + password)
-            self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr["
-                                               "3]/td/table/tbody/tr[2]/td/div[1]/div[2]/div/table/tbody/tr["
-                                               "3]/td/input").click()
+            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr["
+                                                                         "3]/td/div/table/tbody/tr["
+                                                                         "3]/td/table/tbody/tr[2]/td/div[1]/div["
+                                                                         "2]/div/table/tbody/tr[3]/td/input"))
             time.sleep(2)
             profile_manage = "/html/body/form/table/tbody/tr[2]/td[1]/table/tbody/tr/td/table/tbody/tr/td[" \
-                             "4]/table/tbody/tr/td[1]/a "
+                             "4]/table/tbody/tr/td[1]/a"
             ftp_setup = "/html/body/form/table/tbody/tr[2]/td[1]/table/tbody/tr/td/div[4]/table/tbody/tr[" \
                         "6]/td/table/tbody/tr/td "
             setup_inbox = "/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[2]/td[1]/input[1]"
@@ -318,26 +359,28 @@ class TakeTasks:
             finally:
                 ele = self.driver.find_element(By.XPATH, setup_inbox)
                 ele.send_keys(profile_name)
-                self.wait("/html/body/form/table/tbody/tr[3]/td/div/table/tbody/tr[2]/td["
-                          "1]/input[2]").click()
+                self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr["
+                                                                             "3]/td/div/table/tbody/tr[2]/td[ "
+                                                                             "1]/input[2]"))
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
                                                    "1]/div/table/tbody/tr[3]/td[2]/input").send_keys(username)
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
                                                    "1]/div/table/tbody/tr[4]/td[2]/input").send_keys(password)
-                self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
-                                                   "1]/div/table/tbody/tr[5]/td/input[2]").click()
-                self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr[3]/td/div/div["
-                                                   "1]/div/table/tbody/tr[6]/td/input").click()
+                self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr["
+                                                                             "3]/td/div/div[1]/div/table/tbody/tr["
+                                                                             "5]/td/input[2]"))
+                self.driver.execute_script('arguments[0].click()', self.wait("/html/body/form/table/tbody/tr["
+                                                                             "3]/td/div/div[1]/div/table/tbody/tr["
+                                                                             "6]/td/input"))
                 time.sleep(2)
 
     def set_all_cloud(self):
         for item in list(self.cloudsheet.columns)[0]:
             self.cloud_ftp(str(item.value))
 
-    def send_initial_emails(self,email,tp_name):
+    def send_initial_emails(self, email, tp_name):
         self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
-        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
-                        "2]/div/div/div/div"
+        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div"
         ele = self.wait(table_content)
         html = ele.get_attribute('innerHTML')
         soup = BeautifulSoup(html, 'html5lib')
@@ -349,12 +392,12 @@ class TakeTasks:
             print(tr.find_all('td')[2].text)
             if tp_name in tr.find_all('td')[2].text:
                 project_path = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[" \
-                               "2]/div/div/div/div/table/tbody/tr["+str(count)+"]/td[7]/a"
+                               "2]/div/div/div/div/table/tbody/tr[" + str(count) + "]/td[7]/a"
                 ele = self.wait(project_path)
                 cust_name = ele.text.split('[')[0]
                 self.driver.get(ele.get_property('href'))
-                self.wait_id("custom100txt").click()
-                self.wait_id("newmessage").click()
+                self.driver.execute_script('arguments[0].click()', self.wait_id("custom100txt"))
+                self.driver.execute_script('arguments[0].click()', self.wait_id("newmessage"))
                 # time.sleep(10)
                 all_handle = self.driver.window_handles  # get all handle
                 for h in all_handle:
@@ -364,38 +407,43 @@ class TakeTasks:
                 print(email[0])
                 current_handle = self.driver.current_window_handle
                 self.wait_id("recipientemail").send_keys(email[0])
-                if len(email)>1:
-                    self.wait("/html/body/div[1]/div/div[4]/table[1]/tbody/tr[3]/td/div[1]/div/div/table/tbody/tr["
-                              "2]/td/div/div[9]/div/form/div[6]/table/tbody/tr[2]/td[2]/div") .click()
+                if len(email) > 1:
+                    self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div/div[4]/table["
+                                                                                 "1]/tbody/tr[3]/td/div["
+                                                                                 "1]/div/div/table/tbody/tr[ "
+                                                                                 "2]/td/div/div[9]/div/form/div["
+                                                                                 "6]/table/tbody/tr[2]/td[2]/div"))
                     self.wait_id("email").send_keys(email[1])
-                    self.wait_id("otherrecipientslist_addedit").click()
-                self.wait_id("messagestxt").click()
+                    self.driver.execute_script('arguments[0].click()', self.wait_id("otherrecipientslist_addedit"))
+                self.driver.execute_script('arguments[0].click()', self.wait_id("messagestxt"))
                 self.wait_id("template_display").send_keys("Paul")
                 self.wait_id("template_display").send_keys(Keys.ENTER)
                 time.sleep(2)
-                self.wait_id('subject').send_keys(' '+tp_name)
+                self.wait_id('subject').send_keys(' ' + tp_name)
                 ele = self.wait("/html/body/div[1]/div/div[4]/table[1]/tbody/tr[3]/td/div["
                                 "2]/div/div/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[6]/td/div/span["
                                 "2]/div/div/div/iframe")
                 self.driver.switch_to.frame(ele)
-                self.wait("/html/body").click()
-                self.wait("/html/body").send_keys(Keys.CONTROL+Keys.HOME)
-                self.wait("/html/body").send_keys("Good morning "+tp_name+","+"\n"+"\n"+cust_name+"has selected "
-                                                                                             "TrueCommerce EDI "
-                                                                                             "Solutions Group to be "
-                                                                                             "their EDI software "
-                                                                                             "Service Provider. In "
-                                                                                             "order for us to "
-                                                                                             "complete this "
-                                                                                             "relationship setup, "
-                                                                                             "please "
-                                                                                             "provide the following "
-                                                                                             "information:")
+                self.driver.execute_script('arguments[0].click()', self.wait("/html/body"))
+                self.wait("/html/body").send_keys(Keys.CONTROL + Keys.HOME)
+                self.wait("/html/body").send_keys(
+                    "Good morning " + tp_name + "," + "\n" + "\n" + cust_name + "has selected "
+                                                                                "TrueCommerce EDI "
+                                                                                "Solutions Group to be "
+                                                                                "their EDI software "
+                                                                                "Service Provider. In "
+                                                                                "order for us to "
+                                                                                "complete this "
+                                                                                "relationship setup, "
+                                                                                "please "
+                                                                                "provide the following "
+                                                                                "information:")
                 time.sleep(3)
                 self.driver.switch_to.window(current_handle)
-                self.wait("/html/body/div[1]/div/div[4]/form/table/tbody/tr["
-                          "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input").click()
-
+                self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div/div["
+                                                                             "4]/form/table/tbody/tr["
+                                                                             "1]/td/table/tbody/tr/td/table/tbody/tr"
+                                                                             "/td[1]/table/tbody/tr/td[2]/input"))
                 break
 
     def send_all_tps(self):
@@ -407,7 +455,7 @@ class TakeTasks:
                 ele = self.wait("/html/body/div[1]/div[1]/div[1]/div[4]/input[1]")
                 search_name = str(self.newtp_read_sheet['B' + str(total_count)].value)
                 print(search_name)
-                ele.send_keys("part: "+search_name)
+                ele.send_keys("part: " + search_name)
                 ele.send_keys(Keys.ENTER)
                 time.sleep(3)
                 if 'globalsearch' in str(self.driver.current_url):
@@ -417,7 +465,7 @@ class TakeTasks:
                     continue
                 ele = self.wait_id('s_relationtxt')  # Relationships
                 time.sleep(3)
-                ele.click()
+                self.driver.execute_script('arguments[0].click()', ele)
                 print(1)
                 time.sleep(3)
                 try:
@@ -513,12 +561,7 @@ class TakeTasks:
         windows = self.driver.window_handles  # get all handles
         self.driver.switch_to.window(windows[-1])
         self.driver.implicitly_wait(5)
-        js = 'window.open("'+target_url+'")'
+        js = 'window.open("' + target_url + '")'
         self.driver.execute_script(js)
         windows = self.driver.window_handles  # get all handles
         self.driver.switch_to.window(windows[-1])
-
-
-
-
-

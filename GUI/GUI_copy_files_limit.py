@@ -44,8 +44,8 @@ def get_current_time():
 class OOP():
     def __init__(self):  # Initializer method
         # Create instance
-        self.excel_robot = excel_test.TakeTasks()
         self.clean_robot = CleanAllCase()
+        self.excel_robot = excel_test.TakeTasks()
         self.root_browser = self.clean_robot.driver
         self.win = tk.Tk()
         # Single thread
@@ -81,7 +81,6 @@ class OOP():
         else:
             self.run_thread = thread
             thread.start()
-
     # def open_or_not(self,filename):
     #     if(win32gui.FindWindow(None,"excel")
 
@@ -107,32 +106,32 @@ class OOP():
             "Tractor Supply Drop Ship Unknown To Unknown",
             "Unknown Unknown To Unknown",
             "Walmart Unknown To Unknown",
-            "Kroger Unknown To Unknown"
-            # ,
-            # "To For Life Products",
-            # "TM File processing",
-            # "To Base Brands CC",
-            # "To Nurse Assist, Inc.",
-            # "3PL Central 997 To Cali Bamboo",
-            # # "iTrade Network Unknown To Phillips Foods, Inc",
-            # "Unknown Unknown To Total Quality Logistics 2",
-            # "iTrade Network Unknown To Phillips Foods, Inc fka Phillips Seafood",
-            # "Digi-Key Corporation Unknown To Unknown",
-            # "Unknown Unknown To Bestseller",
-            # "Unknown Unknown To Abbyson Living Corporation",
-            # "CSN Unknown To Unknown",
-            # "Five Below 850 To Jem Accessories, Inc.",
-            # "Ace Bayou Corp 846 To Amazon"
+            "Kroger Unknown To Unknown",
+            "To For Life Products",
+            "TM File processing",
+            "To Base Brands CC",
+            "To Nurse Assist, Inc.",
+            "3PL Central 997 To Cali Bamboo",
+            "iTrade Network Unknown To Phillips Foods, Inc",
+            "Unknown Unknown To Total Quality Logistics 2",
+            "iTrade Network Unknown To Phillips Foods, Inc fka Phillips Seafood",
+            "Digi-Key Corporation Unknown To Unknown",
+            "Unknown Unknown To Bestseller",
+            "Unknown Unknown To Abbyson Living Corporation",
+            "CSN Unknown To Unknown",
+            "Five Below 850 To Jem Accessories, Inc.",
+            "No Subject",
+            "Ace Bayou Corp 846 To Amazon"
         ]
         for search_key in var:
             self.clean_robot.change_criteria("contains", search_key)
-            self.write_status_to_text("Closing " + str(self.clean_robot.clean_all_case()) + " cases with key word: " + search_key)
+            self.write_status_to_text(
+                "Closing " + str(self.clean_robot.clean_all_case()) + " cases with key word: " + search_key)
         self.clean_robot.change_criteria("is not empty", "Hello")
         win32api.MessageBox(0, "No more noise in queue. :)", "Cleaning Done", win32con.MB_OK)
         self.progress_bar.stop()
-        self.clean_robot.close_script_window()
         self.write_status_to_text("Complete cleaning all the noise cases!")
-        self.write_status_to_text("------------------------------------------------------------------------------------------------")
+        self.write_status_to_text("----------------------------------------")
 
     def new_clean_thread(self):
         clean_thread = threading.Thread(target=self.do_clean)
@@ -147,7 +146,7 @@ class OOP():
         self.clean_robot.close_script_window()
         self.progress_bar.stop()
         self.write_status_to_text("Updated all the notes for PSA tasks in NetSuite successfully !")
-        self.write_status_to_text("------------------------------------------------------------------------------------------------")
+        self.write_status_to_text("----------------------------------------")
 
     def update_spread_thread(self):
         thread_update = threading.Thread(target=self.do_update)
@@ -162,7 +161,7 @@ class OOP():
         self.progress_bar.stop()
         self.clean_robot.close_script_window()
         self.write_status_to_text("Complete taking all the PSA tasks!")
-        self.write_status_to_text("------------------------------------------------------------------------------------------------")
+        self.write_status_to_text("----------------------------------------")
 
     def grab_task_thread(self):
         thread_grab = threading.Thread(target=self.do_grab)
@@ -180,23 +179,7 @@ class OOP():
         while True:
             print(self.gui_queue.get())
 
-    # def method_in_a_thread(self, num_of_loops=10):
-    #     for idx in range(num_of_loops):
-    #         sleep(1)
-    #         self.scrol.insert(tk.INSERT, str(idx) + '\n')
-    #
-    #         # Running methods in Threads
-
-    # def create_thread(self, num=1):
-    #     self.run_thread = Thread(target=self.method_in_a_thread, args=[num])
-    #     self.run_thread.setDaemon(True)
-    #     self.run_thread.start()
-    #
-    #     # start queue in its own thread
-    #     write_thread = Thread(target=self.use_queues, args=[num], daemon=True)
-    #     write_thread.start()
-
-        # Button callback
+    # Button callback
 
     def click_me(self):
         self.action.configure(text='Hello ' + self.name.get())
@@ -257,18 +240,24 @@ class OOP():
         self.clean_robot.close_script_window()
         self.progress_bar.stop()
         self.write_status_to_text("Complete collecting emails for PSA tasks in NetSuite")
-        self.write_status_to_text("------------------------------------------------------------------------------------------------")
+        self.write_status_to_text("----------------------------------------")
 
     def new_collect_thread(self):
         thread_temp = Thread(target=self.do_collect)
         thread_temp.setDaemon(True)
         self.thread_go(thread_temp)
 
+    def do_info(self):
+        self.write_status_to_text("Start grabbing project and other information:")
+        self.excel_robot.grab_task_name_ID()
+        self.write_status_to_text("Complete grabbing project and other information:")
+
+    def new_info_thread(self):
+        info_thread = threading.Thread(target=self.do_info)
+        info_thread.start()
+
     def new_open_thread(self):
         self.clean_robot.open_new_window()
-        # thread_temp = Thread(target=self.NSrobot.open_new_window)
-        # thread_temp.setDaemon(True)
-        # self.thread_go(thread_temp)
 
     def progressbar_stop_after(self, wait_ms=1000):
         self.win.after(wait_ms, self.progress_bar.stop)
@@ -372,9 +361,10 @@ class OOP():
                    width=self.button_len).grid(column=1, row=0, sticky='W')
         ttk.Button(self.buttons_frame, text="New TP EDI Collection ", command=self.new_collect_thread,
                    width=self.button_len).grid(column=0, row=1, sticky='W')
-        ttk.Button(self.buttons_frame, text="Display Script Browser Window ", command=self.clean_robot.display_script_window,
+        ttk.Button(self.buttons_frame, text="Display Script Browser Window ",
+                   command=self.clean_robot.display_script_window,
                    width=self.button_len).grid(column=2, row=0, sticky='W')
-        ttk.Button(self.buttons_frame, text="Open New Browser Window ", command=self.new_open_thread,
+        ttk.Button(self.buttons_frame, text="Grab project name and ID ", command=self.new_info_thread,
                    width=self.button_len).grid(column=0, row=2, sticky='W')
         ttk.Button(self.buttons_frame, text="Hide Script Browser Window ", command=self.clean_robot.hide_script_window,
                    width=self.button_len).grid(column=2, row=1, sticky='W')
@@ -390,6 +380,7 @@ class OOP():
                    width=self.button_len).grid(column=2,
                                                row=3,
                                                sticky='W')
+
 
 
         def new_send_thread():
@@ -423,7 +414,6 @@ class OOP():
                    width=self.button_len).grid(column=1, row=3,
                                                sticky='W')
 
-
         # Button Callback
         def getFileName():
             print('hello from getFileName')
@@ -433,7 +423,6 @@ class OOP():
                 self.fileEntry.config(state='enabled')
                 self.fileEntry.delete(0, tk.END)
                 self.fileEntry.insert(0, fName)
-
 
         # Add Widgets to Manage Files Frame
         lb = ttk.Button(self.mngFilesFrame, text="Choose Spreadsheet", command=getFileName, width=self.button_len)
@@ -447,7 +436,7 @@ class OOP():
 
         def copyFile():
             import shutil
-            fDir = path.dirname(path.dirname(__file__))+'\\Backup'
+            fDir = path.dirname(path.dirname(__file__)) + '\\Backup'
             fName = fd.askdirectory(parent=self.win, initialdir=fDir)
             print(fName)
             self.netwEntry.config(state='enabled')
@@ -457,8 +446,6 @@ class OOP():
                 self.netwEntry.config(state='enabled')
                 self.netwEntry.delete(0, tk.END)
                 self.netwEntry.insert(0, fName)
-
-
 
         cb = ttk.Button(self.mngFilesFrame, text="Choose Backup Folder", command=copyFile, width=self.button_len)
         cb.grid(column=2, row=1, sticky=tk.W)

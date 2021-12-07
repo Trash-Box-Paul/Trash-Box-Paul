@@ -1,0 +1,338 @@
+14050337	Error: Amware Logistics Unknown To Unknown LogId 1186835268
+14050342	Error: Amware Logistics Unknown To Unknown LogId 1186835339
+14050344	Error: Amware Logistics Unknown To Unknown LogId 1186835365
+14050339	Error: Amware Logistics Unknown To Unknown LogId 1186835415
+14050347	Error: Amware Logistics Unknown To Unknown LogId 1186835442
+14050348	Error: Amware Logistics Unknown To Unknown LogId 1186835509
+14050346	Error: Amware Logistics Unknown To Unknown LogId 1186835529
+14050338	Error: Amware Logistics Unknown To Unknown LogId 1186835680
+14050398	Error: Amware Logistics Unknown To Unknown LogId 1186869680
+14050394	Error: Amware Logistics Unknown To Unknown LogId 1186869708
+14050393	Error: Amware Logistics Unknown To Unknown LogId 1186869737
+14050396	Error: Amware Logistics Unknown To Unknown LogId 1186869750
+14050403	Error: Amware Logistics Unknown To Unknown LogId 1186869790
+14050397	Error: Amware Logistics Unknown To Unknown LogId 1186869812
+14050411	Error: Amware Logistics Unknown To Unknown LogId 1186869831
+14050395	Error: Amware Logistics Unknown To Unknown LogId 1186869873
+14050409	Error: Amware Logistics Unknown To Unknown LogId 1186869886
+14050400	Error: Amware Logistics Unknown To Unknown LogId 1186869904
+14050408	Error: Amware Logistics Unknown To Unknown LogId 1186869923
+14050590	Error: Amware Logistics Unknown To Unknown LogId 1187037962
+14050814	Error: Amware Logistics Unknown To Unknown LogId 1187208845
+14050816	Error: Amware Logistics Unknown To Unknown LogId 1187208850
+14050812	Error: Amware Logistics Unknown To Unknown LogId 1187208852
+14050817	Error: Amware Logistics Unknown To Unknown LogId 1187208858
+14050821	Error: Amware Logistics Unknown To Unknown LogId 1187208880
+14050820	Error: Amware Logistics Unknown To Unknown LogId 1187208897
+14050819	Error: Amware Logistics Unknown To Unknown LogId 1187208901
+14050813	Error: Amware Logistics Unknown To Unknown LogId 1187208911
+14050815	Error: Amware Logistics Unknown To Unknown LogId 1187208917
+14050824	Error: Amware Logistics Unknown To Unknown LogId 1187208919
+14050337	Error: Amware Logistics Unknown To Unknown LogId 1186835268
+14050342	Error: Amware Logistics Unknown To Unknown LogId 1186835339
+14050344	Error: Amware Logistics Unknown To Unknown LogId 1186835365
+14050339	Error: Amware Logistics Unknown To Unknown LogId 1186835415
+14050347	Error: Amware Logistics Unknown To Unknown LogId 1186835442
+14050348	Error: Amware Logistics Unknown To Unknown LogId 1186835509
+14050346	Error: Amware Logistics Unknown To Unknown LogId 1186835529
+14050338	Error: Amware Logistics Unknown To Unknown LogId 1186835680
+14050398	Error: Amware Logistics Unknown To Unknown LogId 1186869680
+14050394	Error: Amware Logistics Unknown To Unknown LogId 1186869708
+14050396	Error: Amware Logistics Unknown To Unknown LogId 1186869750
+14050397	Error: Amware Logistics Unknown To Unknown LogId 1186869812
+14050411	Error: Amware Logistics Unknown To Unknown LogId 1186869831
+14050395	Error: Amware Logistics Unknown To Unknown LogId 1186869873
+14050409	Error: Amware Logistics Unknown To Unknown LogId 1186869886
+14050400	Error: Amware Logistics Unknown To Unknown LogId 1186869904
+14050408	Error: Amware Logistics Unknown To Unknown LogId 1186869923
+14050817	Error: Amware Logistics Unknown To Unknown LogId 1187208858
+14050821	Error: Amware Logistics Unknown To Unknown LogId 1187208880
+14050820	Error: Amware Logistics Unknown To Unknown LogId 1187208897
+14050819	Error: Amware Logistics Unknown To Unknown LogId 1187208901
+14050824	Error: Amware Logistics Unknown To Unknown LogId 1187208919
+14050825	Error: Amware Logistics Unknown To Unknown LogId 1187208932
+14050822	Error: Amware Logistics Unknown To Unknown LogId 1187208936
+14050826	Error: Amware Logistics Unknown To Unknown LogId 1187208938
+14050828	Error: Amware Logistics Unknown To Unknown LogId 1187208950
+14050830	Error: Amware Logistics Unknown To Unknown LogId 1187208952
+14050834	Error: Amware Logistics Unknown To Unknown LogId 1187208955
+14050839	Error: Amware Logistics Unknown To Unknown LogId 1187208957
+14050836	Error: Amware Logistics Unknown To Unknown LogId 1187208961
+14050337	Error: Amware Logistics Unknown To Unknown LogId 1186835268
+14050338	Error: Amware Logistics Unknown To Unknown LogId 1186835680
+14050408	Error: Amware Logistics Unknown To Unknown LogId 1186869923
+14050825	Error: Amware Logistics Unknown To Unknown LogId 1187208932
+14050822	Error: Amware Logistics Unknown To Unknown LogId 1187208936
+14050826	Error: Amware Logistics Unknown To Unknown LogId 1187208938
+14050828	Error: Amware Logistics Unknown To Unknown LogId 1187208950
+14050830	Error: Amware Logistics Unknown To Unknown LogId 1187208952
+14050833	Error: Amware Logistics Unknown To Unknown LogId 1187208965
+14050838	Error: Amware Logistics Unknown To Unknown LogId 1187208978
+14050837	Error: Amware Logistics Unknown To Unknown LogId 1187209053
+14050841	Error: Amware Logistics Unknown To Unknown LogId 1187209061
+14050847	Error: Amware Logistics Unknown To Unknown LogId 1187209103
+14050843	Error: Amware Logistics Unknown To Unknown LogId 1187209165
+14050845	Error: Amware Logistics Unknown To Unknown LogId 1187209180
+14050827	Error: Amware Logistics Unknown To Unknown LogId 1187209185
+14050848	Error: Amware Logistics Unknown To Unknown LogId 1187209188
+14050852	Error: Amware Logistics Unknown To Unknown LogId 1187209190
+14050850	Error: Amware Logistics Unknown To Unknown LogId 1187209192
+14050823	Error: Amware Logistics Unknown To Unknown LogId 1187209199
+14050829	Error: Amware Logistics Unknown To Unknown LogId 1187209215
+14050856	Error: Amware Logistics Unknown To Unknown LogId 1187209217
+14050854	Error: Amware Logistics Unknown To Unknown LogId 1187209236
+14050853	Error: Amware Logistics Unknown To Unknown LogId 1187209242
+14050855	Error: Amware Logistics Unknown To Unknown LogId 1187209247
+14050851	Error: Amware Logistics Unknown To Unknown LogId 1187209252
+14050860	Error: Amware Logistics Unknown To Unknown LogId 1187209254
+14050863	Error: Amware Logistics Unknown To Unknown LogId 1187209264
+14050831	Error: Amware Logistics Unknown To Unknown LogId 1187209267
+14050847	Error: Amware Logistics Unknown To Unknown LogId 1187209103
+14050845	Error: Amware Logistics Unknown To Unknown LogId 1187209180
+14050827	Error: Amware Logistics Unknown To Unknown LogId 1187209185
+14050848	Error: Amware Logistics Unknown To Unknown LogId 1187209188
+14050852	Error: Amware Logistics Unknown To Unknown LogId 1187209190
+14050850	Error: Amware Logistics Unknown To Unknown LogId 1187209192
+14050829	Error: Amware Logistics Unknown To Unknown LogId 1187209215
+14050856	Error: Amware Logistics Unknown To Unknown LogId 1187209217
+14050854	Error: Amware Logistics Unknown To Unknown LogId 1187209236
+14050853	Error: Amware Logistics Unknown To Unknown LogId 1187209242
+14050855	Error: Amware Logistics Unknown To Unknown LogId 1187209247
+14050851	Error: Amware Logistics Unknown To Unknown LogId 1187209252
+14050865	Error: Amware Logistics Unknown To Unknown LogId 1187209271
+14050867	Error: Amware Logistics Unknown To Unknown LogId 1187209279
+14050832	Error: Amware Logistics Unknown To Unknown LogId 1187209285
+14050859	Error: Amware Logistics Unknown To Unknown LogId 1187209293
+14050844	Error: Amware Logistics Unknown To Unknown LogId 1187209304
+14050862	Error: Amware Logistics Unknown To Unknown LogId 1187209319
+14050842	Error: Amware Logistics Unknown To Unknown LogId 1187209330
+14050857	Error: Amware Logistics Unknown To Unknown LogId 1187209353
+14050835	Error: Amware Logistics Unknown To Unknown LogId 1187209355
+14050858	Error: Amware Logistics Unknown To Unknown LogId 1187209375
+14050840	Error: Amware Logistics Unknown To Unknown LogId 1187209382
+14050861	Error: Amware Logistics Unknown To Unknown LogId 1187209423
+14050846	Error: Amware Logistics Unknown To Unknown LogId 1187209430
+14050849	Error: Amware Logistics Unknown To Unknown LogId 1187209436
+14050866	Error: Amware Logistics Unknown To Unknown LogId 1187209440
+14050864	Error: Amware Logistics Unknown To Unknown LogId 1187209449
+14050869	Error: Amware Logistics Unknown To Unknown LogId 1187209451
+14051080	Error: Amware Logistics Unknown To Unknown LogId 1187339533
+14050859	Error: Amware Logistics Unknown To Unknown LogId 1187209293
+14050844	Error: Amware Logistics Unknown To Unknown LogId 1187209304
+14050842	Error: Amware Logistics Unknown To Unknown LogId 1187209330
+14050857	Error: Amware Logistics Unknown To Unknown LogId 1187209353
+14050835	Error: Amware Logistics Unknown To Unknown LogId 1187209355
+14050840	Error: Amware Logistics Unknown To Unknown LogId 1187209382
+14050861	Error: Amware Logistics Unknown To Unknown LogId 1187209423
+14050849	Error: Amware Logistics Unknown To Unknown LogId 1187209436
+14051080	Error: Amware Logistics Unknown To Unknown LogId 1187339533
+14051081	Error: Amware Logistics Unknown To Unknown LogId 1187339590
+14051107	Error: Amware Logistics Unknown To Unknown LogId 1187365114
+14051106	Error: Amware Logistics Unknown To Unknown LogId 1187365123
+14051171	Error: Amware Logistics Unknown To Unknown LogId 1187447549
+14051173	Error: Amware Logistics Unknown To Unknown LogId 1187447556
+14051172	Error: Amware Logistics Unknown To Unknown LogId 1187447571
+14051198	Error: Amware Logistics Unknown To Unknown LogId 1187473307
+14051193	Error: Amware Logistics Unknown To Unknown LogId 1187473325
+14051192	Error: Amware Logistics Unknown To Unknown LogId 1187473363
+14051197	Error: Amware Logistics Unknown To Unknown LogId 1187473381
+14051196	Error: Amware Logistics Unknown To Unknown LogId 1187473385
+14051194	Error: Amware Logistics Unknown To Unknown LogId 1187473392
+14051236	Error: Amware Logistics Unknown To Unknown LogId 1187526337
+14051238	Error: Amware Logistics Unknown To Unknown LogId 1187526342
+14051264	Error: Amware Logistics Unknown To Unknown LogId 1187548341
+14051263	Error: Amware Logistics Unknown To Unknown LogId 1187548364
+14051266	Error: Amware Logistics Unknown To Unknown LogId 1187548370
+14051262	Error: Amware Logistics Unknown To Unknown LogId 1187548376
+14051261	Error: Amware Logistics Unknown To Unknown LogId 1187548384
+14051407	Error: Amware Logistics Unknown To Unknown LogId 1187680233
+14051412	Error: Amware Logistics Unknown To Unknown LogId 1187680237
+14050849	Error: Amware Logistics Unknown To Unknown LogId 1187209436
+14051107	Error: Amware Logistics Unknown To Unknown LogId 1187365114
+14051106	Error: Amware Logistics Unknown To Unknown LogId 1187365123
+14051171	Error: Amware Logistics Unknown To Unknown LogId 1187447549
+14051173	Error: Amware Logistics Unknown To Unknown LogId 1187447556
+14051172	Error: Amware Logistics Unknown To Unknown LogId 1187447571
+14051193	Error: Amware Logistics Unknown To Unknown LogId 1187473325
+14051192	Error: Amware Logistics Unknown To Unknown LogId 1187473363
+14051194	Error: Amware Logistics Unknown To Unknown LogId 1187473392
+14051236	Error: Amware Logistics Unknown To Unknown LogId 1187526337
+14051238	Error: Amware Logistics Unknown To Unknown LogId 1187526342
+14051266	Error: Amware Logistics Unknown To Unknown LogId 1187548370
+14051407	Error: Amware Logistics Unknown To Unknown LogId 1187680233
+14051412	Error: Amware Logistics Unknown To Unknown LogId 1187680237
+14051408	Error: Amware Logistics Unknown To Unknown LogId 1187680246
+14051413	Error: Amware Logistics Unknown To Unknown LogId 1187680260
+14051406	Error: Amware Logistics Unknown To Unknown LogId 1187680265
+14051415	Error: Amware Logistics Unknown To Unknown LogId 1187680268
+14051418	Error: Amware Logistics Unknown To Unknown LogId 1187680278
+14051404	Error: Amware Logistics Unknown To Unknown LogId 1187680284
+14051420	Error: Amware Logistics Unknown To Unknown LogId 1187680287
+14051433	Error: Amware Logistics Unknown To Unknown LogId 1187680290
+14051422	Error: Amware Logistics Unknown To Unknown LogId 1187680300
+14051428	Error: Amware Logistics Unknown To Unknown LogId 1187680319
+14051439	Error: Amware Logistics Unknown To Unknown LogId 1187680357
+14051425	Error: Amware Logistics Unknown To Unknown LogId 1187680371
+14051438	Error: Amware Logistics Unknown To Unknown LogId 1187680375
+14051424	Error: Amware Logistics Unknown To Unknown LogId 1187680377
+14051436	Error: Amware Logistics Unknown To Unknown LogId 1187680395
+14051430	Error: Amware Logistics Unknown To Unknown LogId 1187680404
+14051171	Error: Amware Logistics Unknown To Unknown LogId 1187447549
+14051194	Error: Amware Logistics Unknown To Unknown LogId 1187473392
+14051408	Error: Amware Logistics Unknown To Unknown LogId 1187680246
+14051413	Error: Amware Logistics Unknown To Unknown LogId 1187680260
+14051415	Error: Amware Logistics Unknown To Unknown LogId 1187680268
+14051418	Error: Amware Logistics Unknown To Unknown LogId 1187680278
+14051420	Error: Amware Logistics Unknown To Unknown LogId 1187680287
+14051433	Error: Amware Logistics Unknown To Unknown LogId 1187680290
+14051422	Error: Amware Logistics Unknown To Unknown LogId 1187680300
+14051424	Error: Amware Logistics Unknown To Unknown LogId 1187680377
+14051431	Error: Amware Logistics Unknown To Unknown LogId 1187680408
+14051435	Error: Amware Logistics Unknown To Unknown LogId 1187680410
+14051427	Error: Amware Logistics Unknown To Unknown LogId 1187680421
+14051409	Error: Amware Logistics Unknown To Unknown LogId 1187680423
+14051437	Error: Amware Logistics Unknown To Unknown LogId 1187680441
+14051410	Error: Amware Logistics Unknown To Unknown LogId 1187680470
+14051414	Error: Amware Logistics Unknown To Unknown LogId 1187680472
+14051442	Error: Amware Logistics Unknown To Unknown LogId 1187680479
+14051446	Error: Amware Logistics Unknown To Unknown LogId 1187680481
+14051426	Error: Amware Logistics Unknown To Unknown LogId 1187680485
+14051416	Error: Amware Logistics Unknown To Unknown LogId 1187680500
+14051444	Error: Amware Logistics Unknown To Unknown LogId 1187680505
+14051434	Error: Amware Logistics Unknown To Unknown LogId 1187680516
+14051448	Error: Amware Logistics Unknown To Unknown LogId 1187680522
+14051417	Error: Amware Logistics Unknown To Unknown LogId 1187680528
+14051449	Error: Amware Logistics Unknown To Unknown LogId 1187680532
+14051441	Error: Amware Logistics Unknown To Unknown LogId 1187680538
+14051432	Error: Amware Logistics Unknown To Unknown LogId 1187680550
+14051419	Error: Amware Logistics Unknown To Unknown LogId 1187680557
+14051421	Error: Amware Logistics Unknown To Unknown LogId 1187680561
+14051418	Error: Amware Logistics Unknown To Unknown LogId 1187680278
+14051427	Error: Amware Logistics Unknown To Unknown LogId 1187680421
+14051414	Error: Amware Logistics Unknown To Unknown LogId 1187680472
+14051442	Error: Amware Logistics Unknown To Unknown LogId 1187680479
+14051446	Error: Amware Logistics Unknown To Unknown LogId 1187680481
+14051416	Error: Amware Logistics Unknown To Unknown LogId 1187680500
+14051444	Error: Amware Logistics Unknown To Unknown LogId 1187680505
+14051448	Error: Amware Logistics Unknown To Unknown LogId 1187680522
+14051417	Error: Amware Logistics Unknown To Unknown LogId 1187680528
+14051449	Error: Amware Logistics Unknown To Unknown LogId 1187680532
+14051441	Error: Amware Logistics Unknown To Unknown LogId 1187680538
+14051419	Error: Amware Logistics Unknown To Unknown LogId 1187680557
+14051421	Error: Amware Logistics Unknown To Unknown LogId 1187680561
+14051447	Error: Amware Logistics Unknown To Unknown LogId 1187680568
+14051451	Error: Amware Logistics Unknown To Unknown LogId 1187680578
+14051443	Error: Amware Logistics Unknown To Unknown LogId 1187680582
+14051450	Error: Amware Logistics Unknown To Unknown LogId 1187680590
+14051445	Error: Amware Logistics Unknown To Unknown LogId 1187680596
+14051454	Error: Amware Logistics Unknown To Unknown LogId 1187680598
+14051423	Error: Amware Logistics Unknown To Unknown LogId 1187680630
+14051429	Error: Amware Logistics Unknown To Unknown LogId 1187680638
+14051452	Error: Amware Logistics Unknown To Unknown LogId 1187680641
+14051515	Error: Amware Logistics Unknown To Unknown LogId 1187720508
+14051713	Error: Amware Logistics Unknown To Unknown LogId 1187798164
+14051746	Error: Amware Logistics Unknown To Unknown LogId 1187825310
+14051748	Error: Amware Logistics Unknown To Unknown LogId 1187825319
+14051771	Error: Amware Logistics Unknown To Unknown LogId 1187866358
+14051785	Error: Amware Logistics Unknown To Unknown LogId 1187882115
+14051819	Error: Amware Logistics Unknown To Unknown LogId 1187939144
+14051822	Error: Amware Logistics Unknown To Unknown LogId 1187939154
+14051419	Error: Amware Logistics Unknown To Unknown LogId 1187680557
+14051447	Error: Amware Logistics Unknown To Unknown LogId 1187680568
+14051443	Error: Amware Logistics Unknown To Unknown LogId 1187680582
+14051450	Error: Amware Logistics Unknown To Unknown LogId 1187680590
+14051445	Error: Amware Logistics Unknown To Unknown LogId 1187680596
+14051423	Error: Amware Logistics Unknown To Unknown LogId 1187680630
+14051429	Error: Amware Logistics Unknown To Unknown LogId 1187680638
+14051452	Error: Amware Logistics Unknown To Unknown LogId 1187680641
+14051713	Error: Amware Logistics Unknown To Unknown LogId 1187798164
+14051785	Error: Amware Logistics Unknown To Unknown LogId 1187882115
+14051954	Error: Amware Logistics Unknown To Unknown LogId 1187973641
+14052124	Error: Amware Logistics Unknown To Unknown LogId 1188018765
+14052140	Error: Amware Logistics Unknown To Unknown LogId 1188032060
+14052141	Error: Amware Logistics Unknown To Unknown LogId 1188032065
+14052139	Error: Amware Logistics Unknown To Unknown LogId 1188032072
+14052144	Error: Amware Logistics Unknown To Unknown LogId 1188032081
+14052142	Error: Amware Logistics Unknown To Unknown LogId 1188032109
+14051450	Error: Amware Logistics Unknown To Unknown LogId 1187680590
+14051785	Error: Amware Logistics Unknown To Unknown LogId 1187882115
+14052140	Error: Amware Logistics Unknown To Unknown LogId 1188032060
+14052144	Error: Amware Logistics Unknown To Unknown LogId 1188032081
+14052142	Error: Amware Logistics Unknown To Unknown LogId 1188032109
+14050517	Error: Unknown Unknown To Unknown LogId 1186955825
+14050546	Error: Unknown Unknown To Unknown LogId 1186980530
+14050923	Error: Unknown Unknown To Unknown LogId 1187250503
+14051068	Error: Unknown Unknown To Unknown LogId 1187327300
+14049508	Error: Walmart Unknown To Unknown LogId 1186485635
+14050756	Error: Ace Hardware 850 To For Life Products LogId 1187174578
+14051310	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051293	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051275	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051240	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051220	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051199	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051175	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051155	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051130	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051109	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051083	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051061	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051020	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14050945	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14050922	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14052111	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14052010	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051825	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051802	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051788	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051765	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051749	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051717	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051692	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051677	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051508	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051293	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051275	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051240	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051220	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051175	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051155	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051130	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14051109	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14050945	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14050922	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1339000~21120408382204.xedi
+14052111	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14052010	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051825	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051802	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051749	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051692	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14051677	TM File Processing Error. Sender ProfileId: 68824 FileName: Targetcom DVS~20877~40859~846~1340000~21120509071638.xedi
+14049189	Error: Cardinal Health 850 To Nurse Assist, Inc. LogId 1186380205
+14049545	Error: Cardinal Health Medical Products & Services 850 To Nurse Assist, Inc. LogId 1186493271
+14049819	Error: Concordance 850 To Nurse Assist, Inc. LogId 1186620545
+14050341	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1186846733
+14050367	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1186856963
+14050784	Error: Digi-Key Corporation Unknown To Unknown LogId 1187185045
+14050783	Error: Digi-Key Corporation Unknown To Unknown LogId 1187185185
+14051361	Error: Digi-Key Corporation Unknown To Unknown LogId 1187651066
+14049852	No Subject
+14049826	No Subject
+14052220	Error: Unknown Unknown To Unknown LogId 1188126398
+14052235	Error: Unknown Unknown To Unknown LogId 1188127804
+14052232	Error: Unknown Unknown To Unknown LogId 1188127819
+14052237	Error: Unknown Unknown To Unknown LogId 1188127828
+14052225	Error: Unknown Unknown To Unknown LogId 1188127836
+14052229	Error: Unknown Unknown To Unknown LogId 1188127848
+14052226	Error: Unknown Unknown To Unknown LogId 1188127860
+14052230	Error: Unknown Unknown To Unknown LogId 1188127869
+14052228	Error: Unknown Unknown To Unknown LogId 1188127879
+14052224	Error: Unknown Unknown To Unknown LogId 1188127886
+14052231	Error: Unknown Unknown To Unknown LogId 1188127895
+14052234	Error: Unknown Unknown To Unknown LogId 1188131443
+14052233	Error: Unknown Unknown To Unknown LogId 1188131485
+14052220	Error: Unknown Unknown To Unknown LogId 1188126398
+14052225	Error: Unknown Unknown To Unknown LogId 1188127836
+14052226	Error: Unknown Unknown To Unknown LogId 1188127860
+14052224	Error: Unknown Unknown To Unknown LogId 1188127886
+14052216	Error: Walmart Unknown To Unknown LogId 1188113206

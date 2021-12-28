@@ -19,8 +19,7 @@ from debug_browser import DebugBrowser
 class TakeTasks:
 
     def __init__(self):
-        self.driver = None
-        self.driver_setup()
+        self.driver = DebugBrowser().driver
         self.spread_sheet_read = openpyxl.load_workbook('Latest_Spread_Sheet.xlsm', data_only=True)
         self.spread_sheet_write = openpyxl.load_workbook('Latest_Spread_Sheet.xlsm', data_only=False)
         self.status_sheet_read = self.spread_sheet_read.get_sheet_by_name('general')
@@ -36,22 +35,6 @@ class TakeTasks:
         self.newtp_read_sheet = self.info_collect_list_read.get_sheet_by_name('newtp')
         self.newtp_write_sheet = self.info_collect_list_write.get_sheet_by_name('newtp')
         self.count = 0
-
-    def driver_setup(self):
-        print("22222222222222")
-        chrome_driver = webdrivermanager.ChromeDriverManager()
-        try:
-            print("1111111111111111")
-            self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
-                                           options=DebugBrowser().debug_chrome())
-            print("????????????????")
-        except:
-            chrome_driver.download_and_install(chrome_driver.get_latest_version())
-            time.sleep(3)
-            print("!!!!!!!!!!!!!!!!")
-            time.sleep(3)
-            self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
-                                           options=DebugBrowser().debug_chrome())
 
     def grab_task_name_ID(self):
         # all_handle = self.driver.window_handles  # get all handles
@@ -97,6 +80,7 @@ class TakeTasks:
             self.pend_sheet_write['A' + str(num + 2)] = task_name[num].strip()
             self.pend_sheet_write['B' + str(num + 2)] = task_id[num].strip()
             self.pend_sheet_write['C' + str(num + 2)] = task_customer[num].split('[')[0].strip()
+            self.pend_sheet_write['D' + str(num + 2)] = self.grab_note(num+1).strip()
         self.spread_sheet_write.save('Latest_Spread_Sheet(after).xlsx')
 
     def edit_note(self, task_num, new_note):
@@ -116,6 +100,7 @@ class TakeTasks:
         else:
             self.driver.execute_script('arguments[0].click()', ele)
             ele.send_keys(Keys.CONTROL + 'a')
+            # datetime.now().strftime("%b_%d_%Y") + " checked:" + '\n' +
             ele.send_keys(new_note)
             self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div[2]/div["
                                                                          "3]/form/table/tbody/tr["
@@ -123,49 +108,33 @@ class TakeTasks:
                                                                          "2]/table/tbody/tr[8]/td/div/span["
                                                                          "2]/span/input"))
             # print(new_note)
-            # time.sleep(10)
-            ele = self.wait("/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr["
-                            "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input")
-            while "&e=T" in self.driver.current_url:
-                try:
-                    self.driver.execute_script(ele.get_attribute('onclick'))
-                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
-                except:
-                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+            ele = self.wait("/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr[2]/td/table/tbody/tr["
+                            "2]/td/table/tbody/tr[3]/td[1]/table/tbody/tr[3]/td/div/span[2]/span/input[1]")
+            self.driver.execute_script('arguments[0].click()', ele)
+            ele.send_keys(Keys.CONTROL + 'a')
+            ele.send_keys("121")
+            time.sleep(4)
+            ele.send_keys(Keys.ENTER)
+            while "e=T" in self.driver.current_url:
+                time.sleep(1)
+            self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
 
-    def grab_note(self, task_num, new_note):
+    def grab_note(self, task_num):
         edit_icon = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/table/tbody/tr["
         edit_icon_ex = "]/td[2]/a[1]"
-        table_content = "/html/body/div[1]/div[2]/div/div/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div"
         time.sleep(2)
         ele = self.wait(edit_icon + str(task_num) + edit_icon_ex)
         self.driver.get(ele.get_attribute("href"))
         text_box = "/html/body/div[1]/div[2]/div[3]/table[1]/tbody/tr[3]/td/div[" \
                    "1]/div/div/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/span[2]/span/textarea"
-        # time.sleep(1)
         ele = self.wait(text_box)
-        current_handle = self.driver.current_window_handle
-        if ele.text is not None and ele.text.strip() == new_note.strip():
+        notes = ele.text
+        if notes is not None:
             self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+            return notes
         else:
-            self.driver.execute_script('arguments[0].click()', ele)
-            ele.send_keys(Keys.CONTROL + 'a')
-            ele.send_keys(new_note)
-            self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div[2]/div["
-                                                                         "3]/form/table/tbody/tr["
-                                                                         "2]/td/table/tbody/tr[4]/td[ "
-                                                                         "2]/table/tbody/tr[8]/td/div/span["
-                                                                         "2]/span/input"))
-            # print(new_note)
-            # time.sleep(10)
-            ele = self.wait("/html/body/div[1]/div[2]/div[3]/form/table/tbody/tr["
-                            "1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/input")
-            while "&e=T" in self.driver.current_url:
-                try:
-                    self.driver.execute_script(ele.get_attribute('onclick'))
-                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
-                except:
-                    self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+            self.driver.get("https://907826.app.netsuite.com/app/center/card.nl?sc=-29&whence=")
+            return "NO NOTE."
 
     def update_all_notes(self):
         cur_handle = self.driver.current_window_handle  # get current handle
@@ -186,7 +155,7 @@ class TakeTasks:
         ele = self.wait(number_sum)
         html = ele.get_attribute('innerHTML')
         case_sum = int(html)
-        excel_sum = int(self.status_sheet_read['B1'].value) - 1
+        excel_sum = int(self.status_sheet_read['B1'].value)
         ele = self.wait(table_content)
         html = ele.get_attribute('innerHTML')
         soup = BeautifulSoup(html, 'html5lib')
@@ -197,6 +166,7 @@ class TakeTasks:
         target = int(len(tr_group) - 1)  # number of tr
         task_name = []
         print(target)
+        print("excel:"+str(excel_sum))
         for tr in tr_group:
             if not ("text" in tr['class']):
                 td_group = tr.find_all('td')
@@ -406,7 +376,9 @@ class TakeTasks:
                         break
                 print(email[0])
                 current_handle = self.driver.current_window_handle
+                self.driver.execute_script('arguments[0].click()', self.wait_id("recipientemail"))
                 self.wait_id("recipientemail").send_keys(email[0])
+                time.sleep(1)
                 if len(email) > 1:
                     self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div/div[4]/table["
                                                                                  "1]/tbody/tr[3]/td/div["
@@ -415,6 +387,7 @@ class TakeTasks:
                                                                                  "6]/table/tbody/tr[2]/td[2]/div"))
                     self.wait_id("email").send_keys(email[1])
                     self.driver.execute_script('arguments[0].click()', self.wait_id("otherrecipientslist_addedit"))
+                    time.sleep(1)
                 self.driver.execute_script('arguments[0].click()', self.wait_id("messagestxt"))
                 self.wait_id("template_display").send_keys("Paul")
                 self.wait_id("template_display").send_keys(Keys.ENTER)
@@ -438,7 +411,7 @@ class TakeTasks:
                                                                                 "please "
                                                                                 "provide the following "
                                                                                 "information:")
-                time.sleep(3)
+                time.sleep(1)
                 self.driver.switch_to.window(current_handle)
                 self.driver.execute_script('arguments[0].click()', self.wait("/html/body/div[1]/div/div["
                                                                              "4]/form/table/tbody/tr["
@@ -528,7 +501,7 @@ class TakeTasks:
                 self.driver.close()
             else:
                 break
-        self.info_collect_list_write.save(datetime.now().strftime("%b_%d_%Y") + 'pytest.xlsx')
+        self.info_collect_list_write.save(datetime.now().strftime("%b_%d_%Y_%H%M%S") + 'pytest.xlsx')
 
     def wait(self, xpath):
         try:

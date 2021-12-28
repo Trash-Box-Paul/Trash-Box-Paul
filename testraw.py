@@ -55,7 +55,7 @@ class TestPsd:
                 self.driver.find_element(By.XPATH, input_username).send_keys("Paul.Wu")
                 self.driver.find_element(By.XPATH, input_password).send_keys(Keys.CONTROL + "a")
                 self.driver.find_element(By.XPATH, input_password).send_keys("Smokingman527!")
-                self.driver.find_element(By.XPATH, icon_login).click()
+                self.driver.execute_script('arguments[0].click()', self.driver.find_element(By.XPATH, icon_login))
                 time.sleep(2)
 
         # 1 | open | Chrome with debugger address |\
@@ -101,7 +101,7 @@ class TestPsd:
                 )
             finally:
                 time.sleep(2)
-                self.driver.find_element(By.XPATH, input_all).click()
+                self.driver.execute_script('arguments[0].click()', self.driver.find_element(By.XPATH, input_all))
                 self.driver.find_element(By.XPATH, input_all).send_keys(Keys.CONTROL+"a")
                 self.driver.find_element(By.XPATH, input_all).send_keys(log_id)
             try:
@@ -176,6 +176,8 @@ class TestPsd:
                 self.driver.find_element(By.XPATH, "/html/body/form/table/tbody/tr["
                                                    "3]/td/div/table/tbody/tr/td/div/table[3]/tbody/tr["
                                                    "5]/td/input").click()
+
+
 
 
         #

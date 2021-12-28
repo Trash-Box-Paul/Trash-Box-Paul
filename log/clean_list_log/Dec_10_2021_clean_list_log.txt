@@ -1,0 +1,150 @@
+14062316	Error: Amware Logistics Unknown To Unknown LogId 1191932187
+14062326	Error: Amware Logistics Unknown To Unknown LogId 1191932212
+14062412	Error: Amware Logistics Unknown To Unknown LogId 1191965572
+14062453	Error: Amware Logistics Unknown To Unknown LogId 1191965617
+14062589	Error: Amware Logistics Unknown To Unknown LogId 1192034976
+14062601	Error: Amware Logistics Unknown To Unknown LogId 1192035001
+14062689	Error: Amware Logistics Unknown To Unknown LogId 1192094249
+14062690	Error: Amware Logistics Unknown To Unknown LogId 1192094252
+14062721	Error: Amware Logistics Unknown To Unknown LogId 1192128144
+14062757	Error: Amware Logistics Unknown To Unknown LogId 1192150531
+14062879	Error: Amware Logistics Unknown To Unknown LogId 1192196348
+14062326	Error: Amware Logistics Unknown To Unknown LogId 1191932212
+14062412	Error: Amware Logistics Unknown To Unknown LogId 1191965572
+14062453	Error: Amware Logistics Unknown To Unknown LogId 1191965617
+14062623	Error: Unknown Unknown To Unknown LogId 1192056575
+14062655	Error: Unknown Unknown To Unknown LogId 1192074191
+14062703	Error: Unknown Unknown To Unknown LogId 1192123123
+14062704	Error: Unknown Unknown To Unknown LogId 1192123369
+14062709	Error: Unknown Unknown To Unknown LogId 1192123587
+14062702	Error: Unknown Unknown To Unknown LogId 1192123676
+14062765	Error: Unknown Unknown To Unknown LogId 1192139204
+14062867	Error: Unknown Unknown To Unknown LogId 1192186207
+14062629	Error: Walmart Unknown To Unknown LogId 1192049788
+14062656	Error: Walmart Unknown To Unknown LogId 1192077077
+14062727	Error: Walmart Unknown To Unknown LogId 1192134654
+14062756	Error: Walmart Unknown To Unknown LogId 1192149959
+14062871	Error: Walmart Unknown To Unknown LogId 1192187066
+14062640	TM File Processing Error. Sender ProfileId: 3659 FileName: CVS~101~30729~810~507000~21120917271737.xedi
+14062695	TM File Processing Error. Sender ProfileId: 66061 FileName: Ingram Micro~1602~36895~856~39~21120916581859.xedi
+14062583	TM File Processing Error. Sender ProfileId: 66061 FileName: Ingram Micro~1602~36895~856~39~21120916581859.xedi
+14062600	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1192032318
+14062591	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1192037897
+14062628	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1192049176
+14062647	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1192066719
+14062650	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1192074525
+14062509	Error: Advantage Sales and Marketing 997 To Yucatan Foods LogId 1192006291
+14062663	Error: Advantage Sales and Marketing 997 To Yucatan Foods LogId 1192086185
+14062979	Error: Ahold Delhaize RBS Unknown To Unknown LogId 1192286723
+14060917	Error: Alphabroder 852 4.0 To YS Garments LLC dba Next Level Apparel - TEST LogId 1191505249
+14060918	Error: Alphabroder 852 4.0 To YS Garments LLC dba Next Level Apparel - TEST LogId 1191505395
+14057261	Error: American Pet Nutrition 880 To Kroger LogId 1190217956
+14062917	Error: American Pet Nutrition 880 To Kroger LogId 1192233240
+14057260	Error: American Pet Nutrition 880 To WinCo Foods LogId 1190218021
+14060394	Error: American Pet Nutrition 880 To WinCo Foods LogId 1191247011
+14062918	Error: American Pet Nutrition 880 To WinCo Foods LogId 1192233268
+14062982	Error: American Reading Company Partner Unknown To Unknown LogId 1192292656
+14061264	Error: American T-Shirt Company 852 4.0 To Test Company - Trading Partner Services LogId 1191581879
+14062923	Error: Amware Logistics Unknown To Unknown LogId 1192237297
+14062415	Error: Bass Pro DSCO Unknown To Bedgear LogId 1191966057
+14059916	Error: Beaumont Products, Inc. 880 To Kroger LogId 1190980828
+14062681	Error: Bergen Brunswig 850 To PD-Rx Pharmaceuticals, Inc. LogId 1192081016
+14062888	Error: Brava Team 997 To HighKey Snacks LogId 1192214011
+14062324	Error: Briggs & Stratton 830 To Flambeau Inc. LogId 1191943799
+14062322	Error: Briggs & Stratton 830 To Flambeau Inc. LogId 1191943832
+14062394	Error: Briggs & Stratton 830 To Flambeau Inc. LogId 1191950514
+14062490	Error: Caterpillar Unknown To Unknown LogId 1191990241
+14062992	Error: Champion Power Equipment, Inc. Unknown To Home Depot (Non-Merchandise) LogId 1192308614
+14062691	Error: Coles Australia CONTRL To Just Play LogId 1192101224
+14062676	Error: Demoulas Market Basket Unknown To Krema Group Inc. LogId 1192078467
+14062710	Error: Do It Best Corp. 997 To Bercom International LogId 1192110733
+14062669	Error: Dropship Commerce (DSCO) Unknown To Unknown LogId 1192081584
+14062671	Error: Dropship Commerce (DSCO) Unknown To Unknown LogId 1192081590
+14060440	Error: Dynamic 3PL 945 To Celios LogId 1191273689
+14062915	Error: Dyno Seasonal Solutions LLC Unknown To Unknown LogId 1192225424
+14062495	Error: Empire Marketing Strategies 997 To King's Hawaiian LogId 1191987147
+14062633	Error: Empire Marketing Strategies 997 To King's Hawaiian LogId 1192059896
+14062899	Error: FCA - Fiat Chrysler Automobiles Unknown To Unknown LogId 1192221286
+14062912	Error: FCA - Fiat Chrysler Automobiles Unknown To Unknown LogId 1192226650
+14062911	Error: FCA - Fiat Chrysler Automobiles Unknown To Unknown LogId 1192226717
+14062925	Error: FCA - Fiat Chrysler Automobiles Unknown To Unknown LogId 1192237029
+14062362	Error: Federated Fulfillment 997 To Classic Brands LogId 1191956683
+14062510	Error: Federated Fulfillment 997 To Classic Brands LogId 1192006627
+14062632	Error: Federated Fulfillment 997 To Classic Brands LogId 1192069460
+14062712	Error: Federated Fulfillment 997 To Classic Brands LogId 1192131969
+14062852	Error: Federated Fulfillment 997 To Classic Brands LogId 1192172604
+14062895	Error: Federated Fulfillment 997 To Classic Brands LogId 1192222348
+14062959	Error: Federated Fulfillment 997 To Classic Brands LogId 1192254174
+14062987	Error: Federated Fulfillment 997 To Classic Brands LogId 1192302200
+14062892	Error: Fitbit, Inc. ORDRSP To KOMSA LogId 1192214240
+14062563	Error: Ginger Ray Inc - US ASN To Walmart Marketplace LogId 1192014999
+14062328	Error: Global Transport Logistics Inc Unknown To Unknown LogId 1191937348
+14062378	Error: Grainger 850 To Flambeau Inc. LogId 1191950509
+14062380	Error: Grainger 850 To Flambeau Inc. LogId 1191950515
+14062481	Error: Grainger 850 To Flambeau Inc. LogId 1191985282
+14060395	Error: Greystar Products, Inc. 880 To Smart & Final LogId 1191249215
+14060393	Error: Greystar Products, Inc. 880 To Super Store Industries LogId 1191249271
+14061639	Error: H. E. Butt Grocery Unknown To Swisher International LogId 1191684061
+14056621	Error: HMY Jewelry Inc. 810 To Walmart LogId 1189865706
+14061587	Error: Hy-Vee Inc Partner Unknown To Tony Chachere's Creole Foods LogId 1191674105
+14062967	Error: Kroger 997 To SK Food Group LogId 1192277763
+14062955	Error: Lupin Pharmaceuticals Unknown To Unknown LogId 1192244641
+14062562	Error: Marathon Medical 856 To Cardinal Health Medical Products & Services LogId 1192016343
+14062961	Error: Medline Unknown To Unknown LogId 1192261590
+14062898	Error: Medtronics Unknown To Marathon Medical LogId 1192221261
+14062653	Error: Melitta North America Unknown To H. E. Butt Grocery LogId 1192067864
+14062550	Error: Morphe LLC INVOICE To Boots UK - TRADACOM LogId 1192010468
+14062893	Error: O'Neill Logistics 945 To SimpliHome LogId 1192208684
+14062659	Error: Presence Marketing 997 To Krema Group Inc. LogId 1192073661
+14062670	Error: R&S Solutions Unknown To Unichem Pharmaceuticals (USA), Inc. LogId 1192078804
+14062677	Error: R&S Solutions Unknown To Unichem Pharmaceuticals (USA), Inc. LogId 1192078866
+14062922	Error: Regal Logistics 945 To Goliath Games, LLC LogId 1192235936
+14062648	Error: Robert Bosch GmbH CONTRL To Hunter Engineering Company LogId 1192066876
+14062652	Error: Robert Bosch GmbH CONTRL To Hunter Engineering Company LogId 1192069390
+14062649	Error: Robert Bosch GmbH CONTRL To Hunter Engineering Company LogId 1192071902
+14062654	Error: Robert Bosch GmbH CONTRL To Hunter Engineering Company LogId 1192073398
+14062590	Error: Selection One 997 To Walmart.com - Direct to Customer LogId 1192042803
+14062957	Error: Selection One 997 To Walmart.com - Direct to Customer LogId 1192251495
+14061516	Error: SK Sales Co TMO 850 To Reckitt Benckiser LogId 1191645903
+14062523	Error: Temple Lifestyle 810 To Walmart Canada LogId 1191997604
+14062858	Error: Tillamook County Creamery Association 880 To Smart & Final LogId 1192173499
+14062857	Error: Tillamook County Creamery Association 880 To Stater Brothers LogId 1192173485
+14056718	Error: Top Rx 850 To Amici Pharmaceuticals LogId 1189891361
+14056173	Error: Unknown Unknown To Advantage Sales and Marketing LogId 1189694882
+14062312	Error: Unknown Unknown To Advantage Sales and Marketing LogId 1191931742
+14062701	Error: Unknown Unknown To El Palacio de Hierro LogId 1192119711
+14062708	Error: Unknown Unknown To El Palacio de Hierro LogId 1192119720
+14062705	Error: Unknown Unknown To El Palacio de Hierro LogId 1192119751
+14062725	Error: Unknown Unknown To El Palacio de Hierro LogId 1192131628
+14062698	Error: Unknown Unknown To Improvement Direct LogId 1192108678
+14062700	Error: Unknown Unknown To Improvement Direct LogId 1192118857
+14062869	Error: Unknown Unknown To Improvement Direct LogId 1192192909
+14062718	Error: Unknown Unknown To INDULGENT FOODS LogId 1192134543
+14062745	Error: Unknown Unknown To INDULGENT FOODS LogId 1192138789
+14062603	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192040862
+14062595	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192040928
+14062674	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192088000
+14062679	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192088113
+14062699	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192118794
+14062706	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192118900
+14062882	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192202867
+14062891	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192212252
+14062995	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192317533
+14062998	Error: Unknown Unknown To Lowes SOS - Commercehub LogId 1192317584
+14062667	Error: Unknown Unknown To NTC Marketing Inc LogId 1192078434
+14062755	Error: Unknown Unknown To Polymer Technology Systems LogId 1192151487
+14062897	Error: Unknown Unknown To Polymer Technology Systems LogId 1192217940
+14062737	Error: Unknown Unknown To Safeway LogId 1192136423
+14062986	Error: Unknown Unknown To Unknown LogId 1192296961
+14062894	Error: US Cold Storage - 3rd Party 945 To King's Hawaiian LogId 1192211042
+14061976	Error: USPS Coupa cXML ORDER To Senneca LogId 1191801002
+14061475	Error: Volvo Dealer/Direct 824 To FirsTime Manufactory LogId 1191632127
+14062157	Error: Wakefern Unknown To Piping Rock LogId 1191841489
+14062976	Error: Walmart Unknown To Unknown LogId 1192285357
+14062984	Error: Walmart Unknown To Unknown LogId 1192292425
+14062988	Error: Walmart Unknown To Unknown LogId 1192305171
+14062358	Error: Walmart.com - Direct to Customer 997 To GGI International LogId 1191952156
+14062658	Error: Westlake Hardware Unknown To Unknown LogId 1192076897
+14059773	Error: Westrow - P2P 997 To Westrow Foods LogId 1190915261
+14062236	Error: Westrow - P2P 997 To Westrow Foods LogId 1191909959
+14063001	TM File Processing Error. Sender ProfileId: 27656 FileName: Lowes SOS Commercehub~31981~23463~856~46~21120922573627.xedi

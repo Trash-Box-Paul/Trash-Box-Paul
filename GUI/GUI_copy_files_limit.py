@@ -7,7 +7,7 @@ from tkinter import ttk
 from tkinter import scrolledtext
 from tkinter import Menu
 from tkinter import messagebox as msg
-from netsuite_clean_all_case import *
+from netsuite_clean_case import *
 from tkinter import Spinbox
 from outlook_send_emails import *
 import time
@@ -51,7 +51,7 @@ class OOP():
         # Single thread
         self.run_thread = None
         # Add a title       
-        self.win.title("TPS Automation Tool 0.0.1")
+        self.win.title("Case Killer 0.0.1")
         # Create a Queue
         self.gui_queue = Queue()
         self.create_widgets()
@@ -94,6 +94,7 @@ class OOP():
         self.write_status_to_text("Start cleaning all the noise cases:")
         self.clean_robot.open_new_window()
         var = [
+            "997",
             "Bon Tool Company 997 To Amazon",
             "Amware Logistics Unknown To Unknown",
             "Almo Unknown To Unknown",
@@ -146,6 +147,21 @@ class OOP():
         self.clean_robot.close_script_window()
         self.progress_bar.stop()
         self.write_status_to_text("Updated all the notes for PSA tasks in NetSuite successfully !")
+        self.write_status_to_text("----------------------------------------")
+
+    def new_resend_thread(self):
+        resend_thread = threading.Thread(target=self.do_resend)
+        resend_thread.setDaemon(True)
+        self.thread_go(resend_thread)
+
+    def do_resend(self):
+        self.write_status_to_text("Start resending all the notes for PSA tasks in NetSuite...")
+        self.clean_robot.open_new_window()
+        self.progress_bar.start()
+        self.clean_robot.resend_all_case()
+        self.clean_robot.close_script_window()
+        self.progress_bar.stop()
+        self.write_status_to_text("Resend all the notes for PSA tasks in NetSuite successfully !")
         self.write_status_to_text("----------------------------------------")
 
     def update_spread_thread(self):
@@ -330,7 +346,7 @@ class OOP():
 
         # Add a textbox for log
 
-        self.log_data_Text = scrolledtext.ScrolledText(self.mighty2, width=scrol_w, height=scrol_h, wrap=tk.WORD)  # 日志框
+        self.log_data_Text = scrolledtext.ScrolledText(self.mighty2, width=scrol_w, height=scrol_h, wrap=tk.WORD)
         self.log_data_Text.grid(row=3, column=0, columnspan=10)
 
         # Create a container to hold buttons
@@ -374,14 +390,9 @@ class OOP():
         # Create Manage Files Frame ------------------------------------------------
 
         ttk.Button(self.mngFilesFrame, text=" Open Spreadsheet   ", command=self.open_spread_thread,
-                   width=self.button_len).grid(column=0, row=3,
-                                               sticky='W')
+                   width=self.button_len).grid(column=0, row=3, sticky='W')
         ttk.Button(self.mngFilesFrame, text=" Synchronize Spreadsheet  ", command=self.start_progressbar,
-                   width=self.button_len).grid(column=2,
-                                               row=3,
-                                               sticky='W')
-
-
+                   width=self.button_len).grid(column=2, row=3, sticky='W')
 
         def new_send_thread():
             take_thread = threading.Thread(target=do_send)

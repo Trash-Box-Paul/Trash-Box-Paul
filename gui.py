@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import *
 from tkinter import scrolledtext
 import time
-from netsuite_clean_all_case import *
+from netsuite_clean_case import *
 import netsuite_take_tasks as ntt
 from outlook_send_emails import *
 import _thread

@@ -1,0 +1,34 @@
+14087316	Error: Amware Logistics Unknown To Unknown LogId 1202959318
+14087524	Error: Chewy.com Unknown To Unknown LogId 1203073919
+14087519	Error: Chewy.com Unknown To Unknown LogId 1203074087
+14087526	Error: Chewy.com Unknown To Unknown LogId 1203074236
+14087300	Error: Unknown Unknown To Unknown LogId 1202949724
+14087289	Error: Unknown Unknown To Unknown LogId 1202953605
+14087375	Error: Unknown Unknown To Unknown LogId 1202987979
+14087378	Error: Unknown Unknown To Unknown LogId 1202989264
+14087507	Error: Unknown Unknown To Unknown LogId 1203062818
+14087508	Error: Unknown Unknown To Unknown LogId 1203062908
+14087509	Error: Unknown Unknown To Unknown LogId 1203062912
+14087504	Error: Unknown Unknown To Unknown LogId 1203062916
+14087505	Error: Unknown Unknown To Unknown LogId 1203062922
+14087512	Error: Unknown Unknown To Unknown LogId 1203062928
+14087289	Error: Unknown Unknown To Unknown LogId 1202953605
+14087330	Error: Walmart Unknown To Unknown LogId 1202968515
+14087360	Error: Walmart Unknown To Unknown LogId 1202975515
+14087437	Error: Walmart Unknown To Unknown LogId 1203017010
+14087466	Error: Walmart Unknown To Unknown LogId 1203030437
+14087513	Error: Walmart Unknown To Unknown LogId 1203063628
+14087523	Error: Walmart Unknown To Unknown LogId 1203076020
+14087573	Error: Home Depot 850 To For Life Products LogId 1203098618
+14087574	Error: Home Depot 850 To For Life Products LogId 1203099094
+14087571	Error: Home Depot 850 To For Life Products LogId 1203102181
+14087572	Error: Home Depot 850 To For Life Products LogId 1203102190
+14087430	TM File Processing Error. Sender ProfileId: 27656 FileName: Lowes SOS Commercehub~31981~23463~856~60~21122118321552.xedi
+14087532	TM File Processing Error. Sender ProfileId: 30998 FileName: Fastenal~1573~28017~855~2~21122115433003.xedi
+14087481	TM File Processing Error. Sender ProfileId: 30998 FileName: Fastenal~1573~28017~855~2~21122115433003.xedi
+14087389	TM File Processing Error. Sender ProfileId: 30998 FileName: Fastenal~1573~28017~855~2~21122115433003.xedi
+14087547	Error: Medline 850 To Nurse Assist, Inc. LogId 1203079314
+14087256	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1202929537
+14087264	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1202935026
+14087299	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1202954242
+14087552	No Subject

@@ -1,0 +1,126 @@
+14070057	Error: Amware Logistics Unknown To Unknown LogId 1196426941
+14070056	Error: Amware Logistics Unknown To Unknown LogId 1196427224
+14070257	Error: Amware Logistics Unknown To Unknown LogId 1196557018
+14070010	Error: Almo Unknown To Unknown LogId 1196398679
+14069979	Error: Almo Unknown To Unknown LogId 1196398707
+14069984	Error: Almo Unknown To Unknown LogId 1196398801
+14069982	Error: Almo Unknown To Unknown LogId 1196398862
+14069981	Error: Almo Unknown To Unknown LogId 1196398947
+14069987	Error: Almo Unknown To Unknown LogId 1196399038
+14069988	Error: Almo Unknown To Unknown LogId 1196399069
+14070255	Error: Amazon Unknown To Unknown LogId 1196565859
+14070263	Error: Amazon Unknown To Unknown LogId 1196566861
+14070262	Error: Amazon Unknown To Unknown LogId 1196567254
+14070266	Error: Amazon.ca Unknown To Unknown LogId 1196567215
+14069986	Error: Unknown Unknown To Unknown LogId 1196383441
+14070100	Error: Unknown Unknown To Unknown LogId 1196458645
+14070131	Error: Unknown Unknown To Unknown LogId 1196458766
+14070125	Error: Unknown Unknown To Unknown LogId 1196470388
+14070126	Error: Unknown Unknown To Unknown LogId 1196476143
+14070158	Error: Unknown Unknown To Unknown LogId 1196493691
+14070159	Error: Unknown Unknown To Unknown LogId 1196493706
+14070239	Error: Unknown Unknown To Unknown LogId 1196540259
+14070237	Error: Unknown Unknown To Unknown LogId 1196540271
+14070238	Error: Unknown Unknown To Unknown LogId 1196540287
+14070243	Error: Unknown Unknown To Unknown LogId 1196548682
+14070241	Error: Unknown Unknown To Unknown LogId 1196548698
+14070236	Error: Unknown Unknown To Unknown LogId 1196548707
+14070240	Error: Unknown Unknown To Unknown LogId 1196548735
+14070245	Error: Unknown Unknown To Unknown LogId 1196548750
+14070278	Error: Unknown Unknown To Unknown LogId 1196579319
+14070271	Error: Unknown Unknown To Unknown LogId 1196579323
+14070273	Error: Unknown Unknown To Unknown LogId 1196579330
+14070272	Error: Unknown Unknown To Unknown LogId 1196579338
+14070279	Error: Unknown Unknown To Unknown LogId 1196579346
+14070280	Error: Unknown Unknown To Unknown LogId 1196579375
+14070298	Error: Unknown Unknown To Unknown LogId 1196602333
+14069986	Error: Unknown Unknown To Unknown LogId 1196383441
+14070100	Error: Unknown Unknown To Unknown LogId 1196458645
+14070125	Error: Unknown Unknown To Unknown LogId 1196470388
+14070126	Error: Unknown Unknown To Unknown LogId 1196476143
+14070158	Error: Unknown Unknown To Unknown LogId 1196493691
+14070159	Error: Unknown Unknown To Unknown LogId 1196493706
+14070239	Error: Unknown Unknown To Unknown LogId 1196540259
+14070238	Error: Unknown Unknown To Unknown LogId 1196540287
+14070241	Error: Unknown Unknown To Unknown LogId 1196548698
+14070240	Error: Unknown Unknown To Unknown LogId 1196548735
+14070245	Error: Unknown Unknown To Unknown LogId 1196548750
+14070271	Error: Unknown Unknown To Unknown LogId 1196579323
+14070273	Error: Unknown Unknown To Unknown LogId 1196579330
+14070272	Error: Unknown Unknown To Unknown LogId 1196579338
+14070280	Error: Unknown Unknown To Unknown LogId 1196579375
+14070298	Error: Unknown Unknown To Unknown LogId 1196602333
+14070273	Error: Unknown Unknown To Unknown LogId 1196579330
+14069901	Error: Walmart Unknown To Unknown LogId 1196346385
+14069913	Error: Walmart Unknown To Unknown LogId 1196358238
+14070054	Error: Walmart Unknown To Unknown LogId 1196426537
+14070055	Error: Walmart Unknown To Unknown LogId 1196428193
+14070068	Error: Walmart Unknown To Unknown LogId 1196437420
+14070064	Error: Walmart Unknown To Unknown LogId 1196441491
+14070086	Error: Walmart Unknown To Unknown LogId 1196448505
+14070095	Error: Walmart Unknown To Unknown LogId 1196460438
+14070114	Error: Walmart Unknown To Unknown LogId 1196463142
+14070121	Error: Walmart Unknown To Unknown LogId 1196466788
+14070142	Error: Walmart Unknown To Unknown LogId 1196486005
+14070309	Error: Walmart Unknown To Unknown LogId 1196605678
+14070308	Error: Walmart Unknown To Unknown LogId 1196614857
+14069901	Error: Walmart Unknown To Unknown LogId 1196346385
+14070054	Error: Walmart Unknown To Unknown LogId 1196426537
+14070055	Error: Walmart Unknown To Unknown LogId 1196428193
+14070068	Error: Walmart Unknown To Unknown LogId 1196437420
+14070114	Error: Walmart Unknown To Unknown LogId 1196463142
+14070142	Error: Walmart Unknown To Unknown LogId 1196486005
+14070076	TM File Processing Error. Sender ProfileId: 27656 FileName: Lowes SOS Commercehub~31981~23463~856~49~21121317042873.xedi
+14070211	Error: Twin Med Partner 850 To Nurse Assist, Inc. LogId 1196509819
+14069908	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196355775
+14069929	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196361558
+14069950	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196380156
+14069975	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196388592
+14069977	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196398294
+14069976	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196398342
+14070012	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196403707
+14070020	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196413033
+14070084	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196449689
+14070090	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196458302
+14070221	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196532212
+14070381	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196670037
+14069929	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196361558
+14069950	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196380156
+14069975	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196388592
+14070012	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196403707
+14070381	Error: Unknown Unknown To Total Quality Logistics 2 LogId 1196670037
+14070327	Error: Digi-Key Corporation Unknown To Unknown LogId 1196628900
+14070329	Error: Digi-Key Corporation Unknown To Unknown LogId 1196629642
+14070081	Error: Unknown Unknown To Abbyson Living Corporation LogId 1196446138
+14070083	Error: Unknown Unknown To Abbyson Living Corporation LogId 1196446180
+14070089	Error: Unknown Unknown To Abbyson Living Corporation LogId 1196446183
+14070425	Error: Ace Hardware 850 To For Life Products LogId 1196748480
+14070225	Error: ACS Industries Inc 997 To Martinrea International LogId 1196524333
+14070252	Error: Amazon.ca 852 To Diono LogId 1196567174
+14070314	Error: American Pet Nutrition 880 To Kroger LogId 1196612786
+14070315	Error: American Pet Nutrition 880 To URM Stores LogId 1196612897
+14070317	Error: American Pet Nutrition 880 To WinCo Foods LogId 1196612867
+14070330	Error: Babelway - supplyFORCE Unknown To Unknown LogId 1196627449
+14070116	Error: BackerHaus Veit Ltd 810 To US FoodService EAST (ASYS) LogId 1196472060
+14070123	Error: BackerHaus Veit Ltd 810 To US FoodService EAST (ASYS) LogId 1196478142
+14070146	Error: BackerHaus Veit Ltd 810 To US FoodService EAST (ASYS) LogId 1196487682
+14070157	Error: BackerHaus Veit Ltd 810 To US FoodService EAST (ASYS) LogId 1196493023
+14070102	Error: Bergen Brunswig 850 To PD-Rx Pharmaceuticals, Inc. LogId 1196460098
+14070190	Error: Bergen Brunswig 850 To PD-Rx Pharmaceuticals, Inc. LogId 1196502706
+14070189	Error: Brava Team 997 To HighKey Snacks LogId 1196498424
+14070148	Error: Brothers International Desserts 810 To US FoodService EAST (ASYS) LogId 1196488524
+14070154	Error: Brothers International Desserts 810 To US FoodService EAST (ASYS) LogId 1196488581
+14070149	Error: Brothers International Desserts 810 To US FoodService EAST (ASYS) LogId 1196488732
+14070150	Error: Brothers International Desserts 810 To US FoodService EAST (ASYS) LogId 1196488765
+14070147	Error: Brothers International Desserts 810 To US FoodService EAST (ASYS) LogId 1196488826
+14070483	Error: Coles Australia CONTRL To Just Play LogId 1196798906
+14070119	Error: Del Real Foods 855 To US FoodService EAST (ASYS) LogId 1196463445
+14070013	Error: Demoulas Market Basket Unknown To Unknown LogId 1196403480
+14070023	Error: Demoulas Market Basket Unknown To Unknown LogId 1196403552
+14070565	Error: Digi-Key Corporation Unknown To Unknown LogId 1196834059
+14070598	Error: Digi-Key Corporation Unknown To Unknown LogId 1196849426
+14070096	Error: Dollar General Unknown To Unknown LogId 1196448737
+14070504	Error: Drogueria Betances Unknown To Unknown LogId 1196809773
+14070360	Error: Dynamic 3PL 945 To Celios LogId 1196644924
+14070306	Error: Dyno Seasonal Solutions LLC Unknown To Unknown LogId 1196605873
+14070099	Error: Empire Marketing Strategies 997 To King's Hawaiian LogId 1196454317

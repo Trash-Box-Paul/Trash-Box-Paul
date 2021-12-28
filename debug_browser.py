@@ -1,9 +1,31 @@
 import os
 from selenium.webdriver.chrome.options import Options
 import socket
+import webdrivermanager
+from selenium import webdriver
+import time
+from datetime import datetime
 
 
 # Open the browser on port 9222, and save the information to C:/testfile
+class Singleton(object):
+    _INSTANCE = {}
+
+    def __init__(self, cls):
+        self.cls = cls
+
+    def __call__(self, *args, **kwargs):
+        instance = self._INSTANCE.get(self.cls, None)
+        if not instance:
+            instance = self.cls(*args, **kwargs)
+            self._INSTANCE[self.cls] = instance
+        return instance
+
+    def __getattr__(self, key):
+        return getattr(self.cls, key, None)
+
+
+@Singleton
 class DebugBrowser:
     def __init__(self):
         self.ip = '127.0.0.1'
@@ -11,6 +33,8 @@ class DebugBrowser:
         self.user_file = 'C:/test'
         self.chrome_option = Options()
         self.chrome_address = 'C:\Program Files\Google\Chrome\Application'
+        self.driver = self.driver_setup()
+        self.time = datetime.now().strftime("%b_%d_%Y")
 
     def debug_chrome(self):
         """
@@ -39,3 +63,19 @@ class DebugBrowser:
             check = False
         sock.close()
         return check
+
+    def driver_setup(self):
+        chrome_driver = webdrivermanager.ChromeDriverManager()
+        try:
+            temp_driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
+                                           options=self.debug_chrome())
+            return temp_driver
+
+        except:
+            chrome_driver.download_and_install(chrome_driver.get_latest_version())
+            time.sleep(3)
+            print("!!!!!!!!!!!!!!!!")
+            time.sleep(3)
+            self.driver = webdriver.Chrome(executable_path=chrome_driver.get_driver_filename(),
+                                           options=self.debug_chrome())
+            return temp_driver

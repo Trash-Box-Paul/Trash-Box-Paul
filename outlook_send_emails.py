@@ -1,7 +1,7 @@
 import os.path
 import time
 
-import netsuite_clean_all_case
+import netsuite_clean_case
 import win32com
 from win32com.client import Dispatch, constants
 from datetime import datetime
@@ -27,7 +27,7 @@ class SendEmails:
         # Body
         mail.Body = "Attached is the log of noise cases closed by script today."
         # 添加附件
-        filename = "./OA_log/" + datetime.today().strftime("%b_%d_%Y") + "_clean_list_log.txt"
+        filename = "./clean_list_log/" + datetime.today().strftime("%b_%d_%Y") + "_clean_list_log.txt"
         if os.path.exists(filename):
             mail.Attachments.Add(os.path.abspath(filename))
         filename = datetime.now().strftime("%b_%d_%Y") + "_resend_log.txt"

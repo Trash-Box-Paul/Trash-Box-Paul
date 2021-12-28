@@ -1,9 +1,9 @@
 
-import netsuite_clean_all_case
+import netsuite_clean_case
 import win32api, win32con
 
 
-test1 = netsuite_clean_all_case.CleanAllCase()
+test1 = netsuite_clean_case.CleanAllCase()
 
 var = [
         "To Base Brands CC",

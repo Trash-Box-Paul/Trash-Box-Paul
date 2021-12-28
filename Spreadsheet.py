@@ -1,7 +1,7 @@
 import os.path
 import time
 import os
-import netsuite_clean_all_case
+import netsuite_clean_case
 import win32com
 from win32com.client import Dispatch, constants
 from datetime import datetime

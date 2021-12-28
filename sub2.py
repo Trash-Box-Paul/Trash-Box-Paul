@@ -1,4 +1,4 @@
-import netsuite_clean_all_case
+import netsuite_clean_case
 import win32api, win32con
 import excel_test
 
